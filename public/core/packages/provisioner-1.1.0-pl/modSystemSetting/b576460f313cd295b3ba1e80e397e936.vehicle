@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'key',
+  'namespace' => 'provisioner',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '26ea7cebf45a612e441141fe2aa5b9ea',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'b576460f313cd295b3ba1e80e397e936',
+  'native_key' => 'siteid',
+  'object' => '{"key":"siteid","value":"","xtype":"textfield","namespace":"provisioner","area":"Provisioner","editedon":null}',
+);

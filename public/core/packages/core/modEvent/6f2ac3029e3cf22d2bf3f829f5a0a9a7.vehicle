@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'fcc9cd0e41eb210cdf432cca8a4dc746',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '6f2ac3029e3cf22d2bf3f829f5a0a9a7',
+  'native_key' => 'OnPropertySetSave',
+  'object' => '{"name":"OnPropertySetSave","service":1,"groupname":"Property Sets"}',
+);

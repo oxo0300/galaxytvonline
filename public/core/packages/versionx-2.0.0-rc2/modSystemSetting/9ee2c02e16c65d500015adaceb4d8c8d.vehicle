@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'versionx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd9c851a4abba1673475f6136ff27abe5',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '9ee2c02e16c65d500015adaceb4d8c8d',
+  'native_key' => 'versionx.formtabs.chunk',
+  'object' => '{"key":"versionx.formtabs.chunk","value":true,"xtype":"combo-boolean","namespace":"versionx","area":"formtabs","editedon":null}',
+);

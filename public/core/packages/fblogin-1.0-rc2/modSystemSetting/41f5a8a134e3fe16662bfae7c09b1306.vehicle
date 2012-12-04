@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'namespace' => 'fbLogin',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '97b1f4a57b129d09406009b4b33ee016',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '41f5a8a134e3fe16662bfae7c09b1306',
+  'native_key' => '',
+  'object' => '{"key":"","value":"","xtype":"textfield","namespace":"core","area":"","editedon":null,"name":"fbLogin_cancel_resource_id","description":"The ID of the resource to redirect Facebook users should they cancel a Facebook option"}',
+);

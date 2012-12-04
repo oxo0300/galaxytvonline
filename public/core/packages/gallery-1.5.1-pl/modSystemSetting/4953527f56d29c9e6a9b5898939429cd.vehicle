@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'gallery',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a08ced8860437134b84f924008ac037a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4953527f56d29c9e6a9b5898939429cd',
+  'native_key' => 'gallery.backend_thumb_far',
+  'object' => '{"key":"gallery.backend_thumb_far","value":"C","xtype":"textfield","namespace":"gallery","area":"backend","editedon":null}',
+);

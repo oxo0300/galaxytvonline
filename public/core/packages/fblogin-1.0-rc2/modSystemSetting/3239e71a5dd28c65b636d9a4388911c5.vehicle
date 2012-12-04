@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'namespace' => 'fbLogin',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c648a7e38579e7988eabe5bcb6aad4b5',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '3239e71a5dd28c65b636d9a4388911c5',
+  'native_key' => '',
+  'object' => '{"key":"","value":"","xtype":"textfield","namespace":"core","area":"","editedon":null,"name":"fbLogin_firstlogin_resource_id","description":"The ID of the resource to redirect Facebook users on their first login - perhaps to complete their profile"}',
+);

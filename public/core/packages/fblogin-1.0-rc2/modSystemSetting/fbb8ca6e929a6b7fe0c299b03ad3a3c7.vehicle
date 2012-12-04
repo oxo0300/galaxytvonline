@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'namespace' => 'fbLogin',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '93408bb1c6685e051ba48fe80c3446f8',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'fbb8ca6e929a6b7fe0c299b03ad3a3c7',
+  'native_key' => '',
+  'object' => '{"key":"","value":"","xtype":"textfield","namespace":"core","area":"","editedon":null,"name":"fbLogin_account_resource_id","description":"The ID of resource to redirect returning Facebook users to when they login in"}',
+);

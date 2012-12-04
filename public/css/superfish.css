@@ -1,0 +1,73 @@
+.sf-menu, .sf-menu * {margin:0;padding:0;list-style:none;/*overflow: hidden;*/}
+/*.sf-menu{ padding:27px 0 0 0;}*/
+.sf-menu li {float:left; position:relative; font-size:22px;  line-height:1.2em; margin-right: 1px; min-width: 12.08547%;}
+.sf-menu.menupad li{padding:0 15px 0 3px;}
+.sf-menu li a {
+	display: block;
+	color: #fff;
+	padding: 5px 0px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.sf-menu li li a{
+  min-width:136px;
+  background-color: #1a1a1a;
+  font-size: 12px;
+  text-align: left;
+  padding: 5px;
+}
+.sf-menu li.sfHover a{ color:#2a7ee9;}
+.sf-menu li.active a,.sf-menu li a:hover{
+	color: #eee !important;
+	background-color: #31343d;
+}
+.sf-menu ul {
+	position: absolute;
+	top: -999em;
+	z-index: 99;
+	width: 168px;
+}
+.sf-menu li li{
+	padding: 0;
+	width: 165px;
+	text-align: center;
+}
+.sf-menu li li.m-bottom{ padding-bottom:17px;}
+.sf-menu li li.m-bottom span{display:block; position:absolute; bottom:-5px; left:0; background:url(../media/assets/submenu-bottom.png); width:168px; height:5px;}
+.sf-menu li li a,.sf-menu li.sfHover li a,.sf-menu li.active li a{color:#fff}
+.sf-menu li li a:hover,.sf-menu li li.sfHover a,.sf-menu li li.active a{color:#2a7ee9;}
+.sf-menu ul ul {
+	position:		absolute;
+	top:			-999em;
+	z-index:		99;
+	width:			168px; 
+	display:none;
+	background:#fff;
+}
+.sf-menu li li li{padding:0; width:165px; background:none !important; text-align:center; padding:2px 3px 2px 0;}
+.sf-menu li li li a,.sf-menu li li.sfHover li a,.sf-menu li li.active li a{color:#2a7ee9;}
+.sf-menu li li li a:hover,.sf-menu li li li.active a{color:#2a7ee9;}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			-15px;
+	top:			35px; /* match top ul list item height */
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			168px; /* match ul width */
+	top:			-17px;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			00px;
+}

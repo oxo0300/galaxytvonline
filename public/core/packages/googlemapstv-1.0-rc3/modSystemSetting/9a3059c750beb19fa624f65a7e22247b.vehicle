@@ -1,0 +1,55 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'googlemapstv',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"googlemapstv-1.0-rc3\\/modSystemSetting\\/9a3059c750beb19fa624f65a7e22247b\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"googlemapstv"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"googlemapstv-1.0-rc3\\/modSystemSetting\\/9a3059c750beb19fa624f65a7e22247b\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"googlemapstv"}',
+    ),
+    2 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"googlemapstv-1.0-rc3\\/modSystemSetting\\/9a3059c750beb19fa624f65a7e22247b\\/2\\/","target":"return MODX_CORE_PATH . \'model\\/modx\\/processors\\/element\\/tv\\/renders\\/web\\/output\\/\';","name":"googlemap.php"}',
+    ),
+    3 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"googlemapstv-1.0-rc3\\/modSystemSetting\\/9a3059c750beb19fa624f65a7e22247b\\/3\\/","target":"return MODX_CORE_PATH . \'model\\/modx\\/processors\\/element\\/tv\\/renders\\/mgr\\/properties\\/\';","name":"googlemap.php"}',
+    ),
+    4 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"googlemapstv-1.0-rc3\\/modSystemSetting\\/9a3059c750beb19fa624f65a7e22247b\\/4\\/","target":"return MODX_MANAGER_PATH . \'templates\\/default\\/element\\/tv\\/renders\\/properties\\/\';","name":"googlemap.tpl"}',
+    ),
+    5 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"googlemapstv-1.0-rc3\\/modSystemSetting\\/9a3059c750beb19fa624f65a7e22247b.setupoptions.resolver.resolver","type":"php","name":"setupoptions.resolver"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"googlemapstv-1.0-rc3\\/modSystemSetting\\/9a3059c750beb19fa624f65a7e22247b.paths.validator.validator","type":"php","name":"paths.validator"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '23d90fc2ebb6906787c1e570f554608d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '9a3059c750beb19fa624f65a7e22247b',
+  'native_key' => 'googlemapstv.api_key',
+  'object' => '{"key":"googlemapstv.api_key","value":"","xtype":"textfield","namespace":"googlemapstv","area":"Google Maps","editedon":null}',
+);

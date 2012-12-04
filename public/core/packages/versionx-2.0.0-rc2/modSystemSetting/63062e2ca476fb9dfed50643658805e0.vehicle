@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'versionx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '609a34502643267b0588195b69bcb56a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '63062e2ca476fb9dfed50643658805e0',
+  'native_key' => 'versionx.debug',
+  'object' => '{"key":"versionx.debug","value":false,"xtype":"combo-boolean","namespace":"versionx","area":"Default","editedon":null}',
+);

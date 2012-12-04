@@ -1,0 +1,23 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'name',
+  'namespace' => 'getfeed',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"getfeed-1.0.0-rc1\\/modSnippet\\/e83efbdb1e094b94d10ba2fc92a58181\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"getfeed"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '92924cf76419a3f8367594db2310ea08',
+  'package' => 'modx',
+  'class' => 'modSnippet',
+  'signature' => 'e83efbdb1e094b94d10ba2fc92a58181',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"getFeed","description":"<b>1.0.0-rc1<\\/b> A simple RSS feed client component for MODx Revolution","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * getFeed\\n *\\n * A simple snippet to retrieve an RSS feed and iterate the feed items using a Chunk.\\n *\\n * @author Jason Coward <jason@modxcms.com>\\n * @author Shaun McCormick <shaun@modxcms.com>\\n *\\n * @version 1.0.0-beta\\n * @copyright Copyright 2010 by Jason Coward\\n * @license http:\\/\\/www.gnu.org\\/licenses\\/gpl.txt GPLv3\\n *\\/\\nif (!defined(\'MAGPIE_OUTPUT_ENCODING\')) {\\n    $outputEncoding = $modx->getOption(\'outputEncoding\',$scriptProperties,\'UTF-8\');\\n    define(\'MAGPIE_OUTPUT_ENCODING\',$outputEncoding);\\n}\\n$limit = isset($limit) ? (integer) $limit : 0;\\n$offset = isset($offset) ? (integer) $offset : 0;\\n$totalVar = !empty($totalVar) ? $totalVar : \'total\';\\n$total = 0;\\n$output = array();\\nif (!empty($url) && $modx->getService(\'rss\', \'xmlrss.modRSSParser\')) {\\n    $rss = $modx->rss->parse($url);\\n    if (!empty($rss) && isset($rss->items)) {\\n        $total = count($rss->items);\\n        $modx->setPlaceholder($totalVar, $total);\\n        $itemIdx = 0;\\n        $idx = 0;\\n        while (list($itemKey, $item) = each($rss->items)) {\\n            if ($idx >= $offset) {\\n                if (!empty($tpl)) {\\n                    $output[] = $modx->getChunk($tpl, $item);\\n                } else {\\n                    $output[] = \'<pre>\'.$idx.\': \' . print_r($item, true) . \'<\\/pre>\';\\n                }\\n                $itemIdx++;\\n                if ($limit > 0 && $itemIdx+1 > $limit) break;\\n            }\\n            $idx++;\\n        }\\n    } else {\\n        $modx->log(modX::LOG_LEVEL_ERROR, \\"Error parsing RSS feed at {$url}\\", \'\', \'getFeed\', __FILE__, __LINE__);\\n    }\\n}\\n$output = implode(\\"\\\\n\\", $output);\\n\\nif (!empty($scriptProperties[\'toPlaceholder\'])) {\\n    $modx->setPlaceholder($scriptProperties[\'toPlaceholder\'],$output);\\n    return \'\';\\n}\\nreturn $output;","locked":0,"properties":"a:7:{s:3:\\"url\\";a:6:{s:4:\\"name\\";s:3:\\"url\\";s:4:\\"desc\\";s:27:\\"URL of the feed to retrieve\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";N;}s:3:\\"tpl\\";a:6:{s:4:\\"name\\";s:3:\\"tpl\\";s:4:\\"desc\\";s:39:\\"Name of a chunk to serve as an item tpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";N;}s:5:\\"limit\\";a:6:{s:4:\\"name\\";s:5:\\"limit\\";s:4:\\"desc\\";s:51:\\"Limit the number of items to return; 0 is no limit.\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:1:\\"0\\";s:7:\\"lexicon\\";N;}s:6:\\"offset\\";a:6:{s:4:\\"name\\";s:6:\\"offset\\";s:4:\\"desc\\";s:65:\\"The zero-based index of the item to start at in the feed results.\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:1:\\"0\\";s:7:\\"lexicon\\";N;}s:8:\\"totalVar\\";a:6:{s:4:\\"name\\";s:8:\\"totalVar\\";s:4:\\"desc\\";s:107:\\"The name of a placeholder where the total number of items in the feed is stored. For getPage compatibility.\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:5:\\"total\\";s:7:\\"lexicon\\";N;}s:13:\\"toPlaceholder\\";a:6:{s:4:\\"name\\";s:13:\\"toPlaceholder\\";s:4:\\"desc\\";s:99:\\"If set, will set the output to this placeholder name. If not set, will output directly the results.\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";N;}s:14:\\"outputEncoding\\";a:6:{s:4:\\"name\\";s:14:\\"outputEncoding\\";s:4:\\"desc\\";s:44:\\"Sets the encoding for the Magpie RSS loader.\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:5:\\"UTF-8\\";s:7:\\"lexicon\\";N;}}","moduleguid":""}',
+);

@@ -1,0 +1,50 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      'aced20c327027691ba0035512d1ec9dc' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'class' => 'modAction',
+        'object' => '{"id":1,"namespace":"vidlister","parent":0,"controller":"index","haslayout":1,"lang_topics":"vidlister:default,file","assets":"","help_url":""}',
+        'guid' => '7f1f953aeda987ae10f9c8bcc4a74e9e',
+        'native_key' => 1,
+        'signature' => '32437d4d3a8fc2298eb00034a62fd292',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'vidlister',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '67d838a83058b076a89ef213541bee16',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '9345a3c786db942e04891b7b180f7075',
+  'native_key' => 'vidlister',
+  'object' => '{"text":"vidlister","parent":"components","action":1,"description":"vidlister.desc","icon":"","menuindex":0,"params":"","handler":"","permissions":""}',
+);

@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b8848546b8f8166c5ec7c175981d1c32',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'c03249ca410c5a0111042aec42e1bfea',
+  'native_key' => 'site_name',
+  'object' => '{"key":"site_name","value":"MODX Revolution","xtype":"textfield","namespace":"core","area":"site","editedon":null}',
+);

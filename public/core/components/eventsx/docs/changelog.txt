@@ -1,0 +1,29 @@
+EventsX 0.1.0 Alpha5
+====================================
+- EventsX snippet now also sets [[+idx]] index placeholder (starting at 1)
+- [css] Added cursor:pointer to #calendar .hasEvents
+- New region field
+- New introtext field
+- Fixed typo (eventsPageRegex) in plugin
+- Now shows upcoming events until enddate (was startdate)
+
+EventsX 0.1.0 Alpha4
+====================================
+- EventsX snippet now also sets [[+classes]] placeholder
+
+EventsX 0.1.0 Alpha3
+====================================
+- EventsX snippet now also shows events starting today
+
+EventsX 0.1.0 Alpha2
+====================================
+- Fixed hasEvents typo in calendar.js
+- Russian translation added
+- Small Calendar CSS bug fix (z-index)
+- Added all event fields to JSON data
+- Changed order of context menu (update/remove)
+- Changed relative grid column size to give name more space
+
+EventsX 0.1.0 Alpha
+====================================
+- Initial release

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'namespace' => 'fbLogin',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'df0398821c0caa78b3bca7a7cd44a61c',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '2778b3eae2a60cdf797df9444922df26',
+  'native_key' => '',
+  'object' => '{"key":"","value":"","xtype":"textfield","namespace":"core","area":"","editedon":null,"name":"settings_facebook_app_id","description":"The app ID assigned by Facebook for your app"}',
+);

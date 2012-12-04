@@ -1,0 +1,8 @@
+Changelog for GoogleMapsTV.
+
+GoogleMapsTV 1.0 ($LastChangedRevision: 813 $, $LastChangedDate: 2010-05-06 16:33:49 -0500 (Thu, 06 May 2010) $)
+====================================
+- Optimized for Revo RC2
+- Fixed bug for cached pages
+- Prepared for rc1 release
+- Initial commit

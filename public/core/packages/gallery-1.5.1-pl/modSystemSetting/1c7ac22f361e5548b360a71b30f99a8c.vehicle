@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'gallery',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1484b302fee246ab2d5aace1b573f66b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '1c7ac22f361e5548b360a71b30f99a8c',
+  'native_key' => 'gallery.backend_thumb_zoomcrop',
+  'object' => '{"key":"gallery.backend_thumb_zoomcrop","value":1,"xtype":"combo-boolean","namespace":"gallery","area":"backend","editedon":null}',
+);

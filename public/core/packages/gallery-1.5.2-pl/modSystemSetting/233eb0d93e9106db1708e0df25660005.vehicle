@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'gallery',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '483fb4607e4b60eebd624abd5f860f1b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '233eb0d93e9106db1708e0df25660005',
+  'native_key' => 'gallery.tiny.buttons4',
+  'object' => '{"key":"gallery.tiny.buttons4","value":"","xtype":"textfield","namespace":"gallery","area":"TinyMCE","editedon":null}',
+);

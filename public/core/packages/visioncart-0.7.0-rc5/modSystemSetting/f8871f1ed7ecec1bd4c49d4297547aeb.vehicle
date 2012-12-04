@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'unique_key' => 'key',
+  'namespace' => 'visioncart',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'fcf1aeab81b7ff1329987f8162e722a3',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'f8871f1ed7ecec1bd4c49d4297547aeb',
+  'native_key' => 'visioncart_default_shop',
+  'object' => '{"key":"visioncart_default_shop","value":"1","xtype":"textfield","namespace":"visioncart","area":"system","editedon":null}',
+);

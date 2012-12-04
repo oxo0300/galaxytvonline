@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '39498a1e769975320813883c9da011fb',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '1fb522bccf6a3220cc7e47cd3b8cb74f',
+  'native_key' => 'proxy_host',
+  'object' => '{"key":"proxy_host","value":"","xtype":"textfield","namespace":"core","area":"proxy","editedon":null}',
+);

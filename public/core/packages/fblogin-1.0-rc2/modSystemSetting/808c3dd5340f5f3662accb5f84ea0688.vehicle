@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'namespace' => 'fbLogin',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a6ff366e5031d4837f150e6707cadf95',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '808c3dd5340f5f3662accb5f84ea0688',
+  'native_key' => '',
+  'object' => '{"key":"","value":"email","xtype":"textfield","namespace":"core","area":"","editedon":null,"name":"facebook_user_perms","description":"The comma delimited list of permissions your app needs to request from your user on Facebook"}',
+);

@@ -1,0 +1,54 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      '82752c0877b0cd838740a933a155c995' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnSiteRefresh","priority":0,"propertyset":0}',
+        'guid' => '0b4b2864b5fcca2194b520ebebfd51c9',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnSiteRefresh',
+        ),
+        'signature' => 'c588f77eaecf3a82e02d2c43595a5e6b',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'phpthumbof',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0034e07da614c8e397802b1566c38b08',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => 'b6c82e1111935c0a65985e9262706681',
+  'native_key' => 1,
+  'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"phpThumbOfCacheManager","description":"Handles cache cleaning when clearing the Site Cache.","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * Handles cache management for phpthumbof filter\\n * \\n * @package phpthumbof\\n *\\/\\nif (empty($results)) $results = array();\\n\\nswitch ($modx->event->name) {\\n    case \'OnSiteRefresh\':\\n        if (!$modx->loadClass(\'modPhpThumb\',$modx->getOption(\'core_path\').\'model\\/phpthumb\\/\',true,true)) {\\n            $modx->log(modX::LOG_LEVEL_ERROR,\'[phpThumbOf] Could not load modPhpThumb class in plugin.\');\\n            return;\\n        }\\n        $assetsPath = $modx->getOption(\'phpthumbof.assets_path\',$scriptProperties,$modx->getOption(\'assets_path\').\'components\\/phpthumbof\\/\');\\n        $phpThumb = new modPhpThumb($modx);\\n        $cacheDir = $assetsPath.\'cache\\/\';\\n\\n        \\/* clear local cache *\\/\\n        if (!empty($cacheDir)) {\\n            foreach (new DirectoryIterator($cacheDir) as $file) {\\n                if (!$file->isFile()) continue;\\n                @unlink($file->getPathname());\\n            }\\n        }\\n\\n        \\/* if using amazon s3, clear our cache there *\\/\\n        $useS3 = $modx->getOption(\'phpthumbof.use_s3\',$scriptProperties,false);\\n        if ($useS3) {\\n            $modelPath = $modx->getOption(\'phpthumbof.core_path\',null,$modx->getOption(\'core_path\').\'components\\/phpthumbof\\/\').\'model\\/\';\\n            $modaws = $modx->getService(\'modaws\',\'modAws\',$modelPath.\'aws\\/\',$scriptProperties);\\n            $s3path = $modx->getOption(\'phpthumbof.s3_path\',null,\'phpthumbof\\/\');\\n            \\n            $list = $modaws->getObjectList($s3path);\\n            if (!empty($list) && is_array($list)) {\\n                foreach ($list as $obj) {\\n                    if (empty($obj->Key)) continue;\\n\\n                    $results[] = $modaws->deleteObject($obj->Key);\\n                }\\n            }\\n        }\\n\\n        break;\\n}\\nreturn;","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * Handles cache management for phpthumbof filter\\n * \\n * @package phpthumbof\\n *\\/\\nif (empty($results)) $results = array();\\n\\nswitch ($modx->event->name) {\\n    case \'OnSiteRefresh\':\\n        if (!$modx->loadClass(\'modPhpThumb\',$modx->getOption(\'core_path\').\'model\\/phpthumb\\/\',true,true)) {\\n            $modx->log(modX::LOG_LEVEL_ERROR,\'[phpThumbOf] Could not load modPhpThumb class in plugin.\');\\n            return;\\n        }\\n        $assetsPath = $modx->getOption(\'phpthumbof.assets_path\',$scriptProperties,$modx->getOption(\'assets_path\').\'components\\/phpthumbof\\/\');\\n        $phpThumb = new modPhpThumb($modx);\\n        $cacheDir = $assetsPath.\'cache\\/\';\\n\\n        \\/* clear local cache *\\/\\n        if (!empty($cacheDir)) {\\n            foreach (new DirectoryIterator($cacheDir) as $file) {\\n                if (!$file->isFile()) continue;\\n                @unlink($file->getPathname());\\n            }\\n        }\\n\\n        \\/* if using amazon s3, clear our cache there *\\/\\n        $useS3 = $modx->getOption(\'phpthumbof.use_s3\',$scriptProperties,false);\\n        if ($useS3) {\\n            $modelPath = $modx->getOption(\'phpthumbof.core_path\',null,$modx->getOption(\'core_path\').\'components\\/phpthumbof\\/\').\'model\\/\';\\n            $modaws = $modx->getService(\'modaws\',\'modAws\',$modelPath.\'aws\\/\',$scriptProperties);\\n            $s3path = $modx->getOption(\'phpthumbof.s3_path\',null,\'phpthumbof\\/\');\\n            \\n            $list = $modaws->getObjectList($s3path);\\n            if (!empty($list) && is_array($list)) {\\n                foreach ($list as $obj) {\\n                    if (empty($obj->Key)) continue;\\n\\n                    $results[] = $modaws->deleteObject($obj->Key);\\n                }\\n            }\\n        }\\n\\n        break;\\n}\\nreturn;"}',
+);

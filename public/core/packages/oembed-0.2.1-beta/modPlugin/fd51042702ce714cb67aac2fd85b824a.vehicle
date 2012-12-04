@@ -1,0 +1,27 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'name',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"oembed-0.2.1-beta\\/modPlugin\\/fd51042702ce714cb67aac2fd85b824a.resolve.plugin.events.resolver","type":"php","name":"resolve.plugin.events"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"oembed-0.2.1-beta\\/modPlugin\\/fd51042702ce714cb67aac2fd85b824a\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"oembed"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '13027deae575715874c463929fa6dad6',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => 'fd51042702ce714cb67aac2fd85b824a',
+  'native_key' => 1,
+  'object' => '{"id":1,"name":"oembed","description":"Autodiscover embeddable URLs in document.","editor_type":0,"category":0,"cache_type":0,"plugincode":"$eventName = $modx->event->name;\\nif ($eventName == \'OnWebPagePrerender\') {\\n    include_once $modx->getOption(\'core_path\').\'components\\/oembed\\/oembed.class.php\';\\n    $config = array();\\n    $config[\'strictMatch\'] = $scriptProperties[\'strictMatch\'];\\n    $config[\'maxwidth\'] = $scriptProperties[\'maxwidth\'];\\n    $config[\'maxheight\'] = $scriptProperties[\'maxheight\'];\\n    $config[\'format\'] = $scriptProperties[\'format\'];\\n    $config[\'outputMode\'] = $scriptProperties[\'outputMode\'];\\n    $config[\'discover\'] = false;\\n\\n    $oembed = new oEmbed($modx, $config);\\n    $oembed->autoEmbed();\\n}","locked":0,"properties":"a:6:{s:11:\\"strictMatch\\";a:5:{s:4:\\"name\\";s:11:\\"strictMatch\\";s:4:\\"desc\\";s:105:\\"If true, will be selected URLs which written as one on line only. Else, all unlinked URLs in the content.\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";b:1;}s:3:\\"tpl\\";a:5:{s:4:\\"name\\";s:3:\\"tpl\\";s:4:\\"desc\\";s:110:\\"Name of a chunk serving as a resource template. If not provided, default tpl from oembed snippet will be used.\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";}s:8:\\"maxwidth\\";a:5:{s:4:\\"name\\";s:8:\\"maxwidth\\";s:4:\\"desc\\";s:34:\\"Maximum width for retrieved media.\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:3:\\"600\\";}s:9:\\"maxheight\\";a:5:{s:4:\\"name\\";s:9:\\"maxheight\\";s:4:\\"desc\\";s:35:\\"Maximum height for retrieved media.\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:3:\\"600\\";}s:6:\\"format\\";a:5:{s:4:\\"name\\";s:6:\\"format\\";s:4:\\"desc\\";s:96:\\"Format of the response. Can be json|xml. Require json_decode|simplexml_load_string respectively.\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:4:\\"json\\";}s:10:\\"outputMode\\";a:5:{s:4:\\"name\\";s:10:\\"outputMode\\";s:4:\\"desc\\";s:86:\\"Output mode. Can be \\"full\\" (chunks will be processed) and \\"minimal\\" (only embed code).\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:4:\\"full\\";}}","disabled":0,"moduleguid":""}',
+);

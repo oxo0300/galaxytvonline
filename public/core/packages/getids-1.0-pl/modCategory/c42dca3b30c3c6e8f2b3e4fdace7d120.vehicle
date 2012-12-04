@@ -1,0 +1,60 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      '303280e8d60668161afce319bff095a0' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":33,"name":"GetIds","description":"to get a list of resource ids","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * getIds\\n *\\n * A general purpose snippet to get a list of resource ids for MODx 2.0.\\n *\\n * @author Coroico\\n * @copyright Copyright 2010, Coroico\\n * @version 1.0.0-pl - November 27, 2010\\n *\\n * [[!GetIds? &depth=`5` &ids=`8,-c10,12,3,c3`]]\\n *\\n * depth - (Opt) Integer value indicating depth to search for resources from each parent\\n *\\n * ids - Comma-delimited list of resource ids serving as parents, child or resource\\n *\\n * ids as [ [+| |-] [c| |p]integer ] where:\\n *\\n *  - : exclude ids             + or \'\' : include ids (default)\\n *  p : parents resources       c : children resources      \'\': current resource\\n *\\n * e.g:\\n *\\n * &ids=`18, c18, -c21, 34` : include #18 and children of #18, exclude chidren of #21 but keep #34\\n *\\n * &ids=`p12, -p3, -1, 2`   : include all parents of #12, exclude parents of #3 but keep #2\\n *\\n * &ids=`18, c18, p3, -p2`  : include #8 and children of #8, include parents of #3, exclude parent of #2\\n *\\n *\\n * IMPORTANT: take care of the order of arguments. To be excluded the id should be already in the list\\n * &ids=`18, 19, -19, 20` => \'18,20\'          but &ids=`18, -19, 19, 20` => \'18,19,20\'\\n *\\n *\\/\\n\\n\\/* set default properties *\\/\\n$ids = (!empty($ids) || $ids === \'0\') ? explode(\',\', $ids) : array($modx->resource->get(\'id\'));\\n$depth = isset($depth) ? (integer) $depth : $scriptProperties[\'depth\'];\\n\\n$ids = array_map(\'trim\',$ids);\\n$resIds = array();\\n\\nforeach ($ids as $id) {\\n    if (intval($id)) {  \\/\\/ specified without any prefix\\n        $id = ($id > 0) ? \\"+n\\".abs($id) : \\"-n\\".abs($id);\\n    }\\n    $len = strlen($id);\\n    $digit1 = substr( $id, 0, 1); \\/\\/ p,n or c\\n    $str = substr($id,1,strlen($id)-1);\\n\\n    if ($len >= 3){\\n        if (intval($str)) $id = \'+\' . $digit1 . abs($str);\\n        else if ($digit1 != \'+\' && $digit1 != \'-\') $id = substr($id,1,1) . $digit1 . substr($id,2,strlen($id)-2);\\n    }\\n    else if ($len == 2) {\\n        if (intval($str)) $id = \'+\' . $digit1 . $str;\\n        else $id = \'\';\\n    }\\n    else if ($len == 1){\\n        if (intval($str)) $id = \'+\' . \'n\' . $id;\\n        else $id = \'\';\\n    }\\n\\n    $digit1 = strtolower(substr( $id, 0, 1));\\n    $digit2 = strtolower(substr( $id, 1, 1));\\n    $rid = substr($id, 2, strlen($id)-2);\\n\\n    switch($digit2){\\n        case \\"n\\":  \\/\\/ simple node\\n            $tmp = array($rid);\\n            break;\\n        case \\"c\\":  \\/\\/ children\\n            $tmp = $modx->getChildIds($rid, $depth);\\n            break;\\n        case \\"p\\":   \\/\\/ parents\\n            $tmp = $modx->getParentIds($rid, $depth);\\n            break;\\n    }\\n\\n    if ($digit1 == \'+\') $resIds = array_merge($resIds,$tmp);  \\/\\/ add ids\\n    else if ($digit1 == \'-\') $resIds = array_values(array_diff($resIds,$tmp));  \\/\\/ remove excluded ids\\n}\\n\\n$resIds = array_values(array_unique($resIds));  \\/\\/ remove duplicated ids\\n$lstIds = implode(\',\',$resIds);\\n\\nreturn $lstIds;","locked":0,"properties":"a:1:{s:5:\\"depth\\";a:6:{s:4:\\"name\\";s:5:\\"depth\\";s:4:\\"desc\\";s:71:\\"Integer value indicating depth to search for resources from each parent\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:2:\\"10\\";s:7:\\"lexicon\\";N;}}","moduleguid":""}',
+        'guid' => '01a7735fa28c6d7c0d5a5effa9db6f08',
+        'native_key' => 33,
+        'signature' => 'b34e8c77517f1fc4c94c82684002b96a',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'getids',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'bff212eb3a9b88fb6a49bb16a93a3ba0',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'c42dca3b30c3c6e8f2b3e4fdace7d120',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"GetIds"}',
+);

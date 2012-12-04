@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'key',
+  'namespace' => 'provisioner',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '209909061ea7459292e4666a4e7a740b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4ad447b8ca0b3f2d104502b57291b657',
+  'native_key' => 'status',
+  'object' => '{"key":"status","value":2,"xtype":"textfield","namespace":"provisioner","area":"Provisioner","editedon":null}',
+);

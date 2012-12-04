@@ -1,0 +1,609 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Children' => 
+    array (
+      'f92e29761f1bdb9fd49f3c1fb68e05e3' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'category',
+        'class' => 'modCategory',
+        'object' => '{"id":2,"parent":1,"category":"Backend"}',
+        'guid' => '5d4e2c7bd3facb0d16be9a7ed2da9194',
+        'native_key' => 2,
+        'signature' => '6418187a460aa4de2eb23c1e4331aab8',
+      ),
+      '739f8d5cbb3bf40e52386096b32ba4f0' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'category',
+        'class' => 'modCategory',
+        'object' => '{"id":3,"parent":1,"category":"Emails"}',
+        'guid' => '06c342e011f372b0b6f2e6e537cdaa1d',
+        'native_key' => 3,
+        'signature' => 'd5a814ba7d51c355b131880ddcaca751',
+        'related_objects' => 
+        array (
+          'Chunks' => 
+          array (
+            'fddf6724f9b64bb8fdf8a4a0d4cf406a' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modChunk',
+              'object' => '{"id":1,"name":"vcEmailOuter","description":"","editor_type":0,"category":3,"cache_type":0,"snippet":"<img src=\\"[[++site_url]]\\/assets\\/components\\/visioncart\\/web\\/themes\\/default\\/images\\/emailheader.jpg\\" \\/><hr \\/>\\n[[+innerChunk]]\\n<hr \\/>\\n<a href=\\"http:\\/\\/www.visioncart.net\\">[[+shop.name]]<\\/a>","locked":0,"properties":null}',
+              'guid' => '6d412f854814e735355e8cb76f43286e',
+              'native_key' => 1,
+              'signature' => '2de94b21bd52b5f413ed2ea0b99adfbc',
+            ),
+            '9187e579119aae8affee293feff638fe' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modChunk',
+              'object' => '{"id":1,"name":"vcEmailOuter","description":"","editor_type":0,"category":3,"cache_type":0,"snippet":"<img src=\\"[[++site_url]]\\/assets\\/components\\/visioncart\\/web\\/themes\\/default\\/images\\/emailheader.jpg\\" \\/><hr \\/>\\n[[+innerChunk]]\\n<hr \\/>\\n<a href=\\"http:\\/\\/www.visioncart.net\\">[[+shop.name]]<\\/a>","locked":0,"properties":null}',
+              'guid' => '94db43cb59f970cbc8c9dd20c13fb368',
+              'native_key' => 1,
+              'signature' => 'bb01c87f791da47106f12a915875b304',
+            ),
+            '24847624b485a57eef2515853d21cce6' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modChunk',
+              'object' => '{"id":2,"name":"vcEmailStatusPaid","description":"","editor_type":0,"category":3,"cache_type":0,"snippet":"Hello [[+userdata.profile.fullname]]!\\n<br \\/><br \\/>\\nYour order [[+ordernumber]] has been paid!<br \\/><br \\/>\\nYou have paid: <b>[[+totalorderamountin:vcMoney=`shopId==[[+shopid]]`]]<\\/b>!","locked":0,"properties":"a:0:{}"}',
+              'guid' => '84e87867af34eaa56dc7712ca4a1576e',
+              'native_key' => 2,
+              'signature' => '5147c05289f4fa348a3df4859a5e278d',
+            ),
+            'bf8466c153d28037a4fe8532b25edc12' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modChunk',
+              'object' => '{"id":3,"name":"vcEmailStatusShipped","description":"","editor_type":0,"category":3,"cache_type":0,"snippet":"Hello [[+userdata.profile.fullname]]!\\n<br \\/><br \\/>\\nYour order [[+ordernumber]] has been shipped!","locked":0,"properties":null}',
+              'guid' => '7c04b146a06a9572076d942420fdcbac',
+              'native_key' => 3,
+              'signature' => '30d9ff921ec289dd12ec9121793f43a6',
+            ),
+            'aaac6331c91fa414c63a9ae08da2d2ab' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modChunk',
+              'object' => '{"id":4,"name":"vcEmailStatusConfirmed","description":"","editor_type":0,"category":3,"cache_type":0,"snippet":"Hello [[+userdata.profile.fullname]]!\\n<br \\/><br \\/>\\nYour order [[+ordernumber]] has been changed to the status \\"Confirmed\\"!<br \\/><br \\/>","locked":0,"properties":null}',
+              'guid' => '02ab67c5ade316e56aa44da3f488b810',
+              'native_key' => 4,
+              'signature' => '3ac4263c94a649b204e34cb845e83530',
+            ),
+            'fcadcfd313568219df33fb2ec8677cd7' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modChunk',
+              'object' => '{"id":5,"name":"vcEmailStatusNew","description":"","editor_type":0,"category":3,"cache_type":0,"snippet":"Hi [[+userdata.profile.extended.VisionCart.shippingaddress.fullname]],\\n<br \\/><br \\/>\\nThank you for your order at our webshop. The invoice for your order is attached with this\\nemail.","locked":0,"properties":null}',
+              'guid' => '85a2353fd1474aefd204ae2944c15fd6',
+              'native_key' => 5,
+              'signature' => 'f13cfa96c691edb0cfe259eb1f8e23b5',
+            ),
+          ),
+        ),
+      ),
+      '256adb36f2d63b6c6f0a1c2da4bb98f9' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'category',
+        'class' => 'modCategory',
+        'object' => '{"id":5,"parent":1,"category":"Template"}',
+        'guid' => 'd1b2bad8bbffa7290fe9fd6d86700280',
+        'native_key' => 5,
+        'signature' => 'b20a0137cf7a0a6ef31d54cafa37b963',
+      ),
+      '643d927424081b2ca8c05dad4d6d15f6' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'category',
+        'class' => 'modCategory',
+        'object' => '{"id":6,"parent":1,"category":"Frontend"}',
+        'guid' => 'a07f674a0228d018ef713a0da78d09bc',
+        'native_key' => 6,
+        'signature' => '381ba400497e593528ab35b7f3187dd8',
+        'related_objects' => 
+        array (
+          'Snippets' => 
+          array (
+            '32d1956b8c96c03978f17ee2be9d8ac0' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":4,"name":"vcGetProducts","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$vc =& $modx->visioncart;\\n\\n$output = array(\\n    \'master\' => \'\'\\n);\\n\\n$scriptProperties[\'config\'] = $modx->getOption(\'config\', $scriptProperties, \'default\');\\n$config = $vc->getConfigFile($vc->shop->get(\'id\'), \'getProducts\', null, array(\'config\' => $scriptProperties[\'config\']));\\n\\n$scriptProperties = array_merge($config, $scriptProperties);\\n\\n\\/\\/ Settings\\n$scriptProperties[\'parents\'] = $modx->getOption(\'parents\', $scriptProperties, 0);\\n$scriptProperties[\'limit\'] = $modx->getOption(\'limit\', $scriptProperties, 0);\\n$scriptProperties[\'offset\'] = $modx->getOption(\'offset\', $scriptProperties, 0);\\n$scriptProperties[\'hideInactive\'] = $modx->getOption(\'hideInactive\', $scriptProperties, 0);\\n$scriptProperties[\'includeContent\'] = $modx->getOption(\'includeContent\', $scriptProperties, 0);\\n$scriptProperties[\'hideSKU\'] = $modx->getOption(\'hideSKU\', $scriptProperties, true);\\n$scriptProperties[\'exclude\'] = $modx->getOption(\'exclude\', $scriptProperties, \'\');\\n$scriptProperties[\'scheme\'] = $modx->getOption(\'scheme\', $scriptProperties, -1);\\n\\n\\/\\/ Sorting settings\\n$scriptProperties[\'sort\'] = $modx->getOption(\'sort\', $scriptProperties, \'ASC\');\\n$scriptProperties[\'sortBy\'] = $modx->getOption(\'sortBy\', $scriptProperties, \'name\');\\n$scriptProperties[\'sortable\'] = $modx->getOption(\'sortable\', $scriptProperties, \'name,price\');\\n\\n\\/\\/ Sorting settings for extra fields\\n$scriptProperties[\'extraFieldSort\'] = $modx->getOption(\'extraFieldSort\', $scriptProperties, \'ASC\');\\n$scriptProperties[\'extraFieldSortBy\'] = $modx->getOption(\'extraFieldSortBy\', $scriptProperties, \'\');\\n\\n\\/\\/ Templating\\n$scriptProperties[\'tpl\'] = $modx->getOption(\'tpl\', $scriptProperties, \'\');\\n$scriptProperties[\'tplOdd\'] = $modx->getOption(\'tplOdd\', $scriptProperties, $scriptProperties[\'tpl\']);\\n$scriptProperties[\'tplFirst\'] = $modx->getOption(\'tplFirst\', $scriptProperties, $scriptProperties[\'tpl\']);\\n$scriptProperties[\'tplLast\'] = $modx->getOption(\'tplLast\', $scriptProperties, $scriptProperties[\'tpl\']);\\n\\nif (!isset($scriptProperties[\'tpl\'])  || $scriptProperties[\'tpl\'] == \'\') {\\n    return \'\';\\n}\\n\\n\\/\\/ Querystring based search\\n$router = $vc->router[\'query\'];\\nunset($router[\'q\']);\\n\\n$scriptProperties[\'sort\'] = $modx->getOption(\'sort\', $router, \'asc\');\\n\\nif (isset($router[\'index\']) && in_array($router[\'index\'], explode(\',\', $scriptProperties[\'sortable\']))) {\\n    $scriptProperties[\'sortBy\'] = $modx->getOption(\'index\', $router, \'asc\');    \\n}\\n\\n$internal = array(\\n    \'limit\' => 0,\\n    \'offset\' => 0\\n);\\n\\nif ($scriptProperties[\'parents\'] == false) {\\n    return \'\';\\n}\\n\\nforeach($scriptProperties as $parameter => $property) {\\n    if (substr($parameter, 0, 3) == \'tpl\' && !in_array($parameter, array(\'tpl\', \'tplOdd\', \'tplFirst\', \'tplLast\'))) {\\n        if (!is_numeric(substr($parameter, 3))) {\\n            continue;\\n        }\\n        \\n        $scriptProperties[\'tplNth\'][] = array(\\n            \'nth\' => (int) substr($parameter, 3),\\n            \'tpl\' => $property\\n        );\\n        \\n        unset($scriptProperties[$parameter]); \\/\\/ Clean up on isle 5!\\n    }\\n}\\n\\nif ($scriptProperties[\'parents\'] == 0) {\\n    return \'\';\\n}\\n\\n$scriptProperties[\'parents\'] = explode(\',\',  $scriptProperties[\'parents\']);\\n$scriptProperties[\'exclude\'] = explode(\',\',  $scriptProperties[\'exclude\']);\\n\\n$products = array();\\nforeach($scriptProperties[\'parents\'] as $parent) {\\n    \\/\\/ Fetch the parent (for shop ID)\\n    if (!isset($modx->visioncart) || !isset($modx->visioncart->shop)) {\\n        $category = $modx->getObject(\'vcCategory\', (int) $parent);\\n        $shopId = $category->get(\'shopid\');\\n    } else {\\n        $shopId = $modx->visioncart->shop->get(\'id\');\\n    }\\n\\n    $stack = $vc->getProducts($parent, array(\\n        \'hideSKU\' => $scriptProperties[\'hideSKU\'],\\n        \'shopId\' => $shopId\\n    ));\\n\\n    if ($stack[\'total\'] != 0 && !empty($stack[\'data\'])) {\\n        foreach($stack[\'data\'] as $product) {\\n            if (in_array($product->get(\'id\'), $scriptProperties[\'exclude\'])) {\\n            \\tcontinue;\\t\\n            }\\n            \\n            $product->set(\'url\', $vc->makeUrl(array(\\n                \'productCategory\' => $product->get(\'linkId\'),\\n                \'shopId\' => $product->get(\'shopid\'),\\n                \'scheme\' => $scriptProperties[\'scheme\']\\n            )));\\n            \\n            $priceData = $vc->calculateProductPrice($product, true);\\n            $product->set(\'display\', array(\'price\' => $priceData));\\n\\n            $products[] = $product->toArray();    \\n        }\\n    }\\n    \\n    unset($stack);\\n}\\n\\nif ($scriptProperties[\'extraFieldSortBy\'] != \'\') {\\n    $products = array_values($vc->multiNaturalSort($products, \'customfields.\'.$scriptProperties[\'extraFieldSortBy\'], strtolower($scriptProperties[\'extraFieldSort\'])));\\n} else {\\n    $products = array_values($vc->multiNaturalSort($products, $scriptProperties[\'sortBy\'], strtolower($scriptProperties[\'sort\'])));\\n}\\n\\nfor($inc = 0; $inc < count($products); $inc++) {\\n    if ($scriptProperties[\'offset\'] != 0 && $internal[\'offset\'] <= $scriptProperties[\'offset\']) {\\n        $internal[\'offset\']++;\\n        continue;\\n    }\\n    \\n    if ($scriptProperties[\'limit\'] != 0 && $internal[\'limit\'] >= $scriptProperties[\'limit\']) {\\n        break;\\n    }\\n    \\n    $internal[\'limit\']++;\\n    \\n    if ($inc == 0) {\\n        $output[\'master\'] .= $vc->parseChunk($scriptProperties[\'tplFirst\'], array_merge($products[$inc], array(\\n            \'count\' => $inc\\n        )));\\n        continue;\\n    } else if ($inc == count($products)) {\\n        $output[\'master\'] .= $vc->parseChunk($scriptProperties[\'tplLast\'], array_merge($products[$inc], array(\\n            \'count\' => $inc\\n        )));\\n        continue;\\n    }\\n    \\n    \\/\\/ Raffle through a set of nth templates, if they\'ve been set\\n    if (isset($scriptProperties[\'tplNth\']) && !empty($scriptProperties[\'tplNth\'])) {\\n        $break = false;\\n        \\n        foreach($scriptProperties[\'tplNth\'] as $tpl) {\\n            if ($tpl[\'nth\'] == $inc) {\\n                $output[\'master\'] .= $vc->parseChunk($tpl[\'tpl\'], array_merge($products[$inc], array(\\n                    \'count\' => $inc\\n                )));\\n                $break = true;\\n                break;\\n            }\\n        }\\n    }\\n    \\n    \\/\\/ Break the loop since a nth tpl has been found\\n    if (isset($break) && $break == true) {\\n        continue;\\n    }\\n    \\n    if ($inc % 2) {\\n        $output[\'master\'] .= $vc->parseChunk($scriptProperties[\'tplOdd\'], array_merge($products[$inc], array(\\n            \'count\' => $inc\\n        )));\\n        continue;\\n    }\\n    \\n    $output[\'master\'] .= $vc->parseChunk($scriptProperties[\'tpl\'], array_merge($products[$inc], array(\\n        \'count\' => $inc\\n    )));\\n}\\n\\nunset($scriptProperties, $products, $product, $interal);\\nreturn $output[\'master\'];","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => 'ed4026e09c9f65f0c08766d1998bb8eb',
+              'native_key' => 4,
+              'signature' => '73a9bd543e8145842221408a5f6f320f',
+            ),
+            '896802ec3ba6e07261ebe3b3e3e4cfd5' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":5,"name":"vcWayfinder","description":"Use wayfinder to build a path from the inherit shop or a specified one","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$vc =& $modx->visioncart;\\n\\nreturn $vc->wayFinder($scriptProperties);","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => 'd7ef934654e8de29afe608d44d9e6726',
+              'native_key' => 5,
+              'signature' => 'b3dbfbea80ad82b1a5fdcfc8057ff2a2',
+            ),
+            'f8f4b7cebdef71877c68872830efa797' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":6,"name":"vcGetProductCustomField","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$vc =& $modx->visioncart;\\n\\nif (isset($scriptProperties[\'id\']) || !is_numeric($scriptProperties[\'id\'])) {\\n\\treturn \'\';\\n}\\n\\n$product = $vc->getProduct($scriptProperties[\'id\']);\\n\\nif ($product == null) {\\n\\treturn \'\';\\n}\\n\\n$link = $product->getOne(\'ProductCategory\');\\n\\n$product = $product->toArray();\\n$link = $link->toArray();\\n\\nif ($product[\'customfields\'] != \'\' && is_array($product[\'customfields\'])) {\\n\\tif (isset($product[\'customfields\'][$link[\'categoryid\']][$field])) {\\n\\t\\treturn $product[\'customfields\'][$link[\'categoryid\']][$field];\\n\\t}\\n}\\n\\nreturn \'\';","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => 'df0a3dbcd84bbdbb1a8f92f8890753d6',
+              'native_key' => 6,
+              'signature' => '2601b3ad0f01ae58489e2f2d2d240690',
+            ),
+            '850eae53dc607154f99ce3c03f6ac589' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":7,"name":"vcGetProduct","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n \\n$vc =& $modx->visioncart;\\n\\n$scriptProperties[\'config\'] = $modx->getOption(\'config\', $scriptProperties, \'default\');\\n$config = $vc->getConfigFile($vc->shop->get(\'id\'), \'getProduct\', null, array(\'config\' => $scriptProperties[\'config\']));\\n\\n$scriptProperties = array_merge($config, $scriptProperties);\\n$scriptProperties[\'category\'] = $modx->getOption(\'category\', $scriptProperties, 0);\\n$scriptProperties[\'scheme\'] = $modx->getOption(\'scheme\', $scriptProperties, -1);\\n\\n\\/\\/ Load the product\\nif (isset($scriptProperties[\'id\'])) {\\n    $product = $vc->getProduct($scriptProperties[\'id\']);\\n} else {\\n\\tif (isset($vc->product)) {\\n\\t\\t$product = $vc->product;\\n\\t} else {\\n    \\t$product = $vc->getProduct($vc->router[\'product\'][\'id\']);\\n\\t}\\n}\\n\\nif (!isset($product) || is_null($product) || $product == false) {\\n\\treturn false;\\n}\\n\\nif ($scriptProperties[\'category\'] != 0) {\\n\\t$link = $product->getOne(\'ProductCategory\', array(\\n\\t\\t\'categoryid\' => $scriptProperties[\'category\']\\n\\t));\\n\\t\\n\\t\\/\\/ Add the product URL for reference\\n\\t$product->set(\'url\', $vc->makeUrl(array(\\n\\t\\t\'productCategory\' => $link->get(\'id\'),\\n\\t\\t\'scheme\' => $scriptProperties[\'scheme\']\\n\\t)));\\n}\\n\\n\\/\\/ Convert prices and so on for display purposes, leaving the database values intact for re-usage\\n$product->set(\'display\', array(\\n\\t\'price\' => $vc->calculateProductPrice($product, true),\\n\\t\'shippingprice\' => $vc->money($product->get(\'shippingprice\'), array(\'shopId\' => $product->get(\'shopid\')))\\n));\\n\\n\\n\\nif (isset($scriptProperties[\'id\'])) {\\n    $modx->toPlaceholders($product->toArray(), \'vc.product\');\\n}\\n\\nif ($scriptProperties[\'tpl\'] != \'\') { \\n\\treturn $vc->parseChunk($scriptProperties[\'tpl\'], array_merge($product->toArray(), array(\\n\\t\\t\'link\' => $link != null ? $link->toArray() : array()\\n\\t)));\\n}\\n\\nreturn \'\';","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => 'e6a3924773b5d40639889f76f639ff1a',
+              'native_key' => 7,
+              'signature' => '4855901bcdd9278a165c9fa3fba8fe74',
+            ),
+            'c2d04e3d26db9c8fd2c0da2ff908a332' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":4,"name":"vcGetProducts","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$vc =& $modx->visioncart;\\n\\n$output = array(\\n    \'master\' => \'\'\\n);\\n\\n$scriptProperties[\'config\'] = $modx->getOption(\'config\', $scriptProperties, \'default\');\\n$config = $vc->getConfigFile($vc->shop->get(\'id\'), \'getProducts\', null, array(\'config\' => $scriptProperties[\'config\']));\\n\\n$scriptProperties = array_merge($config, $scriptProperties);\\n\\n\\/\\/ Settings\\n$scriptProperties[\'parents\'] = $modx->getOption(\'parents\', $scriptProperties, 0);\\n$scriptProperties[\'limit\'] = $modx->getOption(\'limit\', $scriptProperties, 0);\\n$scriptProperties[\'offset\'] = $modx->getOption(\'offset\', $scriptProperties, 0);\\n$scriptProperties[\'hideInactive\'] = $modx->getOption(\'hideInactive\', $scriptProperties, 0);\\n$scriptProperties[\'includeContent\'] = $modx->getOption(\'includeContent\', $scriptProperties, 0);\\n$scriptProperties[\'hideSKU\'] = $modx->getOption(\'hideSKU\', $scriptProperties, true);\\n$scriptProperties[\'exclude\'] = $modx->getOption(\'exclude\', $scriptProperties, \'\');\\n$scriptProperties[\'scheme\'] = $modx->getOption(\'scheme\', $scriptProperties, -1);\\n\\n\\/\\/ Sorting settings\\n$scriptProperties[\'sort\'] = $modx->getOption(\'sort\', $scriptProperties, \'ASC\');\\n$scriptProperties[\'sortBy\'] = $modx->getOption(\'sortBy\', $scriptProperties, \'name\');\\n$scriptProperties[\'sortable\'] = $modx->getOption(\'sortable\', $scriptProperties, \'name,price\');\\n\\n\\/\\/ Sorting settings for extra fields\\n$scriptProperties[\'extraFieldSort\'] = $modx->getOption(\'extraFieldSort\', $scriptProperties, \'ASC\');\\n$scriptProperties[\'extraFieldSortBy\'] = $modx->getOption(\'extraFieldSortBy\', $scriptProperties, \'\');\\n\\n\\/\\/ Templating\\n$scriptProperties[\'tpl\'] = $modx->getOption(\'tpl\', $scriptProperties, \'\');\\n$scriptProperties[\'tplOdd\'] = $modx->getOption(\'tplOdd\', $scriptProperties, $scriptProperties[\'tpl\']);\\n$scriptProperties[\'tplFirst\'] = $modx->getOption(\'tplFirst\', $scriptProperties, $scriptProperties[\'tpl\']);\\n$scriptProperties[\'tplLast\'] = $modx->getOption(\'tplLast\', $scriptProperties, $scriptProperties[\'tpl\']);\\n\\nif (!isset($scriptProperties[\'tpl\'])  || $scriptProperties[\'tpl\'] == \'\') {\\n    return \'\';\\n}\\n\\n\\/\\/ Querystring based search\\n$router = $vc->router[\'query\'];\\nunset($router[\'q\']);\\n\\n$scriptProperties[\'sort\'] = $modx->getOption(\'sort\', $router, \'asc\');\\n\\nif (isset($router[\'index\']) && in_array($router[\'index\'], explode(\',\', $scriptProperties[\'sortable\']))) {\\n    $scriptProperties[\'sortBy\'] = $modx->getOption(\'index\', $router, \'asc\');    \\n}\\n\\n$internal = array(\\n    \'limit\' => 0,\\n    \'offset\' => 0\\n);\\n\\nif ($scriptProperties[\'parents\'] == false) {\\n    return \'\';\\n}\\n\\nforeach($scriptProperties as $parameter => $property) {\\n    if (substr($parameter, 0, 3) == \'tpl\' && !in_array($parameter, array(\'tpl\', \'tplOdd\', \'tplFirst\', \'tplLast\'))) {\\n        if (!is_numeric(substr($parameter, 3))) {\\n            continue;\\n        }\\n        \\n        $scriptProperties[\'tplNth\'][] = array(\\n            \'nth\' => (int) substr($parameter, 3),\\n            \'tpl\' => $property\\n        );\\n        \\n        unset($scriptProperties[$parameter]); \\/\\/ Clean up on isle 5!\\n    }\\n}\\n\\nif ($scriptProperties[\'parents\'] == 0) {\\n    return \'\';\\n}\\n\\n$scriptProperties[\'parents\'] = explode(\',\',  $scriptProperties[\'parents\']);\\n$scriptProperties[\'exclude\'] = explode(\',\',  $scriptProperties[\'exclude\']);\\n\\n$products = array();\\nforeach($scriptProperties[\'parents\'] as $parent) {\\n    \\/\\/ Fetch the parent (for shop ID)\\n    if (!isset($modx->visioncart) || !isset($modx->visioncart->shop)) {\\n        $category = $modx->getObject(\'vcCategory\', (int) $parent);\\n        $shopId = $category->get(\'shopid\');\\n    } else {\\n        $shopId = $modx->visioncart->shop->get(\'id\');\\n    }\\n\\n    $stack = $vc->getProducts($parent, array(\\n        \'hideSKU\' => $scriptProperties[\'hideSKU\'],\\n        \'shopId\' => $shopId\\n    ));\\n\\n    if ($stack[\'total\'] != 0 && !empty($stack[\'data\'])) {\\n        foreach($stack[\'data\'] as $product) {\\n            if (in_array($product->get(\'id\'), $scriptProperties[\'exclude\'])) {\\n            \\tcontinue;\\t\\n            }\\n            \\n            $product->set(\'url\', $vc->makeUrl(array(\\n                \'productCategory\' => $product->get(\'linkId\'),\\n                \'shopId\' => $product->get(\'shopid\'),\\n                \'scheme\' => $scriptProperties[\'scheme\']\\n            )));\\n            \\n            $priceData = $vc->calculateProductPrice($product, true);\\n            $product->set(\'display\', array(\'price\' => $priceData));\\n\\n            $products[] = $product->toArray();    \\n        }\\n    }\\n    \\n    unset($stack);\\n}\\n\\nif ($scriptProperties[\'extraFieldSortBy\'] != \'\') {\\n    $products = array_values($vc->multiNaturalSort($products, \'customfields.\'.$scriptProperties[\'extraFieldSortBy\'], strtolower($scriptProperties[\'extraFieldSort\'])));\\n} else {\\n    $products = array_values($vc->multiNaturalSort($products, $scriptProperties[\'sortBy\'], strtolower($scriptProperties[\'sort\'])));\\n}\\n\\nfor($inc = 0; $inc < count($products); $inc++) {\\n    if ($scriptProperties[\'offset\'] != 0 && $internal[\'offset\'] <= $scriptProperties[\'offset\']) {\\n        $internal[\'offset\']++;\\n        continue;\\n    }\\n    \\n    if ($scriptProperties[\'limit\'] != 0 && $internal[\'limit\'] >= $scriptProperties[\'limit\']) {\\n        break;\\n    }\\n    \\n    $internal[\'limit\']++;\\n    \\n    if ($inc == 0) {\\n        $output[\'master\'] .= $vc->parseChunk($scriptProperties[\'tplFirst\'], array_merge($products[$inc], array(\\n            \'count\' => $inc\\n        )));\\n        continue;\\n    } else if ($inc == count($products)) {\\n        $output[\'master\'] .= $vc->parseChunk($scriptProperties[\'tplLast\'], array_merge($products[$inc], array(\\n            \'count\' => $inc\\n        )));\\n        continue;\\n    }\\n    \\n    \\/\\/ Raffle through a set of nth templates, if they\'ve been set\\n    if (isset($scriptProperties[\'tplNth\']) && !empty($scriptProperties[\'tplNth\'])) {\\n        $break = false;\\n        \\n        foreach($scriptProperties[\'tplNth\'] as $tpl) {\\n            if ($tpl[\'nth\'] == $inc) {\\n                $output[\'master\'] .= $vc->parseChunk($tpl[\'tpl\'], array_merge($products[$inc], array(\\n                    \'count\' => $inc\\n                )));\\n                $break = true;\\n                break;\\n            }\\n        }\\n    }\\n    \\n    \\/\\/ Break the loop since a nth tpl has been found\\n    if (isset($break) && $break == true) {\\n        continue;\\n    }\\n    \\n    if ($inc % 2) {\\n        $output[\'master\'] .= $vc->parseChunk($scriptProperties[\'tplOdd\'], array_merge($products[$inc], array(\\n            \'count\' => $inc\\n        )));\\n        continue;\\n    }\\n    \\n    $output[\'master\'] .= $vc->parseChunk($scriptProperties[\'tpl\'], array_merge($products[$inc], array(\\n        \'count\' => $inc\\n    )));\\n}\\n\\nunset($scriptProperties, $products, $product, $interal);\\nreturn $output[\'master\'];","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => 'ea85b24064c1fb3f7056a43618b8eb3b',
+              'native_key' => 4,
+              'signature' => '712b9d1577ad9650c061711ea74600fb',
+            ),
+            '622afd69f7dec2e8683d87acf55dbd57' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":5,"name":"vcWayfinder","description":"Use wayfinder to build a path from the inherit shop or a specified one","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$vc =& $modx->visioncart;\\n\\nreturn $vc->wayFinder($scriptProperties);","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => 'bb255e77fa475a23c8ea0de16652120a',
+              'native_key' => 5,
+              'signature' => '6edfec34b1d477230e63f198b9d0c916',
+            ),
+            'cec9ad4fca620252570d96905be512aa' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":6,"name":"vcGetProductCustomField","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$vc =& $modx->visioncart;\\n\\nif (isset($scriptProperties[\'id\']) || !is_numeric($scriptProperties[\'id\'])) {\\n\\treturn \'\';\\n}\\n\\n$product = $vc->getProduct($scriptProperties[\'id\']);\\n\\nif ($product == null) {\\n\\treturn \'\';\\n}\\n\\n$link = $product->getOne(\'ProductCategory\');\\n\\n$product = $product->toArray();\\n$link = $link->toArray();\\n\\nif ($product[\'customfields\'] != \'\' && is_array($product[\'customfields\'])) {\\n\\tif (isset($product[\'customfields\'][$link[\'categoryid\']][$field])) {\\n\\t\\treturn $product[\'customfields\'][$link[\'categoryid\']][$field];\\n\\t}\\n}\\n\\nreturn \'\';","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => 'e376898f9b6a43df29a8a8e7a4c76472',
+              'native_key' => 6,
+              'signature' => '7c9ae831f0ccfeadb267f8e592904951',
+            ),
+            '41ef4031514eb4750b0f9213be4c4b56' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":7,"name":"vcGetProduct","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n \\n$vc =& $modx->visioncart;\\n\\n$scriptProperties[\'config\'] = $modx->getOption(\'config\', $scriptProperties, \'default\');\\n$config = $vc->getConfigFile($vc->shop->get(\'id\'), \'getProduct\', null, array(\'config\' => $scriptProperties[\'config\']));\\n\\n$scriptProperties = array_merge($config, $scriptProperties);\\n$scriptProperties[\'category\'] = $modx->getOption(\'category\', $scriptProperties, 0);\\n$scriptProperties[\'scheme\'] = $modx->getOption(\'scheme\', $scriptProperties, -1);\\n\\n\\/\\/ Load the product\\nif (isset($scriptProperties[\'id\'])) {\\n    $product = $vc->getProduct($scriptProperties[\'id\']);\\n} else {\\n\\tif (isset($vc->product)) {\\n\\t\\t$product = $vc->product;\\n\\t} else {\\n    \\t$product = $vc->getProduct($vc->router[\'product\'][\'id\']);\\n\\t}\\n}\\n\\nif (!isset($product) || is_null($product) || $product == false) {\\n\\treturn false;\\n}\\n\\nif ($scriptProperties[\'category\'] != 0) {\\n\\t$link = $product->getOne(\'ProductCategory\', array(\\n\\t\\t\'categoryid\' => $scriptProperties[\'category\']\\n\\t));\\n\\t\\n\\t\\/\\/ Add the product URL for reference\\n\\t$product->set(\'url\', $vc->makeUrl(array(\\n\\t\\t\'productCategory\' => $link->get(\'id\'),\\n\\t\\t\'scheme\' => $scriptProperties[\'scheme\']\\n\\t)));\\n}\\n\\n\\/\\/ Convert prices and so on for display purposes, leaving the database values intact for re-usage\\n$product->set(\'display\', array(\\n\\t\'price\' => $vc->calculateProductPrice($product, true),\\n\\t\'shippingprice\' => $vc->money($product->get(\'shippingprice\'), array(\'shopId\' => $product->get(\'shopid\')))\\n));\\n\\n\\n\\nif (isset($scriptProperties[\'id\'])) {\\n    $modx->toPlaceholders($product->toArray(), \'vc.product\');\\n}\\n\\nif ($scriptProperties[\'tpl\'] != \'\') { \\n\\treturn $vc->parseChunk($scriptProperties[\'tpl\'], array_merge($product->toArray(), array(\\n\\t\\t\'link\' => $link != null ? $link->toArray() : array()\\n\\t)));\\n}\\n\\nreturn \'\';","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => 'f3568eaa0647d141c029c6c1ab5c663f',
+              'native_key' => 7,
+              'signature' => 'de10d63c6e6eca73d99aec94ecff331b',
+            ),
+            '3e819f08f92fb1d5bf6cb9d278cf41ed' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":8,"name":"vcGetProductImages","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$vc =& $modx->visioncart;\\n\\nif (!isset($scriptProperties[\'id\']) || !is_numeric($scriptProperties[\'id\'])) {\\n\\treturn;\\n}\\n\\n$scriptProperties[\'config\'] = $modx->getOption(\'config\', $scriptProperties, \'default\');\\n$config = $vc->getConfigFile($vc->shop->get(\'id\'), \'getProductImages\', null, array(\'config\' => $scriptProperties[\'config\']));\\n$scriptProperties = array_merge($config, $scriptProperties);\\n\\n$scriptProperties[\'rel\'] = $modx->getOption(\'rel\', $scriptProperties, \'\');\\n$scriptProperties[\'limit\'] = $modx->getOption(\'limit\', $scriptProperties, 0);\\n$scriptProperties[\'offset\'] = $modx->getOption(\'offset\', $scriptProperties, 0);\\n$scriptProperties[\'prefix\'] = $modx->getOption(\'prefix\', $scriptProperties, false);\\n$scriptProperties[\'shopId\'] = $modx->getOption(\'shopId\', $scriptProperties, 0);\\n\\n$internal = array(\\n\\t\'limit\' => 0,\\n\\t\'offset\' => 0,\\n\\t\'count\' => 0\\n);\\n\\n$path = array(\\n\\t\'url\' => $vc->config[\'assetsUrl\'].\'web\\/images\\/products\\/\',\\n\\t\'abs\' => $vc->config[\'assetsBasepath\'].\'web\\/images\\/products\\/\'\\n);\\n\\n\\/\\/ Caching\\n$cacheHash = sha1(json_encode($scriptProperties));\\n$cache = $vc->getCache($cacheHash, \'product\\/\'.$scriptProperties[\'id\']);\\n\\nif ($cache != null) {\\n   return $cache;\\n}\\n\\n\\/\\/ Load the shop for the images config\\nif ($scriptProperties[\'shopId\'] != 0) {\\n\\t$shop = $vc->getShop(array(\\n\\t\\t\'asArray\' => true,\\n\\t\\t\'value\' => $scriptProperties[\'shopId\']\\n\\t));\\n} else {\\n\\t$shop = $vc->getShop(array(\\n\\t\\t\'asArray\' => true\\n\\t));\\n}\\n\\nif (!isset($shop[\'config\'][\'thumbnails\']) || $shop[\'config\'][\'thumbnails\'] == \'\') {\\n\\treturn;\\n}\\n\\n$thumbnails = $vc->getThumbnailSettings($shop[\'id\']);\\n\\n\\/\\/ Load the product\\n$product = $modx->getObject(\'vcProduct\', $scriptProperties[\'id\']);\\n$product = $product->toArray();\\n\\nif (!empty($product) && isset($product[\'pictures\']) && !empty($product[\'pictures\'])) {\\n\\t$output = \'\';\\n\\t\\n\\tif ($scriptProperties[\'prefix\'] != false) {\\n\\t\\tforeach($thumbnails as $thumbnail) {\\n\\t\\t\\tif ($thumbnail[\'prefix\'] == $scriptProperties[\'prefix\']) {\\n\\t\\t\\t\\tbreak;\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\t\\n\\t\\tforeach($product[\'pictures\'] as $image) {\\n\\t\\t\\tif ($scriptProperties[\'limit\'] != 0 && $internal[\'limit\'] >= $scriptProperties[\'limit\']) {\\n\\t\\t\\t\\tbreak;\\n\\t\\t\\t}\\n\\t\\t\\t\\n\\t\\t\\tif ($scriptProperties[\'offset\'] != 0 && $internal[\'offset\'] < $scriptProperties[\'offset\']) {\\n\\t\\t\\t\\t$internal[\'offset\']++;\\n\\t\\t\\t\\tcontinue;\\n\\t\\t\\t}\\n\\t\\t\\t\\n\\t\\t\\tif ($thumbnail[\'crop\'] == \'false\') {\\n\\t\\t\\t\\t$dimensions = getimagesize($path[\'abs\'].$thumbnail[\'prefix\'].$image);\\n\\t\\t\\t}\\n\\t\\t\\t\\n\\t\\t\\t$output .= $vc->parseChunk($scriptProperties[\'tpl\'], array(\\n\\t\\t\\t\\t\'src\' => $path[\'url\'].$thumbnail[\'prefix\'].$image,\\n\\t\\t\\t\\t\'title\' => $product[\'name\'],\\n\\t\\t\\t\\t\'alt\' => $product[\'name\'],\\n\\t\\t\\t\\t\'rel\' => $scriptProperties[\'rel\'],\\n\\t\\t\\t\\t\'width\' => isset($dimensions) ? $dimensions[0] : \'\',\\n\\t\\t\\t\\t\'height\' => isset($dimensions) ? $dimensions[1] : \'\',\\n\\t\\t\\t\\t\'count\' => $internal[\'count\']\\n\\t\\t\\t));\\n\\t\\t\\t\\n\\t\\t\\t$internal[\'limit\']++;\\n\\t\\t\\t$internal[\'count\']++;\\n\\t\\t\\tunset($dimensions);\\n\\t\\t}\\n\\t} else {\\n\\t\\tforeach($thumbnails as $thumbnail) {\\n\\t\\t\\tforeach($product[\'pictures\'] as $image) {\\n\\t\\t\\t\\tif ($thumbnail[\'crop\'] == \'false\') {\\n\\t\\t\\t\\t\\t$dimensions = getimagesize($path[\'abs\'].$thumbnail[\'prefix\'].$image);\\n\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t$output .= $vc->parseChunk($scriptProperties[\'tpl\'], array(\\n\\t\\t\\t\\t\\t\'src\' => $path[\'url\'].$thumbnail[\'prefix\'].$image,\\n\\t\\t\\t\\t\\t\'title\' => $product[\'name\'],\\n\\t\\t\\t\\t\\t\'alt\' => $product[\'name\'],\\n\\t\\t\\t\\t\\t\'rel\' => $scriptProperties[\'rel\'],\\n\\t\\t\\t\\t\\t\'width\' => isset($dimensions) ? $dimensions[0] : \'\',\\n\\t\\t\\t\\t\\t\'height\' => isset($dimensions) ? $dimensions[1] : \'\',\\n\\t\\t\\t\\t));\\n\\t\\t\\t\\t\\n\\t\\t\\t\\tunset($dimensions);\\n\\t\\t\\t}\\n\\t\\t}\\n\\t}\\n\\t\\n\\t$vc->setCache($cacheHash, $output, 0, \'product\\/\'.$scriptProperties[\'id\']);\\n\\t\\n\\treturn $output;\\n}","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => 'c5981c2f522348b2ff1d10af0c3cdeb0',
+              'native_key' => 8,
+              'signature' => 'a9aa20dc19804646eb7ce155f7721c8f',
+            ),
+            '04820786e069914e54d824161b72b50f' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":9,"name":"vcGetCategory","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$vc =& $modx->visioncart;\\n\\n$scriptProperties[\'config\'] = $modx->getOption(\'config\', $scriptProperties, \'default\');\\n$config = $vc->getConfigFile($vc->shop->get(\'id\'), \'getCategory\', null, array(\'config\' => $scriptProperties[\'config\']));\\n$scriptProperties = array_merge($config, $scriptProperties);\\n\\nif (!isset($scriptProperties[\'tpl\']) || $scriptProperties[\'tpl\'] == \'\') {\\n\\treturn \'\';\\n}\\n\\nif (isset($scriptProperties[\'id\'])) {\\n\\t$category = $vc->getCategory($scriptProperties[\'id\']);\\n} else {\\n\\t$category = $vc->getCategory(end($vc->router[\'categories\']), array(\\n\\t\\t\'whereColumn\' => \'alias\'\\n\\t));\\n}\\n\\nif ($category == null) {\\n\\treturn \'\';\\t\\n}\\n\\nreturn $vc->parseChunk($scriptProperties[\'tpl\'], $category->toArray());","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => '86c67d41a756168348aaf02bf591e7d1',
+              'native_key' => 9,
+              'signature' => 'b6cd73aef2d059f8f8cf71561a522aec',
+            ),
+            'bf8c47659eec77fc3b8afc8319367ca4' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":10,"name":"vcGetProductList","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\nif (!isset($scriptProperties[\'id\'])) {\\n\\treturn;\\t\\n}\\n\\n$vc =& $modx->visioncart;\\n\\n$columns = array();\\n$indexes = array();\\n$output = array(\\n\\t\'master\' => \'\',\\n\\t\'headers\' => \'\',\\n\\t\'content\' => \'\',\\n\\t\'footer\' => array(),\\n\\t\'tmp\' => \'\'\\n);\\n\\n$defaults = array(\\n\\t\'limit\' => 10,\\n\\t\'offset\' => 0\\n);\\n\\n$pagination = array(\\n\\t\'items\' => 0,\\n\\t\'pages\' => 0,\\n\\t\'page\' => 1\\n);\\n\\n$scriptProperties[\'config\'] = $modx->getOption(\'config\', $scriptProperties, \'default\');\\n$config = $vc->getConfigFile($scriptProperties[\'shopId\'], \'getProductList\', null, array(\'config\' => $scriptProperties[\'config\']));\\n$scriptProperties = array_merge($config, $scriptProperties);\\n\\n\\/\\/ Configuration\\n$scriptProperties[\'columns\'] = $modx->getOption(\'columns\', $scriptProperties, \'Name==name,Description==description,Price==price,Quantity==quantity\');\\n$scriptProperties[\'searchable\'] = $modx->getOption(\'searchable\', $scriptProperties, \'name,alias,description,articlenumber\');\\n$scriptProperties[\'linkable\'] = $modx->getOption(\'linkable\', $scriptProperties, \'name\');\\n$scriptProperties[\'columnLexicon\'] = $modx->getOption(\'columnLexicon\', $scriptProperties, false);\\n$scriptProperties[\'lexicon\'] = $modx->getOption(\'lexicon\', $scriptProperties, \'visioncart:default\');\\n$scriptProperties[\'limit\'] = $modx->getOption(\'limit\', $scriptProperties, $defaults[\'limit\']);\\n$scriptProperties[\'offset\'] = $modx->getOption(\'offset\', $scriptProperties, $defaults[\'offset\']);\\n$scriptProperties[\'sort\'] = $modx->getOption(\'sort\', $scriptProperties, \'ASC\');\\n$scriptProperties[\'sortBy\'] = $modx->getOption(\'sortBy\', $scriptProperties, \'name\');\\n$scriptProperties[\'scheme\'] = $modx->getOption(\'scheme\', $scriptProperties, -1);\\n\\n\\/\\/ Template\\n$scriptProperties[\'wrapperTpl\'] = $modx->getOption(\'wrapperTpl\', $scriptProperties);\\n$scriptProperties[\'headerTpl\'] = $modx->getOption(\'headerTpl\', $scriptProperties);\\n$scriptProperties[\'headerTplColumn\'] = $modx->getOption(\'headerTplColumn\', $scriptProperties);\\n$scriptProperties[\'rowTpl\'] = $modx->getOption(\'rowTpl\', $scriptProperties);\\n$scriptProperties[\'rowTplColumn\'] = $modx->getOption(\'rowTplColumn\', $scriptProperties);\\n$scriptProperties[\'rowLinkTplColumn\'] = $modx->getOption(\'rowLinkTplColumn\', $scriptProperties);\\n$scriptProperties[\'footerTpl\'] = $modx->getOption(\'footerTpl\', $scriptProperties);\\n$scriptProperties[\'limitTpl\'] = $modx->getOption(\'limitTpl\', $scriptProperties);\\n$scriptProperties[\'limitItemTpl\'] = $modx->getOption(\'limitItemTpl\', $scriptProperties);\\n$scriptProperties[\'paginationWrapper\'] = $modx->getOption(\'paginationWrapper\', $scriptProperties);\\n$scriptProperties[\'paginationTpl\'] = $modx->getOption(\'paginationTpl\', $scriptProperties);\\n\\n\\/\\/ Load lexicons\\n$modx->getService(\'lexicon\', \'modLexicon\');\\n$modx->lexicon->load($scriptProperties[\'lexicon\']);\\n\\n$category = $vc->getCategory(end($vc->router[\'categories\']), array(\\n\\t\'whereColumn\' => \'alias\'\\n));\\n$category->set(\'url\', $vc->makeUrl(array(\\n\\t\'categoryId\' => $category->get(\'id\'),\\n\\t\'scheme\' => $scriptProperties[\'scheme\']\\n)));\\n\\n\\/\\/ Parse the columns and translate where needed\\n$columns = explode(\',\', $scriptProperties[\'columns\']);\\n$searchable = explode(\',\', $scriptProperties[\'searchable\']);\\n$linkable = explode(\',\', $scriptProperties[\'linkable\']);\\n\\nforeach($columns as $key => $column) {\\n\\t$column = explode(\'==\', $column);\\n\\t\\n\\tif ($scriptProperties[\'columnLexicon\'] == true) {\\n\\t\\t$column[0] = $modx->lexicon($column[0]);\\n\\t}\\n\\t\\n\\t$indexes[] = $column[1];\\n\\t$columns[$key] = array(\\n\\t\\t\'dataIndex\' => $column[1],\\n\\t\\t\'translation\' => $column[0]\\n\\t);\\n}\\n\\n\\/\\/ Parse query string for relevant data\\nif (isset($vc->router[\'query\'])) {\\n\\t$scriptProperties[\'sort\'] = (string) strtoupper($modx->getOption(\'sort\', $vc->router[\'query\'], $scriptProperties[\'sort\']));\\n\\t\\/\\/ Prevent sorting on anything but ASC and DESC\\n\\tif (!in_array($scriptProperties[\'sort\'], array(\'ASC\', \'DESC\'))) {\\n\\t\\t$scriptProperties[\'sort\'] = \'ASC\';\\n\\t}\\n\\n\\t$scriptProperties[\'sortBy\'] = (string) strtolower($modx->getOption(\'index\', $vc->router[\'query\'], $scriptProperties[\'sortBy\']));\\n\\t\\/\\/ Prevent sorting on unknown columns\\n\\tif (!in_array($scriptProperties[\'sortBy\'], $indexes)) {\\n\\t\\t$scriptProperties[\'sortBy\'] = \'name\';\\n\\t}\\n\\t\\n\\t$scriptProperties[\'limit\'] = $modx->getOption(\'limit\', $vc->router[\'query\'], $scriptProperties[\'limit\']);\\n\\t\\/\\/ Prevent limit being a string or anything larger than specified\\n\\tif (!is_numeric($scriptProperties[\'limit\'])) {\\n\\t\\t$scriptProperties[\'limit\'] = $defaults[\'limit\'];\\n\\t}\\n\\t\\n\\t$scriptProperties[\'offset\'] = $modx->getOption(\'offset\', $vc->router[\'query\'], $scriptProperties[\'offset\']);\\n\\t\\/\\/ Prevent limit being a string or anything larger than specified\\n\\tif (!is_numeric($scriptProperties[\'offset\'])) {\\n\\t\\t$scriptProperties[\'offset\'] = $defaults[\'offset\'];\\n\\t}\\n}\\n\\n$params = array(\\n\\t\'asArray\' => true,\\n\\t\'sort\' => $scriptProperties[\'sort\'],\\n\\t\'sortBy\' => ($scriptProperties[\'sortBy\'] == \'sort\') ? \'vcProductCategory.\'.$scriptProperties[\'sortBy\'] : \'vcProduct.\'.$scriptProperties[\'sortBy\'],\\n\\t\'limit\' => $scriptProperties[\'limit\'],\\n\\t\'offset\' => $scriptProperties[\'offset\']\\n);\\n\\nif (isset($vc->router[\'query\'][\'query\']) && $vc->router[\'query\'][\'query\'] != \'\') {\\n\\t$conditions = array();\\n\\t\\n\\t$inc = 0;\\n\\t$searchable = explode(\',\', $scriptProperties[\'searchable\']);\\t\\t\\n\\tforeach($searchable as $column) {\\t\\n\\t\\t$conditions = array_merge($conditions, array(\\n\\t\\t\\t(($inc == 0) ? \'AND:\' : \'OR:\').\'vcProduct.\'.$column.\':LIKE\' => \'%\'.$vc->router[\'query\'][\'query\'].\'%\'\\n\\t\\t));\\n\\t\\t\\n\\t\\t$inc++;\\n\\t}\\n\\t\\n\\t$params = array_merge($params, array(\'queryAnd\' => $conditions));\\n}\\n\\n$products = $vc->getProducts($scriptProperties[\'id\'], $params);\\n\\n$pagination[\'items\'] = $products[\'total\'];\\n$pagination[\'pages\'] = ceil($pagination[\'items\'] \\/ $scriptProperties[\'limit\']);\\n$products = $products[\'data\'];\\n\\nif (empty($products)) {\\n\\treturn \'There are no products in this category\';\\n}\\n\\n$product = reset($products);\\nforeach($columns as $column) {\\n\\tif (isset($product[$column[\'dataIndex\']])) {\\n\\t\\t$output[\'headers\'] .= $vc->parseChunk($scriptProperties[\'headerTplColumn\'], array(\\n\\t\\t\\t\'name\' => $column[\'translation\'],\\n\\t\\t\\t\'url\' => $category->get(\'url\').$vc->buildQueryString($vc->router[\'query\'], array(\\n\\t\\t\\t\\t\'strip\' => array(\'q\'),\\n\\t\\t\\t\\t\'overwrite\' => array(\\n\\t\\t\\t\\t\\t\'index\' => $column[\'dataIndex\'],\\n\\t\\t\\t\\t\\t\'sort\' => ($vc->router[\'query\'][\'index\'] == $column[\'dataIndex\'] && $vc->router[\'query\'][\'sort\'] == \'asc\') ? \'desc\' : \'asc\'\\n\\t\\t\\t\\t)\\n\\t\\t\\t)),\\n\\t\\t\\t\'sort\' => ($vc->router[\'query\'][\'index\'] == $column[\'dataIndex\'] && $vc->router[\'query\'][\'sort\'] == \'asc\') ? \'desc\' : \'asc\'\\n\\t\\t));\\n\\t}\\n}\\n\\nforeach($products as $product) {\\n\\tforeach($columns as $column) {\\n\\t\\tif (isset($product[$column[\'dataIndex\']])) {\\n\\t\\t\\tif (in_array($column[\'dataIndex\'], $linkable)) {\\n\\t\\t\\t\\t$output[\'tmp\'] .= $vc->parseChunk($scriptProperties[\'rowLinkTplColumn\'], array(\\n\\t\\t\\t\\t\\t\'field\' => $product[$column[\'dataIndex\']],\\n\\t\\t\\t\\t\\t\'url\' => $vc->makeUrl(array(\\n\\t\\t\\t\\t\\t\\t\'productCategory\' => $product[\'linkId\'],\\n\\t\\t\\t\\t\\t\\t\'shopId\' => $product[\'shopid\'],\\n\\t\\t\\t\\t\\t\\t\'scheme\' => $scriptProperties[\'scheme\']\\n\\t\\t\\t\\t\\t))\\n\\t\\t\\t\\t));\\n\\t\\t\\t} else {\\n\\t\\t\\t\\t$output[\'tmp\'] .= $vc->parseChunk($scriptProperties[\'rowTplColumn\'], array(\\n\\t\\t\\t\\t\\t\'field\' => $product[$column[\'dataIndex\']]\\n\\t\\t\\t\\t));\\n\\t\\t\\t}\\n\\t\\t}\\n\\t}\\n\\t\\n\\t\\/\\/ Assign the parsed columns to the row template and reset the tmp\\n\\t$output[\'content\'] .= $vc->parseChunk($scriptProperties[\'rowTpl\'], array(\\n\\t\\t\'columns\' => $output[\'tmp\']\\n\\t));\\n\\t$output[\'tmp\'] = \'\';\\n}\\n\\n\\nforeach(array(1, 2, 5, 10, 25, 50, 100) as $limit) {\\n\\t$output[\'tmp\'] .= $vc->parseChunk($scriptProperties[\'limitItemTpl\'], array(\\n\\t\\t\'value\' => $limit,\\n\\t\\t\'selected\' => ($scriptProperties[\'limit\'] == $limit) ? \'selected\' : \'\'\\n\\t));\\n}\\n\\n$output[\'footer\'][\'limit\'] = $vc->parseChunk($scriptProperties[\'limitTpl\'], array(\\n\\t\'options\' => $output[\'tmp\']\\n));\\n\\n$output[\'footer\'][\'pagination\'] = \'\';\\nfor($page = 1; $page <= $pagination[\'pages\']; $page++) {\\n\\t$output[\'footer\'][\'pagination\'] .= $vc->parseChunk($scriptProperties[\'paginationTpl\'], array(\\n\\t\\t\'page\' => $page,\\n\\t\\t\'url\' => $category->get(\'url\').$vc->buildQueryString($vc->router[\'query\'], array(\\n\\t\\t\\t\'strip\' => array(\'q\'),\\n\\t\\t\\t\'overwrite\' => array(\\n\\t\\t\\t\\t\'offset\' => ($page - 1) * $scriptProperties[\'limit\'],\\n\\t\\t\\t)\\n\\t\\t))\\n\\t));\\n}\\n\\n$output[\'footer\'][\'pagination\'] = $vc->parseChunk($scriptProperties[\'paginationWrapper\'], array(\\n\\t\'pages\' => $output[\'footer\'][\'pagination\']\\n));\\n\\n$output[\'footer\'] = $vc->parseChunk($scriptProperties[\'footerTpl\'], array(\\n\\t\'limitbox\' => $output[\'footer\'][\'limit\'],\\n\\t\'pagination\' => $output[\'footer\'][\'pagination\']\\n));\\n\\n$output[\'master\'] .= $vc->parseChunk($scriptProperties[\'wrapperTpl\'], array(\\n\\t\'headers\' => $output[\'headers\'],\\n\\t\'content\' => $output[\'content\'],\\n\\t\'footer\' => $output[\'footer\']\\n));\\n\\n\\/\\/ Set template placeholders for configuration in the template\\n$modx->toPlaceholders(array(\\n\\t\'vc\' => array(\\n\\t\\t\'list\' => array(\\n\\t\\t\\t\'config\' => array(\\n\\t\\t\\t\\t\'columns\' => (int) count($columns)\\n\\t\\t\\t),\\n\\t\\t\\t\'pagination\' => $pagination,\\n\\t\\t\\t\'router\' => $vc->router\\n\\t\\t)\\n\\t)\\n));\\n\\nreturn $output[\'master\'];","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => '7933e266dc997748813d1a4a6e867194',
+              'native_key' => 10,
+              'signature' => 'edf6fa6833d27b4bfae281d5aa1f2ce7',
+            ),
+            'e9d884e383d3be7cf667471f55d461e1' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":11,"name":"vcGetProductCustomFields","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n \\n$vc =& $modx->visioncart;\\n\\nif (!isset($scriptProperties[\'id\']) || $scriptProperties[\'id\'] == \'\') {\\n\\treturn \'\';\\n}\\n \\n$config = $vc->getConfigFile($vc->shop->get(\'id\'), \'getProductCustomFields\');\\n$scriptProperties = array_merge($config, $scriptProperties);\\n\\nif (!isset($scriptProperties[\'rowTpl\']) || $scriptProperties[\'rowTpl\'] == \'\') {\\n\\treturn \'\';\\n}\\n\\nif (!isset($scriptProperties[\'wrapperTpl\']) || $scriptProperties[\'wrapperTpl\'] == \'\') {\\n\\treturn \'\';\\n}\\n\\n$output = array(\\n\\t\'wrapper\' => \'\',\\n\\t\'rows\' => \'\'\\n);\\n\\n$product = $vc->getProduct($scriptProperties[\'id\']);\\n\\nif ($product == null) {\\n\\treturn \'\';\\t\\n}\\n\\n$link = $product->getOne(\'ProductCategory\');\\n$category = $vc->getCategory($link->get(\'categoryid\'), array(\\n\\t\'whereColumn\' => \'id\',\\n\\t\'asArray\' => true\\n));\\n$product = $product->toArray();\\n\\nif ($product[\'customfields\'] != \'\' && is_array($product[\'customfields\'])) {\\n\\t$fields = array();\\n\\t$values = $product[\'customfields\'];\\n\\t\\n\\t$fields = $values[$category[\'id\']];\\n\\tforeach($fields as $field => $value) {\\n\\t\\t$output[\'rows\'] .= $vc->parseChunk($scriptProperties[\'rowTpl\'], array(\\n\\t\\t\\t\'field\' => $field,\\n\\t\\t \\t\'value\' => $value\\n\\t\\t));\\n\\t}\\n\\t\\n\\tunset($product, $field, $value);\\n\\t\\n\\tif ($output[\'rows\'] != \'\') {\\n\\t\\t$output[\'wrapper\'] = $vc->parseChunk($scriptProperties[\'wrapperTpl\'], array(\\n\\t\\t\\t\'rows\' => $output[\'rows\']\\n\\t\\t));\\n\\t\\t\\n\\t\\treturn $output[\'wrapper\'];\\n\\t}\\n}\\n\\nreturn \'\';","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => '36d3052774691b75072a6ca7844b2f32',
+              'native_key' => 11,
+              'signature' => 'c79377d31b7a3ac97699d463ddc296b9',
+            ),
+            '8813174638fa3c2c8b179f31722b605a' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":12,"name":"vcGetBasket","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$vc =& $modx->visioncart;\\n\\n$processor = $modx->runProcessor(\'basket\', array(), array(\\n\\t\'location\' => \'web\',\\n\\t\'processors_path\' => $vc->config[\'processorsPath\'],\\n\\t\'return\' => \'tpl\',\\n\\t\'requestURL\' => (isset($_REQUEST[\'method\'])) ? $_REQUEST[\'method\'] : $_SERVER[\'REQUEST_URI\']\\n));\\n\\nreturn $processor->getResponse();","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => 'b3514d12421a83d06aa95fe4ced744a7',
+              'native_key' => 12,
+              'signature' => '43ff18d20c97bd8bad57b4b79c6ad0dd',
+            ),
+            '53e401aa18bcdae5181906c1648afff7' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":13,"name":"vcExport","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\nif (!isset($modx->visioncart)) {\\n    $modx->addPackage(\'visioncart\', $modx->getOption(\'core_path\').\'components\\/visioncart\\/model\\/\');\\n    $modx->visioncart = $modx->getService(\'visioncart\', \'VisionCart\', $modx->getOption(\'core_path\').\'components\\/visioncart\\/model\\/visioncart\\/\');\\n}\\n\\n$vc =& $modx->visioncart;\\nreturn $vc->export($scriptProperties);","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => '51dadecf670ddb2f1536f264f565a71e',
+              'native_key' => 13,
+              'signature' => 'f9ac265b97686c995ecc6f4c15f9e7b5',
+            ),
+            '76bab3f6a3762ce0ca4a1143e3f89815' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":14,"name":"vcGetCategories","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$vc =& $modx->visioncart;\\n$categories = array();\\n$output = \'\';\\n\\nif ($modx->visioncart->shop != null) {\\n\\t$shopId = $modx->visioncart->shop->get(\'id\');\\t\\n}\\n\\n$scriptProperties[\'config\'] = $modx->getOption(\'config\', $scriptProperties, \'default\');\\n$config = $vc->getConfigFile($vc->shop->get(\'id\'), \'getCategories\', null, array(\'config\' => $scriptProperties[\'config\']));\\n$scriptProperties = array_merge($config, $scriptProperties);\\n\\n$scriptProperties[\'parents\'] = $modx->getOption(\'parents\', $scriptProperties, 0);\\n$scriptProperties[\'exclude\'] = $modx->getOption(\'exclude\', $scriptProperties, \'\');\\n$scriptProperties[\'shopId\'] = $modx->getOption(\'shopId\', $scriptProperties, $shopId);\\n$scriptProperties[\'scheme\'] = $modx->getOption(\'scheme\', $scriptProperties, -1);\\n\\n$scriptProperties[\'parents\'] = explode(\',\', $scriptProperties[\'parents\']);\\n$scriptProperties[\'exclude\'] = explode(\',\', $scriptProperties[\'exclude\']);\\n\\n$scriptProperties[\'sort\'] = $modx->getOption(\'sort\', $scriptProperties, \'ASC\');\\n$scriptProperties[\'sortBy\'] = $modx->getOption(\'sortBy\', $scriptProperties, \'sort\');\\n\\nif ($scriptProperties[\'tpl\'] == \'\') {\\n\\treturn \'\';\\n}\\n\\nforeach($scriptProperties[\'parents\'] as $parent) {\\n\\t$stack = $vc->getCategories($scriptProperties[\'shopId\'], array_merge($scriptProperties, array(\\n\\t\\t\'parent\' => (int) $parent,\\n\\t\\t\'asArray\' => true\\n\\t)));\\n\\t\\n\\tforeach($stack as $category) {\\n\\t\\tif (!in_array($category[\'id\'], $scriptProperties[\'exclude\'])) {\\n\\t\\t\\t$category[\'url\'] = $vc->makeUrl(array(\\n\\t\\t\\t\\t\'categoryId\' => $category[\'id\'],\\n\\t\\t\\t\\t\'shopId\' => $scriptProperties[\'shopId\'],\\n\\t\\t\\t\\t\'scheme\' => $scriptProperties[\'scheme\']\\n\\t\\t\\t));\\n\\t\\t\\t$categories[] = $category;\\n\\t\\t}\\n\\t}\\n}\\n\\nforeach($categories as $category) {\\n\\t$output .= $vc->parseChunk($scriptProperties[\'tpl\'], $category);\\n}\\n\\nreturn $output;","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => 'b9ce3f3ebcbe7a53d1fa2a57cbf7d59a',
+              'native_key' => 14,
+              'signature' => 'd3e72c16a14629d635d52af44d770d73',
+            ),
+            '5797c1852dcb4cbffe199fc9c5cc4cc8' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":15,"name":"vcProductOptions","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n$vc =& $modx->visioncart;\\n\\n$scriptProperties[\'config\'] = $modx->getOption(\'config\', $scriptProperties, \'default\');\\n$config = $vc->getConfigFile($vc->shop->get(\'id\'), \'getProductOptions\', null, array(\'config\' => $scriptProperties[\'config\']));\\n$scriptProperties = array_merge($config, $scriptProperties);\\n\\n$scriptProperties[\'tpl\'] = $modx->getOption(\'tpl\', $scriptProperties, \'\');\\n$scriptProperties[\'rowTpl\'] = $modx->getOption(\'rowTpl\', $scriptProperties, \'\');\\n$scriptProperties[\'return\'] = $modx->getOption(\'return\', $scriptProperties, \'tpl\');\\n$scriptProperties[\'id\'] = $modx->getOption(\'id\', $scriptProperties, $vc->product->get(\'id\'));\\n$scriptProperties[\'selectedValues\'] = $modx->getOption(\'selectedValues\', $scriptProperties, array());\\n$scriptProperties[\'categoryId\'] = $modx->getOption(\'categoryId\', $scriptProperties, $vc->category->get(\'id\'));\\n$scriptProperties[\'scheme\'] = $modx->getOption(\'scheme\', $scriptProperties, -1);\\n\\nif (!isset($scriptProperties[\'id\']) || !is_numeric($scriptProperties[\'id\'])) {\\n\\treturn \'\';\\n}\\n\\nif (!isset($scriptProperties[\'categoryId\']) || !is_numeric($scriptProperties[\'categoryId\'])) {\\n\\treturn \'\';\\n}\\n\\nif (!isset($scriptProperties[\'tpl\']) || $scriptProperties[\'categoryId\'] == \'\') {\\n\\treturn \'\';\\n}\\n\\nif (!isset($scriptProperties[\'rowTpl\']) || $scriptProperties[\'rowTpl\'] == \'\') {\\n\\treturn \'\';\\n}\\n\\n\\/*$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'vcProductOptions\');\\n$rowTpl = $modx->getOption(\'rowTpl\', $scriptProperties, \'vcProductOptionsRow\');\\n$return = $modx->getOption(\'return\', $scriptProperties, \'tpl\');\\n$id = $modx->getOption(\'id\', $scriptProperties, false);\\n$selectedValues = $modx->getOption(\'selectedValues\', $scriptProperties, array());\\n$categoryId = $modx->getOption(\'categoryId\', $scriptProperties, $vc->category->get(\'id\'));*\\/\\n\\nif (!is_numeric($scriptProperties[\'id\'])) {\\n\\t$productId = $vc->router[\'product\'][\'id\'];\\n} else {\\n\\t$productId = $scriptProperties[\'id\'];\\n}\\n\\n$currentProduct = $vc->getProduct($scriptProperties[\'id\']);\\nif ($currentProduct->get(\'parent\') != 0) {\\n\\t$productId = $currentProduct->get(\'parent\');\\n\\t$product = $vc->getProduct($currentProduct->get(\'parent\'));\\n} else {\\n\\t$product = $currentProduct;\\t\\n}\\n\\n$returnArray = array();\\n$skuArray = array($product);\\n$output = \'\';\\n$innerChunk = \'\';\\n$hiddenInputs = \\"\\\\n\\";\\n$optionArray = array();\\n\\n\\/\\/ Set selected options\\nif (isset($_GET[\'option\'])) {\\n\\t$optionValues = $modx->getCollection(\'vcProductOption\', array(\\n\\t\\t\'productid\' => $currentProduct->get(\'id\')\\n\\t));\\n\\t\\n\\tforeach($optionValues as $value) {\\n\\t\\t$scriptProperties[\'selectedValues\'][$value->get(\'optionid\')] = $value->get(\'valueid\');\\n\\t}\\n}\\n\\n$query = $modx->newQuery(\'vcProductOption\', array(\\n\\t\'productid\' => $productId\\n));\\n$query->sortby(\'sort\', \'ASC\');\\n\\n$optionValues = $modx->getCollection(\'vcProductOption\', $query);\\n\\nif (sizeof($optionValues) > 0) {\\n\\t$masterOption = reset($optionValues);\\n}\\n\\n$skipSku = false;\\n\\n\\/\\/ Check if selected option matches SKU\\nforeach($optionValues as $value) {\\n\\tif ($value->get(\'optionid\') == $masterOption->get(\'optionid\') && $value->get(\'valueid\') == $scriptProperties[\'selectedValues\'][$masterOption->get(\'optionid\')]) {\\n\\t\\t\\/*$skipSku = false;\\n\\t\\tbreak;\\t*\\/\\n\\t}\\n\\tif (isset($scriptProperties[\'selectedValues\'][$value->get(\'optionid\')]) && $scriptProperties[\'selectedValues\'][$value->get(\'optionid\')] != $value->get(\'valueid\') && $scriptProperties[\'selectedValues\'][$value->get(\'optionid\')] != 0) {\\n\\t\\t$skipSku = true;\\n\\t\\tcontinue;\\n\\t}\\n}\\n\\nforeach($optionValues as $value) {\\n\\tif ($skipSku == false || $value->get(\'optionid\') == $masterOption->get(\'optionid\')) {\\n\\t\\t$value = $value->getOne(\'OptionValue\');\\n\\t\\t$optionArray[$value->get(\'optionid\')][$value->get(\'id\')] = $value->toArray();\\t\\n\\t}\\n}\\n\\n\\/\\/ Fetch all SKUs\\n$skus = $vc->getSKUs($scriptProperties[\'id\'], $vc->category->get(\'id\'));\\nforeach($skus as $sku) {\\n\\t$skuArray[] = $sku;\\n\\t$optionValues = $modx->getCollection(\'vcProductOption\', array(\\n\\t\\t\'productid\' => $sku->get(\'id\')\\n\\t));\\n\\t\\n\\t$skipSku = false;\\n\\t\\n\\t\\/\\/ Check if selected option matches SKU\\n\\tforeach($optionValues as $value) {\\n\\t\\tif ($value->get(\'optionid\') == $masterOption->get(\'optionid\') && \\n\\t\\t$value->get(\'valueid\') == $scriptProperties[\'selectedValues\'][$masterOption->get(\'optionid\')]) {\\n\\t\\t\\t\\/*$skipSku = false;\\n\\t\\t\\tbreak;\\t*\\/\\n\\t\\t}\\n\\n\\t\\tif (isset($scriptProperties[\'selectedValues\'][$value->get(\'optionid\')]) && $scriptProperties[\'selectedValues\'][$value->get(\'optionid\')] != $value->get(\'valueid\') && $scriptProperties[\'selectedValues\'][$value->get(\'optionid\')] != 0) {\\n\\t\\t\\t$skipSku = true;\\n\\t\\t\\tcontinue;\\t\\n\\t\\t}\\n\\t}\\n\\t\\n\\tforeach($optionValues as $value) {\\n\\t\\tif ($skipSku == false || $value->get(\'optionid\') == $masterOption->get(\'optionid\')) {\\n\\t\\t\\t$value = $value->getOne(\'OptionValue\');\\n\\t\\t\\t$optionArray[$value->get(\'optionid\')][$value->get(\'id\')] = $value->toArray();\\t\\n\\t\\t}\\n\\t}\\n}\\n\\n\\/\\/ Prepare HTML responses\\nforeach($optionArray as $optionId => $optionValues) {\\n\\t$option = $modx->getObject(\'vcOption\', $optionId);\\n\\t\\n\\tarray_unshift($optionValues, array(\\n\\t\\t\'id\' => 0,\\n\\t\\t\'optionid\' => $optionId,\\n\\t\\t\'value\' => \'Select value\'\\n\\t));\\n\\n\\t$selectedValue = isset($scriptProperties[\'selectedValues\'][$optionId]) ? $scriptProperties[\'selectedValues\'][$optionId] == \'\' ? \'0\' : $scriptProperties[\'selectedValues\'][$optionId] : \'0\';\\n\\n\\tif ($option->get(\'outputsnippet\') == \'\') {\\n\\t\\t$returnValue = \'\';\\n\\t} else {\\n\\t\\t$returnValue = $modx->runSnippet($option->get(\'outputsnippet\'), array(\\n\\t\\t\\t\'option\' => $option->toArray(),\\n\\t\\t\\t\'values\' => $optionValues,\\n\\t\\t\\t\'selectedValue\' => $selectedValue\\n\\t\\t));\\n\\t}\\n\\t\\n\\t\\/\\/ JSON response\\n\\t$returnArray[\'html\'][] = array(\\n\\t\\t\'option\' => $optionId,\\n\\t\\t\'response\' => $returnValue\\n\\t);\\n\\t \\n\\t\\/\\/ TPL parsing\\n\\t$innerChunk .= $vc->parseChunk($scriptProperties[\'rowTpl\'], array(\\n\\t\\t\'option\' => $option->toArray(),\\n\\t\\t\'innerChunk\' => $returnValue\\n\\t));\\n\\t\\n\\t\\/\\/ Hidden input\\n\\t$hiddenInputs .= \'<input type=\\"hidden\\" name=\\"vc-product-option-\'.$optionId.\'\\" id=\\"vc-product-option-\'.$optionId.\'\\" value=\\"\'.$selectedValue.\'\\" \\/>\'.\\"\\\\n\\";\\n}  \\n\\n\\/\\/ Fetch available SKU (if more then one, return false)\\n$skuFound = false;\\n$skuLink = \'\';\\n\\nforeach($skuArray as $sku) {\\n\\t$optionValues = $modx->getCollection(\'vcProductOption\', array(\\n\\t\\t\'productid\' => $sku->get(\'id\')\\n\\t));\\n\\t \\n\\t$skipSku = false;\\n\\t\\/\\/ Check if selected option matches SKU\\n\\tforeach($optionValues as $value) { \\n\\t\\tif (isset($scriptProperties[\'selectedValues\'][$value->get(\'optionid\')]) && $scriptProperties[\'selectedValues\'][$value->get(\'optionid\')] != $value->get(\'valueid\')) {\\n\\t\\t\\t$skipSku = true;\\n\\t\\t} elseif (!isset($scriptProperties[\'selectedValues\'][$value->get(\'optionid\')])) {\\n\\t\\t\\t$skipSku = true;\\t\\n\\t\\t}\\n\\t}\\n\\t\\n\\tif ($skipSku == false) { \\n\\t\\t\\/\\/ We found a match (woohoow)\\n\\t\\tif ($skuFound == false) { \\n\\t\\t\\t$skuFound = $sku->get(\'id\');\\t\\n\\t\\t} else { \\n\\t\\t\\t$skuFound = false;\\n\\t\\t\\tbreak;\\t \\n\\t\\t}\\n\\t}\\n}\\n\\nif ($skuFound != false) {\\n\\t$productLink = $modx->getObject(\'vcProductCategory\', array(\\n\\t\\t\'productid\' => $skuFound,\\n\\t\\t\'categoryid\' => $scriptProperties[\'categoryId\']\\n\\t));\\n\\t$skuLink = $vc->makeUrl(array(\\n\\t\\t\'productCategory\' => $productLink->get(\'id\'),\\n\\t\\t\'scheme\' => $scriptProperties[\'scheme\']\\n\\t));\\n}\\n\\nif ($scriptProperties[\'return\'] == \'tpl\') {\\n\\t$output = $vc->parseChunk($scriptProperties[\'tpl\'], array(\\n\\t\\t\'innerChunk\' => $innerChunk.$hiddenInputs\\n\\t));\\n\\t\\n\\treturn $output;\\n} else {\\n\\t$returnArray[\'productId\'] = $skuFound;\\n\\t$returnArray[\'productLink\'] = $skuLink;\\n\\treturn json_encode($returnArray);\\t\\n}","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => '6d4afefb8c014437fe7794456d87ea90',
+              'native_key' => 15,
+              'signature' => '289367ce3efac76bedc14d3d87b23db1',
+            ),
+            'cb021477d0c2a89a2b605a18bb8da4d1' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":16,"name":"vcOrderProcess","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\nif (!isset($modx->visioncart) || $modx->visioncart == null) {\\n\\t$modx->addPackage(\'visioncart\', $modx->getOption(\'core_path\').\'components\\/visioncart\\/model\\/\');\\n    $modx->visioncart = $modx->getService(\'visioncart\', \'VisionCart\', $modx->getOption(\'core_path\').\'components\\/visioncart\\/model\\/visioncart\\/\');\\t\\n}\\n\\n$vc =& $modx->visioncart;\\n$vc->initialize(\'web\');\\n\\nreturn $vc->order();","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => '6d67642dbece2a8bf660be91a6668160',
+              'native_key' => 16,
+              'signature' => 'ea98c9096be5e1eeb89b3ae65431eec3',
+            ),
+            'dcca51abf3d5e5badf25a4528968ba22' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":17,"name":"vcFormItGetUser","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\nif (!$modx->user->isAuthenticated()) {\\n\\treturn \'\';\\n}\\n$profile = $modx->user->getOne(\'Profile\');\\n$extended = $profile->get(\'extended\');\\n$fields = array();\\n\\n\\/\\/ Set the default VisionCart key if extended is empty\\nif (empty($extended) || !is_array($extended)) {\\n\\t$extended = array(\\n\\t\\t\'VisionCart\' => array()\\n\\t);\\n}\\n\\n\\/\\/ Set the default VisionCart key if extended is in use and hasn\'t been set\\nif (!isset($extended[\'VisionCart\'])) {\\n\\t$extended[\'VisionCart\'] = array();\\n}\\n\\nif (!isset($extended[\'VisionCart\'][\'shippingaddress\']) || $extended[\'VisionCart\'][\'shippingaddress\'][\'fullname\'] == \'\') {\\n\\t$extended[\'VisionCart\'][\'shippingaddress\'] = array(\\n\\t\\t\'fullname\' => $profile->get(\'fullname\'),\\n\\t\\t\'address\' => $profile->get(\'address\'),\\n\\t\\t\'zip\' => $profile->get(\'zip\'),\\n\\t\\t\'city\' => $profile->get(\'city\'),\\n\\t\\t\'state\' => $profile->get(\'state\'),\\n\\t\\t\'country\' => $profile->get(\'country\')\\n\\t);\\n}\\n\\nif (!isset($extended[\'VisionCart\'][\'billingaddress\']) || $extended[\'VisionCart\'][\'billingaddress\'][\'fullname\'] == \'\') {\\n        $extended[\'VisionCart\'][\'billing_as_shipping\'] = 1;\\n}\\n\\nif (!isset($extended[\'VisionCart\'][\'billing_as_shipping\']) || (int) $extended[\'VisionCart\'][\'billing_as_shipping\'] == 1) {\\n\\t$extended[\'VisionCart\'][\'billing_as_shipping\'] = 1;\\n\\t$extended[\'VisionCart\'][\'billingaddress\'] = $extended[\'VisionCart\'][\'shippingaddress\'];\\n}\\n\\n$profile->set(\'extended\', $extended);\\n$profile->save();\\n\\nforeach($extended[\'VisionCart\'][\'shippingaddress\'] as $key => $value) {\\n\\t$fields[\'shipping_\'.$key] = $value;\\n}\\n\\nforeach($extended[\'VisionCart\'][\'billingaddress\'] as $key => $value) {\\n\\t$fields[\'billing_\'.$key] = $value;\\n}\\n\\n$fields[\'billing_as_shipping\'] = (int) $extended[\'VisionCart\'][\'billing_as_shipping\'];\\n$hook->setValues($fields);\\n\\nunset($profile, $extended, $fields, $key, $value);\\nreturn \'\';","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => '7f1f798d30e50bdb8b1b7196e9dbb044',
+              'native_key' => 17,
+              'signature' => 'f39107427de6328a19319fae9c638a5a',
+            ),
+            '05d3ef2c42615cc5c77245ad42af7bc2' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":18,"name":"vcFormItSaveUser","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$vc =& $modx->visioncart;\\n\\n$processor = $modx->runProcessor(\'user\\/update\', $scriptProperties, array(\\n\\t\'location\' => \'web\',\\n\\t\'processors_path\' => $vc->config[\'processorsPath\'],\\n\\t\'scriptProperties\' => &$scriptProperties\\n));\\n\\nreturn $processor->getResponse();","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => '1e4b867b33d22e0d6ba5b4a8f0383c95',
+              'native_key' => 18,
+              'signature' => '9b61a754d9e125160b5b25c2a0522daa',
+            ),
+            'a68eacdba5244423fb067489b3f3b411' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":19,"name":"vcOrderHistory","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$vc =& $modx->visioncart;\\n\\n$scriptProperties[\'viewOrderResource\'] = $modx->getOption(\'viewOrderResource\', $scriptProperties, 0);\\n$scriptProperties[\'config\'] = $modx->getOption(\'config\', $scriptProperties, \'default\');\\n$scriptProperties = array_merge($vc->getConfigFile($vc->shop->get(\'id\'), \'orderHistory\', null, array(\'config\' => $scriptProperties[\'config\'])), $scriptProperties);\\n\\n$cache = \'\';\\n$output = \'\';\\n$orders = $vc->getOrders();\\n\\nforeach($orders as $order) {\\n\\t$rawOrder = $order->toArray(\'\', true);\\n\\t$order = $order->toArray();\\n\\n\\t$order[\'ordertime\'] = $rawOrder[\'ordertime\'];\\n\\t\\n\\t$order[\'display\'] = array(\\n\\t \\t\'products\' => count($order[\'basket\'])\\n\\t);\\n\\t\\n\\t$order[\'link\'] = $modx->makeUrl($scriptProperties[\'viewOrderResource\']).\'?id=\'.$order[\'ordernumber\']; \\n\\t\\n\\t$output .= $vc->parseChunk($scriptProperties[\'wrapperTpl\'], $order);\\n}\\n\\nreturn $output;","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => 'ec0d176e3884eb5634cdd61a50c3a5ea',
+              'native_key' => 19,
+              'signature' => 'aeb54f019088708bb1ed5b37073a5a29',
+            ),
+            '75aa37afe0254ccd38a7daea31a90bf9' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":20,"name":"vcOrderView","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n \\n$vc =& $modx->visioncart;\\n$shop = $vc->shop;\\n$output = \'\';\\n$cache = \'\';\\n$order = $vc->getOrder();\\n\\nif ($order == null) {\\n\\t$modx->sendUnauthorizedPage();\\t\\n\\texit();\\n}\\n\\n$scriptProperties[\'config\'] = $modx->getOption(\'config\', $scriptProperties, \'default\');\\n$scriptProperties = array_merge($vc->getConfigFile($order->get(\'shopid\'), \'orderView\', null, array(\'config\' => $scriptProperties[\'config\'])), $scriptProperties);\\n\\nforeach($order->get(\'basket\') as $product) {\\n\\t$productObject = $modx->getObject(\'vcProduct\', $product[\'id\']);\\n\\t$taxCategory = $productObject->getOne(\'TaxCategory\');\\n\\t$productPrice = $vc->calculateProductPrice($product, true);\\n\\t\\n\\t\\/\\/ Calculate product price\\n\\t$product[\'display\'][\'price\'] = $productPrice;\\n\\t$product[\'display\'][\'price\'][\'subtotal\'] = ($productPrice[\'in\'] * $product[\'quantity\']);\\n\\t\\n\\t$cache .= $vc->parseChunk($scriptProperties[\'productRow\'], array_merge($order->toArray(), array(\\n\\t\\t\'product\' => $product\\n\\t)));\\n}\\n\\n\\/\\/ Loop through taxes\\n$taxes = $vc->calculateTaxes($order);\\n$taxContent = \'\';\\n\\nif (is_array($taxes)) {\\n\\tforeach($taxes as $tax) {\\n\\t\\t$taxContent .= $vc->parseChunk($scriptProperties[\'taxRow\'], array_merge(array(\\n\\t\\t\\t\'tax\' => $tax,\\n\\t\\t)));\\n\\t}\\n}\\n\\n\\/\\/ Get highest tax\\n$highestTax = $vc->getOrderHighestTax($order);\\n\\n\\/\\/ Get the shipping module\\n$shippingModule = $order->getOne(\'ShippingModule\');\\nif ($shippingModule == null) {\\n\\t$shippingModule = array();\\t\\n} else {\\n\\t\\/\\/ Include the controller to give it a chance to do some stuff as well\\n\\tif ($shippingModule->get(\'controller\') != \'\') {\\n\\t\\t$controller = $vc->config[\'corePath\'].\'modules\\/shipping\\/\'.$shippingModule->get(\'controller\');\\n\\t\\tif (is_file($controller)) {\\t\\n\\t\\t\\t$vcAction = \'getParams\';\\n\\t\\t\\t\\n\\t\\t\\t$returnValue = include($controller);\\t\\n\\t\\t\\t\\n\\t\\t\\tif (!is_array($returnValue)) {\\n\\t\\t\\t\\t$returnValue = array();\\t\\n\\t\\t\\t}\\n\\t\\t\\t\\n\\t\\t\\tif (isset($module)) {\\n\\t\\t\\t\\tunset($module);\\t\\n\\t\\t\\t}\\n\\t\\t}\\n\\t}\\n\\t$shippingModule = $shippingModule->toArray();\\n\\t$shippingModule = array_merge($shippingModule, $returnValue);\\n}\\n\\n\\/\\/ Get the payment module\\n$paymentModule = $order->getOne(\'PaymentModule\');\\nif ($paymentModule == null) {\\n\\t$paymentModule = array();\\t\\n} else {\\n\\t\\/\\/ Include the controller to give it a chance to do some stuff as well\\n\\tif ($paymentModule->get(\'controller\') != \'\') {\\n\\t\\t$controller = $vc->config[\'corePath\'].\'modules\\/payment\\/\'.$paymentModule->get(\'controller\');\\n\\t\\tif (is_file($controller)) {\\t\\n\\t\\t\\t$vcAction = \'getParams\';\\n\\t\\t\\t\\n\\t\\t\\t$returnValue = include($controller);\\t\\n\\t\\t\\t\\n\\t\\t\\tif (!is_array($returnValue)) {\\n\\t\\t\\t\\t$returnValue = array();\\t\\n\\t\\t\\t}\\n\\t\\t\\t\\n\\t\\t\\tif (isset($module)) {\\n\\t\\t\\t\\tunset($module);\\t\\n\\t\\t\\t}\\n\\t\\t}\\n\\t}\\n\\t$paymentModule = $paymentModule->toArray();\\n\\t$paymentModule = array_merge($paymentModule, $returnValue);\\n} \\n\\n$user = $order->get(\'userdata\');\\n$profile = $user[\'profile\'];\\n\\n$rawOrder = $order->toArray(\'\', true);\\n$order = $order->toArray();\\n$order[\'ordertime\'] = $rawOrder[\'ordertime\'];\\n\\n$output = $vc->parseChunk($scriptProperties[\'wrapperTpl\'], array_merge($order, array(\\n\\t\'wrapper.products\' => $cache,\\n\\t\'shippingModule\' => $shippingModule,\\n\\t\'paymentModule\' => $paymentModule,\\n\\t\'taxes\' => $taxContent\\n)));\\n\\nreturn $output;","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => '807febf1301793c2b6a2f727dfbd9c5b',
+              'native_key' => 20,
+              'signature' => '4816c7608df277f82effb18437a53577',
+            ),
+            '54453070e9f8eadb7d0edd802bdadbd8' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":42,"name":"vcCategoryUltimateParent","description":"","editor_type":0,"category":6,"cache_type":0,"snippet":"if ($modx->visioncart->category != null) {\\n\\t$default = $modx->visioncart->category->get(\'id\');\\n} else {\\n\\t$default = 0;\\n}\\n\\n$id = $modx->getOption(\'id\', $scriptProperties, $default);\\n$return = $modx->getOption(\'return\', $scriptProperties, \'id\');\\n\\n$maxLoops = 50;\\n$count = 0;\\n\\nif ($id != 0) {\\n\\t$parentFound = false;\\n\\t$parent = null;\\n\\t\\n\\twhile(!$parentFound) {\\n\\t\\tif ($count == $maxLoops) {\\n\\t\\t\\tif ($category != null) {\\n\\t\\t\\t}\\n\\t\\t\\treturn \'infinite\';\\n\\t\\t}\\n\\t\\t\\n\\t\\t$category = $modx->getObject(\'vcCategory\', $id);\\n\\t\\tif ($category == null) {\\n\\t\\t\\treturn \'\';\\t\\n\\t\\t}\\n\\t\\t\\n\\t\\tif ($category->get(\'parent\') == 0) {\\n\\t\\t\\treturn $category->get($return);\\t\\n\\t\\t\\tbreak;\\t\\n\\t\\t} else {\\n\\t\\t\\t$id = $category->get(\'parent\');\\t\\n\\t\\t}\\n\\t\\t\\n\\t\\t$count++;\\n\\t}\\n\\t\\n\\tif ($parentFound) {\\n\\t\\treturn $category->get($return);\\t\\n\\t}\\n}","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => '3b9c97094db776bb98dfad9ece6167e7',
+              'native_key' => 42,
+              'signature' => 'fded25cc4c1d20252573ace9d7edc667',
+            ),
+          ),
+        ),
+      ),
+      'b0d31df84122b72b2ba16b7588d83f9b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'category',
+        'class' => 'modCategory',
+        'object' => '{"id":7,"parent":1,"category":"Orders"}',
+        'guid' => '432d8c63378410ba523bbfdaf644253f',
+        'native_key' => 7,
+        'signature' => '7a5174cbde034bcb9d43232c87b6bd08',
+      ),
+      '2d113aad0c7d222200acc6982b1cee95' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'category',
+        'class' => 'modCategory',
+        'object' => '{"id":8,"parent":1,"category":"Modifiers"}',
+        'guid' => '4bc7dfcf46d0c809cddd9c168c7db02c',
+        'native_key' => 8,
+        'signature' => '52d8de9bdb824181287d50c6d5440429',
+        'related_objects' => 
+        array (
+          'Snippets' => 
+          array (
+            'bb68d4637e482c1e30f2cff627efc9e5' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":21,"name":"vcMoney","description":"Currency number format modifer","editor_type":0,"category":8,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$vc =& $modx->visioncart;\\n\\nif ($scriptProperties[\'options\'] != \'\') {\\n\\t$scriptProperties[\'options\'] = explode(\',\', $scriptProperties[\'options\']);\\n\\tforeach($scriptProperties[\'options\'] as $key => $value) {\\n\\t\\t$value = explode(\'==\', $value);\\n\\t\\t$scriptProperties[$value[0]] = $value[1];\\n\\t}\\n}\\n\\nreturn $vc->money($scriptProperties[\'input\'], $scriptProperties);","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => 'f1441c0cbfcbd3f1c5a853a9660a1ecf',
+              'native_key' => 21,
+              'signature' => '27d7ac87cf008751e3cb09d4878debb2',
+            ),
+            '07c4a5a9a85ef3de331d973ebcb84f53' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":21,"name":"vcMoney","description":"Currency number format modifer","editor_type":0,"category":8,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$vc =& $modx->visioncart;\\n\\nif ($scriptProperties[\'options\'] != \'\') {\\n\\t$scriptProperties[\'options\'] = explode(\',\', $scriptProperties[\'options\']);\\n\\tforeach($scriptProperties[\'options\'] as $key => $value) {\\n\\t\\t$value = explode(\'==\', $value);\\n\\t\\t$scriptProperties[$value[0]] = $value[1];\\n\\t}\\n}\\n\\nreturn $vc->money($scriptProperties[\'input\'], $scriptProperties);","locked":0,"properties":"a:0:{}","moduleguid":""}',
+              'guid' => 'd561db7c7291e147027634a76460182b',
+              'native_key' => 21,
+              'signature' => 'ffb5d75d635c2cddda43a107f8b49801',
+            ),
+          ),
+        ),
+      ),
+      '7e73dc3caeee350c2df637f9913b7423' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'category',
+        'class' => 'modCategory',
+        'object' => '{"id":9,"parent":1,"category":"Order step 1"}',
+        'guid' => '9600b294625b9eb16db62970fb526ea4',
+        'native_key' => 9,
+        'signature' => 'e4503785e617fa33ab79fcba06ca2d41',
+      ),
+      '9c6e7fb58808a65f970715fd9d04aa96' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'category',
+        'class' => 'modCategory',
+        'object' => '{"id":10,"parent":1,"category":"Order step 3"}',
+        'guid' => 'a52d7b8872c6d1913f5e75c7b26a58ba',
+        'native_key' => 10,
+        'signature' => '8854c1279d1a6a04f2a951f2190d8822',
+      ),
+      'b52769b4acd19148bb1dd57f06dae63e' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'category',
+        'class' => 'modCategory',
+        'object' => '{"id":11,"parent":1,"category":"Order step 4"}',
+        'guid' => '082ce8991e9c3534f257dee13c8f228a',
+        'native_key' => 11,
+        'signature' => '8c78b09295199f95ffa347b43db1f5f5',
+      ),
+      'e872be39c85cfc04019d676c95d10d61' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'category',
+        'class' => 'modCategory',
+        'object' => '{"id":12,"parent":1,"category":"Order step 5"}',
+        'guid' => 'ca90766b0eae95b84c674ce185a4fd6b',
+        'native_key' => 12,
+        'signature' => '01fe8964f46fa712d95168f2bf9386a7',
+      ),
+      '7303243e3b7b66b1e7845b1f2902fc9a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'category',
+        'class' => 'modCategory',
+        'object' => '{"id":15,"parent":1,"category":"Options"}',
+        'guid' => '6afc95fa564cde0542ebbc464e6aa7cd',
+        'native_key' => 15,
+        'signature' => 'c1da5f37c469acd74ab89bd3656d3754',
+        'related_objects' => 
+        array (
+          'Chunks' => 
+          array (
+            '5563e924b9c9c73de774ac6392c75b83' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modChunk',
+              'object' => '{"id":24,"name":"vcOptionOutputComboRow","description":"","editor_type":0,"category":15,"cache_type":0,"snippet":"<option value=\\"[[+id]]\\" [[+selected]]>[[+value]]<\\/option>","locked":0,"properties":null}',
+              'guid' => 'b31c63930436821175c4c7be1c6858ba',
+              'native_key' => 24,
+              'signature' => 'c91d96f6dc08643d5f0ddcdd8ddc3242',
+            ),
+            '10047ac1b0db3aaa2d17fce1ecfa4219' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modChunk',
+              'object' => '{"id":25,"name":"vcOptionOutputCombo","description":"","editor_type":0,"category":15,"cache_type":0,"snippet":"[[+name]]:<br \\/><select onchange=\\"vc.setOptionValue([[+id]], this.value);\\">\\n[[+innerChunk]]\\n<\\/select>\\n<hr \\/>","locked":0,"properties":null}',
+              'guid' => '414cc5727740d60e50c49e58050a1c49',
+              'native_key' => 25,
+              'signature' => '3454f4cc673861d715e06bc7abb70b96',
+            ),
+            '892fef9afc5642ea09b1d08438712aa9' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modChunk',
+              'object' => '{"id":24,"name":"vcOptionOutputComboRow","description":"","editor_type":0,"category":15,"cache_type":0,"snippet":"<option value=\\"[[+id]]\\" [[+selected]]>[[+value]]<\\/option>","locked":0,"properties":null}',
+              'guid' => '7a5e04a80f98b6c227f6929a4fac68d8',
+              'native_key' => 24,
+              'signature' => '7f48f2ee2728ee0221940cbe45efe029',
+            ),
+            '981e43ec8a473712d2931ac0eff6f15a' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modChunk',
+              'object' => '{"id":25,"name":"vcOptionOutputCombo","description":"","editor_type":0,"category":15,"cache_type":0,"snippet":"[[+name]]:<br \\/><select onchange=\\"vc.setOptionValue([[+id]], this.value);\\">\\n[[+innerChunk]]\\n<\\/select>\\n<hr \\/>","locked":0,"properties":null}',
+              'guid' => '6383fb906fd283876aac6e59cfcd743d',
+              'native_key' => 25,
+              'signature' => 'cbf82a54a896296aa193e82c715eb591',
+            ),
+          ),
+          'Snippets' => 
+          array (
+            '15615bb1702363742031b30b7a1bab78' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":36,"name":"vcOptionOutputCombo","description":"Default output snippet","editor_type":0,"category":15,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$option = $modx->getOption(\'option\', $scriptProperties, array());\\n$values = $modx->getOption(\'values\', $scriptProperties, array());\\n$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'vcOptionOutputCombo\');\\n$rowTpl = $modx->getOption(\'rowTpl\', $scriptProperties, \'vcOptionOutputComboRow\');\\n$selectedValue = $modx->getOption(\'selectedValue\', $scriptProperties, \'0\');\\n\\n$innerChunk = \'\';\\nforeach($values as $value) {\\n\\tif ($value[\'id\'] == $selectedValue) {\\n\\t\\t$value[\'selected\'] = \'selected=\\"selected\\"\';\\t\\n\\t} else {\\n\\t\\t$value[\'selected\'] = \'\';\\t\\n\\t}\\n\\t$innerChunk .= $modx->getChunk($rowTpl, $value);\\n}\\n\\nreturn $modx->getChunk($tpl, array_merge($option, array(\'innerChunk\' => $innerChunk)));","locked":0,"properties":null,"moduleguid":""}',
+              'guid' => 'e8b894ee770b60231b902d5135affd76',
+              'native_key' => 36,
+              'signature' => 'd507d0fb1a2e94f5c2e77161455eb995',
+            ),
+            '558e6a21a38725f5e0b3ce08dbca82a7' => 
+            array (
+              'preserve_keys' => false,
+              'update_object' => true,
+              'unique_key' => 'name',
+              'class' => 'modSnippet',
+              'object' => '{"id":36,"name":"vcOptionOutputCombo","description":"Default output snippet","editor_type":0,"category":15,"cache_type":0,"snippet":"\\/**\\n * @package visioncart\\n *\\/\\n\\n$option = $modx->getOption(\'option\', $scriptProperties, array());\\n$values = $modx->getOption(\'values\', $scriptProperties, array());\\n$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'vcOptionOutputCombo\');\\n$rowTpl = $modx->getOption(\'rowTpl\', $scriptProperties, \'vcOptionOutputComboRow\');\\n$selectedValue = $modx->getOption(\'selectedValue\', $scriptProperties, \'0\');\\n\\n$innerChunk = \'\';\\nforeach($values as $value) {\\n\\tif ($value[\'id\'] == $selectedValue) {\\n\\t\\t$value[\'selected\'] = \'selected=\\"selected\\"\';\\t\\n\\t} else {\\n\\t\\t$value[\'selected\'] = \'\';\\t\\n\\t}\\n\\t$innerChunk .= $modx->getChunk($rowTpl, $value);\\n}\\n\\nreturn $modx->getChunk($tpl, array_merge($option, array(\'innerChunk\' => $innerChunk)));","locked":0,"properties":null,"moduleguid":""}',
+              'guid' => 'c7ef4016b0d72f61334ca222c74d2ae2',
+              'native_key' => 36,
+              'signature' => '69ca1c123e20accce86a5f3f54ce22a9',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'category',
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'visioncart',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"visioncart-0.7.0-rc5\\/modCategory\\/c716d9c19996467b951a7fdfa4041037\\/0\\/","target":"return MODX_CORE_PATH.\'components\\/\';","name":"visioncart"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"visioncart-0.7.0-rc5\\/modCategory\\/c716d9c19996467b951a7fdfa4041037\\/1\\/","target":"return MODX_ASSETS_PATH.\'components\\/\';","name":"visioncart"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"visioncart-0.7.0-rc5\\/modCategory\\/c716d9c19996467b951a7fdfa4041037.postactions.dbchanges.resolver","type":"php","name":"postactions.dbchanges"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"visioncart-0.7.0-rc5\\/modCategory\\/c716d9c19996467b951a7fdfa4041037.postactions.resolver.resolver","type":"php","name":"postactions.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6b58c8eccb66fd5fa4609eee502b2477',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'c716d9c19996467b951a7fdfa4041037',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"VisionCart"}',
+);

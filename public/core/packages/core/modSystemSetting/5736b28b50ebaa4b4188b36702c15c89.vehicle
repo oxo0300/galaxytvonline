@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8bc3fad649f925c3fb9d66c026f47d0f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '5736b28b50ebaa4b4188b36702c15c89',
+  'native_key' => 'resolve_hostnames',
+  'object' => '{"key":"resolve_hostnames","value":"0","xtype":"combo-boolean","namespace":"core","area":"system","editedon":null}',
+);
