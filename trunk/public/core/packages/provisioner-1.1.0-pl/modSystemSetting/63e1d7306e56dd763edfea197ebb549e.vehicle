@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'key',
+  'namespace' => 'provisioner',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '93c61d01159c48864650af1af9384515',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '63e1d7306e56dd763edfea197ebb549e',
+  'native_key' => 'url',
+  'object' => '{"key":"url","value":"no url","xtype":"textfield","namespace":"provisioner","area":"Provisioner","editedon":null}',
+);

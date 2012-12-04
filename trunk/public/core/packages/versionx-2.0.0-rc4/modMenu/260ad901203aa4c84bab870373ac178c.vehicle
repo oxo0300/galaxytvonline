@@ -1,0 +1,52 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      '1813ecde3308599b0d15f82078577b76' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'related_objects' => false,
+        'class' => 'modAction',
+        'object' => '{"id":0,"namespace":"versionx","controller":"controllers\\/index","haslayout":1,"lang_topics":"versionx:default","assets":"","help_url":"","parent":"0"}',
+        'guid' => '6303e7cc3dc4da9a322424502a6f6089',
+        'native_key' => 0,
+        'signature' => 'cccc6c1ac43faa8a060c666dfc2e085d',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+      'related_objects' => false,
+    ),
+  ),
+  'namespace' => 'versionx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '617b236917029e2af042bad2b0a0b22d',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '260ad901203aa4c84bab870373ac178c',
+  'native_key' => 'versionx',
+  'object' => '{"text":"versionx","parent":"components","action":0,"description":"versionx.menu_desc","icon":"images\\/icons\\/plugin.gif","menuindex":0,"params":"","handler":"","permissions":""}',
+);

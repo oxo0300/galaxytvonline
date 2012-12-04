@@ -1,0 +1,11 @@
+Changelog for MobileDetection
+
+MobileDetection 2.1-beta1
+-------------------
+Completely repackaged this module using MyComponent rather than PackMan.
+Updated the install script so that you can skip updating templates and snippets if you have already modified them.
+
+
+MobileDetection 2.0-rc1
+-------------------
+Initial Version

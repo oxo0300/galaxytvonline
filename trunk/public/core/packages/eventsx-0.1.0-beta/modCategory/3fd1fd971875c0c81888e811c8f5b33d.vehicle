@@ -1,0 +1,156 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '7cd8c49856073e027d687c2d62f41da9' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"evxEventCalendarTpl","description":"Event html for calendar","editor_type":0,"category":0,"cache_type":0,"snippet":"<a href=\\"[[+url]]\\">[[+name]]<\\/a><br \\/>","locked":0,"properties":null,"static":0,"static_file":"","content":"<a href=\\"[[+url]]\\">[[+name]]<\\/a><br \\/>"}',
+        'guid' => 'a050bf403c36a517349f4f4fc8d859f3',
+        'native_key' => 0,
+        'signature' => '5ab0e8c9f400d5047aa681ee317ac692',
+      ),
+      '7c892c3ae769316c77af1dcc21fec34f' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"evxEventTpl","description":"Event html for upcoming events list","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"[[+classes]]\\">\\r\\n    <h1>[[+name]]<\\/h1>\\r\\n    <p class=\\"startdate\\">[[+startdate:strtotime:date=`%d-%m-%Y`]]<\\/p>\\r\\n    <p class=\\"enddate\\">[[+enddate:strtotime:date=`%d-%m-%Y`]]<\\/p>\\r\\n    <p>[[+description]]<\\/p>\\r\\n    <a href=\\"[[+url]]\\" class=\\"readmore\\">Read more<\\/a>\\r\\n<\\/div>","locked":0,"properties":null,"static":0,"static_file":"","content":"<div class=\\"[[+classes]]\\">\\r\\n    <h1>[[+name]]<\\/h1>\\r\\n    <p class=\\"startdate\\">[[+startdate:strtotime:date=`%d-%m-%Y`]]<\\/p>\\r\\n    <p class=\\"enddate\\">[[+enddate:strtotime:date=`%d-%m-%Y`]]<\\/p>\\r\\n    <p>[[+description]]<\\/p>\\r\\n    <a href=\\"[[+url]]\\" class=\\"readmore\\">Read more<\\/a>\\r\\n<\\/div>"}',
+        'guid' => '23e9b7795d583e282066b4d2ade5ab60',
+        'native_key' => 0,
+        'signature' => 'cd4e7555b985065cfd2e08b74a350454',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '7bc009ac3f5484b2f1cc0f79af8795bf' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"EventsX","description":"Upcoming events list","editor_type":0,"category":0,"cache_type":0,"snippet":"$modx->getService(\'eventsx\',\'EventsX\',$modx->getOption(\'eventsx.core_path\',null,$modx->getOption(\'core_path\').\'components\\/eventsx\\/\').\'model\\/eventsx\\/\',$scriptProperties);\\r\\n\\r\\n\\/\\/get id of events (overview) page\\r\\n$eventsPage = $modx->getOption(\'evxEventsPage\', null, 1);\\r\\n\\r\\n\\/\\/max number over events shown\\r\\n$limit = $modx->getOption(\'limit\', $scriptProperties, 5);\\r\\n\\r\\n\\/\\/event chunk\\r\\n$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'evxEventTpl\');\\r\\n\\r\\n\\/\\/default event classes\\r\\n$eventClass = $modx->getOption(\'eventClass\', $scriptProperties, \'event\');\\r\\n$oddClass = $modx->getOption(\'eventClass\', $scriptProperties, \'odd\');\\r\\n$evenClass = $modx->getOption(\'eventClass\', $scriptProperties, \'even\');\\r\\n\\r\\n$c = $modx->newQuery(\'evxEvent\');\\r\\n$c->andCondition(array(\'active\' => 1, \\"enddate >= \'\\".date(\'Y-m-d\').\\"\'\\"));\\r\\n$c->limit($limit);\\r\\n$c->sortby(\'startdate\', \'ASC\');\\r\\n$events = $modx->getCollection(\'evxEvent\', $c);\\r\\n\\r\\n$output = \'\';\\r\\n$i = 1;\\r\\nforeach($events as $event)\\r\\n{\\r\\n    $event = $event->toArray();\\r\\n    $event[\'idx\'] = $i;\\r\\n    $event[\'classes\'] = $eventClass.\' \'.($i & 1 ? $oddClass : $evenClass);\\r\\n    $event[\'url\'] = $modx->makeUrl($eventsPage).urlencode($event[\'name\']).\'\\/\'.$event[\'id\'];\\r\\n    $output .= $modx->getChunk($tpl, $event);\\r\\n    $i++;\\r\\n}\\r\\nreturn $output;","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"$modx->getService(\'eventsx\',\'EventsX\',$modx->getOption(\'eventsx.core_path\',null,$modx->getOption(\'core_path\').\'components\\/eventsx\\/\').\'model\\/eventsx\\/\',$scriptProperties);\\r\\n\\r\\n\\/\\/get id of events (overview) page\\r\\n$eventsPage = $modx->getOption(\'evxEventsPage\', null, 1);\\r\\n\\r\\n\\/\\/max number over events shown\\r\\n$limit = $modx->getOption(\'limit\', $scriptProperties, 5);\\r\\n\\r\\n\\/\\/event chunk\\r\\n$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'evxEventTpl\');\\r\\n\\r\\n\\/\\/default event classes\\r\\n$eventClass = $modx->getOption(\'eventClass\', $scriptProperties, \'event\');\\r\\n$oddClass = $modx->getOption(\'eventClass\', $scriptProperties, \'odd\');\\r\\n$evenClass = $modx->getOption(\'eventClass\', $scriptProperties, \'even\');\\r\\n\\r\\n$c = $modx->newQuery(\'evxEvent\');\\r\\n$c->andCondition(array(\'active\' => 1, \\"enddate >= \'\\".date(\'Y-m-d\').\\"\'\\"));\\r\\n$c->limit($limit);\\r\\n$c->sortby(\'startdate\', \'ASC\');\\r\\n$events = $modx->getCollection(\'evxEvent\', $c);\\r\\n\\r\\n$output = \'\';\\r\\n$i = 1;\\r\\nforeach($events as $event)\\r\\n{\\r\\n    $event = $event->toArray();\\r\\n    $event[\'idx\'] = $i;\\r\\n    $event[\'classes\'] = $eventClass.\' \'.($i & 1 ? $oddClass : $evenClass);\\r\\n    $event[\'url\'] = $modx->makeUrl($eventsPage).urlencode($event[\'name\']).\'\\/\'.$event[\'id\'];\\r\\n    $output .= $modx->getChunk($tpl, $event);\\r\\n    $i++;\\r\\n}\\r\\nreturn $output;"}',
+        'guid' => 'b364da8732061029394dcc7e4750671c',
+        'native_key' => 0,
+        'signature' => 'c55f7556fcad1abaaf748d6de83fcdc2',
+      ),
+      '2f47738a9637a5f9b3c9cf15c65f9c1f' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"evxEvent","description":"Get event data (for event page)","editor_type":0,"category":0,"cache_type":0,"snippet":"$modx->getService(\'eventsx\',\'EventsX\',$modx->getOption(\'eventsx.core_path\',null,$modx->getOption(\'core_path\').\'components\\/eventsx\\/\').\'model\\/eventsx\\/\',$scriptProperties);\\r\\n\\r\\n\\/\\/get id of events (overview) page\\r\\n$eventsPage = $modx->getOption(\'evxEventsPage\', $scriptProperties, 1);\\r\\n\\r\\n\\/\\/get regex escaped name\\/url of events (overview) page without \\/\\r\\n\\/\\/events are below overiew page. e.a. \\/events\\/event-name\\/10\\r\\n$eventsPageRegex = preg_quote(trim($modx->makeUrl($eventsPage), \'\\/\'));\\r\\n\\r\\n\\/\\/single event\\r\\nif(preg_match(\'\\/\'.$eventsPageRegex.\'\\\\\\/.*\\\\\\/[0-9]+$\\/\', $_SERVER[\'REQUEST_URI\']))\\r\\n{\\r\\n    $event = explode(\'\\/\', $_SERVER[\'REQUEST_URI\']);\\r\\n    $event = end($event);\\r\\n    $event = $modx->getObject(\'evxEvent\', array(\'id\' => $event, \'active\' => 1));\\r\\n    if(is_object($event)) {\\r\\n        $modx->setPlaceholders($event->toArray(), \'event.\');\\r\\n        return \'\';\\r\\n    }\\r\\n}\\r\\n\\r\\n$modx->sendRedirect($modx->makeUrl($eventsPage));","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"$modx->getService(\'eventsx\',\'EventsX\',$modx->getOption(\'eventsx.core_path\',null,$modx->getOption(\'core_path\').\'components\\/eventsx\\/\').\'model\\/eventsx\\/\',$scriptProperties);\\r\\n\\r\\n\\/\\/get id of events (overview) page\\r\\n$eventsPage = $modx->getOption(\'evxEventsPage\', $scriptProperties, 1);\\r\\n\\r\\n\\/\\/get regex escaped name\\/url of events (overview) page without \\/\\r\\n\\/\\/events are below overiew page. e.a. \\/events\\/event-name\\/10\\r\\n$eventsPageRegex = preg_quote(trim($modx->makeUrl($eventsPage), \'\\/\'));\\r\\n\\r\\n\\/\\/single event\\r\\nif(preg_match(\'\\/\'.$eventsPageRegex.\'\\\\\\/.*\\\\\\/[0-9]+$\\/\', $_SERVER[\'REQUEST_URI\']))\\r\\n{\\r\\n    $event = explode(\'\\/\', $_SERVER[\'REQUEST_URI\']);\\r\\n    $event = end($event);\\r\\n    $event = $modx->getObject(\'evxEvent\', array(\'id\' => $event, \'active\' => 1));\\r\\n    if(is_object($event)) {\\r\\n        $modx->setPlaceholders($event->toArray(), \'event.\');\\r\\n        return \'\';\\r\\n    }\\r\\n}\\r\\n\\r\\n$modx->sendRedirect($modx->makeUrl($eventsPage));"}',
+        'guid' => 'ec6e9d8b7a7ed6714202d636b304b8b9',
+        'native_key' => 0,
+        'signature' => '4f1e401cf45992a4e4e99da22be5d1d2',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      'd791549a56d7a71fbd84dc94aad4066e' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"EventsX","description":"Show single event page or JSON data of selected\\/current month","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/\\/get id of single event page\\r\\n$eventPage = $modx->getOption(\'evxEventPage\', null, 1);\\r\\n\\r\\n\\/\\/get id of events (overview) page\\r\\n$eventsPage = $modx->getOption(\'evxEventsPage\', null, 1);\\r\\n\\r\\n\\/\\/get regex escaped name\\/url of events (overview) page without \\/\\r\\n$eventsPageRegex = preg_quote(trim($modx->makeUrl($eventsPage), \'\\/\'));\\r\\n\\r\\n\\/\\/calendar item template\\r\\n$eventTpl = $modx->getOption(\'evxEventCalendarTpl\', null, \'evxEventCalendarTpl\');\\r\\n\\r\\n\\/\\/JSON URI\\r\\n$jsonURI = $modx->getOption(\'evxJSON\', null, \'eventsxJSON\');\\r\\n\\r\\n\\/\\/output calendar JSON\\r\\nif ($modx->event->name == \'OnPageNotFound\' && preg_match(\'\\/\'.$jsonURI.\'\\\\?.*$\\/\', $_SERVER[\'REQUEST_URI\']))\\r\\n{\\r\\n    $modx->getService(\'eventsx\',\'EventsX\',$modx->getOption(\'eventsx.core_path\',null,$modx->getOption(\'core_path\').\'components\\/eventsx\\/\').\'model\\/eventsx\\/\',$scriptProperties);\\r\\n\\r\\n    $month = $modx->getOption(\'month\', $_GET, date(\'m\'));\\r\\n    $year = $modx->getOption(\'year\', $_GET, date(\'Y\'));\\r\\n\\r\\n    $startdate = $year.\'-\'.$month.\'-01\';\\r\\n    $enddate = date(\'Y-m-t\',mktime(0, 0, 0, $month, 1, $year));\\r\\n    $daysInMonth = date(\'t\',mktime(0, 0, 0, $month, 1, $year));\\r\\n\\r\\n    $c = $modx->newQuery(\'evxEvent\');\\r\\n    $c->select(\'id, name, description, UNIX_TIMESTAMP(startdate) AS startTime, UNIX_TIMESTAMP(enddate) AS endTime, location, street, pc, city, country, website\');\\r\\n    $c->where(\\r\\n        array(\\r\\n            \'active\' => 1,\\r\\n            \\"startdate <= \'$enddate\' AND  enddate >= \'$startdate\'\\"\\r\\n        )\\r\\n    );\\r\\n\\r\\n    $eventDays = array();\\r\\n\\r\\n    $events = $modx->getCollection(\'evxEvent\', $c);\\r\\n    foreach($events as $event)\\r\\n    {\\r\\n        $event = $event->toArray();\\r\\n        $event[\'url\'] = $modx->makeUrl($eventsPage).urlencode($event[\'name\']).\'\\/\'.$event[\'id\'];\\r\\n        $event[\'html\'] = $modx->getChunk($eventTpl, $event);\\r\\n        for($i=1; $i <= $daysInMonth; $i++)\\r\\n        {\\r\\n            $dayTimestamp = mktime(0, 0, 0, $month, $i, $year);\\r\\n            if($event[\'startTime\'] <= $dayTimestamp && $event[\'endTime\'] >= $dayTimestamp)\\r\\n            {\\r\\n                $eventDays[$i][] = $event;\\r\\n            }\\r\\n        }\\r\\n    }\\r\\n\\r\\n    echo $modx->toJSON($eventDays);\\r\\n    exit;\\r\\n}\\r\\n\\r\\n\\/\\/go to event page\\r\\nelseif ($modx->event->name == \'OnPageNotFound\' && preg_match(\'\\/\'.$eventsPageRegex.\'\\\\\\/.*\\\\\\/[0-9]+$\\/\', $_SERVER[\'REQUEST_URI\']))\\r\\n{\\r\\n    $modx->sendForward($eventPage);\\r\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/\\/get id of single event page\\r\\n$eventPage = $modx->getOption(\'evxEventPage\', null, 1);\\r\\n\\r\\n\\/\\/get id of events (overview) page\\r\\n$eventsPage = $modx->getOption(\'evxEventsPage\', null, 1);\\r\\n\\r\\n\\/\\/get regex escaped name\\/url of events (overview) page without \\/\\r\\n$eventsPageRegex = preg_quote(trim($modx->makeUrl($eventsPage), \'\\/\'));\\r\\n\\r\\n\\/\\/calendar item template\\r\\n$eventTpl = $modx->getOption(\'evxEventCalendarTpl\', null, \'evxEventCalendarTpl\');\\r\\n\\r\\n\\/\\/JSON URI\\r\\n$jsonURI = $modx->getOption(\'evxJSON\', null, \'eventsxJSON\');\\r\\n\\r\\n\\/\\/output calendar JSON\\r\\nif ($modx->event->name == \'OnPageNotFound\' && preg_match(\'\\/\'.$jsonURI.\'\\\\?.*$\\/\', $_SERVER[\'REQUEST_URI\']))\\r\\n{\\r\\n    $modx->getService(\'eventsx\',\'EventsX\',$modx->getOption(\'eventsx.core_path\',null,$modx->getOption(\'core_path\').\'components\\/eventsx\\/\').\'model\\/eventsx\\/\',$scriptProperties);\\r\\n\\r\\n    $month = $modx->getOption(\'month\', $_GET, date(\'m\'));\\r\\n    $year = $modx->getOption(\'year\', $_GET, date(\'Y\'));\\r\\n\\r\\n    $startdate = $year.\'-\'.$month.\'-01\';\\r\\n    $enddate = date(\'Y-m-t\',mktime(0, 0, 0, $month, 1, $year));\\r\\n    $daysInMonth = date(\'t\',mktime(0, 0, 0, $month, 1, $year));\\r\\n\\r\\n    $c = $modx->newQuery(\'evxEvent\');\\r\\n    $c->select(\'id, name, description, UNIX_TIMESTAMP(startdate) AS startTime, UNIX_TIMESTAMP(enddate) AS endTime, location, street, pc, city, country, website\');\\r\\n    $c->where(\\r\\n        array(\\r\\n            \'active\' => 1,\\r\\n            \\"startdate <= \'$enddate\' AND  enddate >= \'$startdate\'\\"\\r\\n        )\\r\\n    );\\r\\n\\r\\n    $eventDays = array();\\r\\n\\r\\n    $events = $modx->getCollection(\'evxEvent\', $c);\\r\\n    foreach($events as $event)\\r\\n    {\\r\\n        $event = $event->toArray();\\r\\n        $event[\'url\'] = $modx->makeUrl($eventsPage).urlencode($event[\'name\']).\'\\/\'.$event[\'id\'];\\r\\n        $event[\'html\'] = $modx->getChunk($eventTpl, $event);\\r\\n        for($i=1; $i <= $daysInMonth; $i++)\\r\\n        {\\r\\n            $dayTimestamp = mktime(0, 0, 0, $month, $i, $year);\\r\\n            if($event[\'startTime\'] <= $dayTimestamp && $event[\'endTime\'] >= $dayTimestamp)\\r\\n            {\\r\\n                $eventDays[$i][] = $event;\\r\\n            }\\r\\n        }\\r\\n    }\\r\\n\\r\\n    echo $modx->toJSON($eventDays);\\r\\n    exit;\\r\\n}\\r\\n\\r\\n\\/\\/go to event page\\r\\nelseif ($modx->event->name == \'OnPageNotFound\' && preg_match(\'\\/\'.$eventsPageRegex.\'\\\\\\/.*\\\\\\/[0-9]+$\\/\', $_SERVER[\'REQUEST_URI\']))\\r\\n{\\r\\n    $modx->sendForward($eventPage);\\r\\n}"}',
+        'guid' => '5d45e0242bc03cddf42e2b60d7658941',
+        'native_key' => 0,
+        'signature' => '6d5a793044e58c5b2be923a2250efe03',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '12bd7c948f0001ef849c372570bee613' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnPageNotFound","priority":0,"propertyset":0}',
+              'guid' => 'ef0cf8cf82ba1f86ec894ac63cfe547d',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnPageNotFound',
+              ),
+              'signature' => '8e89673ac46374425ed9a32100efeb99',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'eventsx',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"eventsx-0.1.0-beta\\/modCategory\\/3fd1fd971875c0c81888e811c8f5b33d\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"eventsx"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"eventsx-0.1.0-beta\\/modCategory\\/3fd1fd971875c0c81888e811c8f5b33d\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"eventsx"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"eventsx-0.1.0-beta\\/modCategory\\/3fd1fd971875c0c81888e811c8f5b33d.postactions.resolver.resolver","type":"php","name":"postactions.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2df2e8e4c2f35bcb8440673e1843f851',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '3fd1fd971875c0c81888e811c8f5b33d',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"EventsX"}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'login',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '48004302644d96819267b18e8885399b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '88f3d4c45ca2375de0f1805b82113ee3',
+  'native_key' => 'login.forgot_password_email_subject',
+  'object' => '{"key":"login.forgot_password_email_subject","value":"Password Retrieval Email","xtype":"textfield","namespace":"login","area":"security","editedon":null}',
+);

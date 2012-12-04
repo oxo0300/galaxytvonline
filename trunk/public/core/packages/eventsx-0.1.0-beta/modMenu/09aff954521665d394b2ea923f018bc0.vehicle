@@ -1,0 +1,50 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      '89bd61e932573036ac7c1c3e760990a7' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'class' => 'modAction',
+        'object' => '{"id":1,"namespace":"eventsx","parent":0,"controller":"index","haslayout":1,"lang_topics":"eventsx:default,file","assets":"","help_url":""}',
+        'guid' => '4e5da7d8e603e2acf2b2e8078fb2d592',
+        'native_key' => 1,
+        'signature' => 'ed806e8e6d94f8d341140e60f81792d6',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'eventsx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '50c7c109114a2b2fc215b0a75eb2bd30',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '09aff954521665d394b2ea923f018bc0',
+  'native_key' => 'eventsx',
+  'object' => '{"text":"eventsx","parent":"components","action":1,"description":"eventsx.desc","icon":"","menuindex":0,"params":"","handler":"","permissions":""}',
+);

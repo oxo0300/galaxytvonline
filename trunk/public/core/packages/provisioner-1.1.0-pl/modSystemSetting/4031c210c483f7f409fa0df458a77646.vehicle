@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'key',
+  'namespace' => 'provisioner',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7fa660710edca6b6982de72123cbee40',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4031c210c483f7f409fa0df458a77646',
+  'native_key' => 'user',
+  'object' => '{"key":"user","value":"","xtype":"textfield","namespace":"provisioner","area":"Provisioner","editedon":null}',
+);

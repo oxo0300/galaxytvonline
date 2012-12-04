@@ -1,0 +1,121 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      'b5514e3348a22292481febed24091e90' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":1,"name":"my_mobile_template","description":"Mobile Template","editor_type":0,"category":0,"cache_type":0,"snippet":"<!DOCTYPE html PUBLIC \\"-\\/\\/W3C\\/\\/DTD XHTML 1.0 Transitional\\/\\/EN\\" \\"http:\\/\\/www.w3.org\\/TR\\/xhtml1\\/DTD\\/xhtml1-transitional.dtd\\">\\n<html xmlns=\\"http:\\/\\/www.w3.org\\/1999\\/xhtml\\" xml:lang=\\"en\\">\\n<head>\\n<meta charset=\\"utf-8\\">\\n<meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge,chrome=1\\">\\n<title>[[++site_name]] | [[*pagetitle]]<\\/title>\\n<meta http-equiv=\\"Content-Type\\" content=\\"text\\/html; charset=[[++modx_charset]]\\" \\/>\\n<meta name=\\"description\\" content=\\"[[*description]]\\" \\/>\\n<meta name=\\"author\\" content=\\"[[*author]]\\">\\n<base href=\\"[[++site_url]]\\/\\" \\/>\\n<meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\">\\n\\n<link type=\\"text\\/css\\" rel=\\"stylesheet\\" href=\\"mobile.css\\" \\/>\\n<\\/head>\\n<body>\\n[[*content]]\\n<\\/body>\\n<\\/html>","locked":0,"properties":""}',
+        'guid' => '35ab9c267245669afdd6afca2bc6ee05',
+        'native_key' => 1,
+        'signature' => 'bd1dee1cb5e044cc44ff26c72bbfcca7',
+      ),
+      'e0afc17450211df26e9e77996e1e3dd5' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":2,"name":"my_standard_template","description":"My Standard Template","editor_type":0,"category":0,"cache_type":0,"snippet":"<!DOCTYPE html PUBLIC \\"-\\/\\/W3C\\/\\/DTD XHTML 1.0 Transitional\\/\\/EN\\" \\"http:\\/\\/www.w3.org\\/TR\\/xhtml1\\/DTD\\/xhtml1-transitional.dtd\\">\\n<html xmlns=\\"http:\\/\\/www.w3.org\\/1999\\/xhtml\\" xml:lang=\\"en\\">\\n<head>\\n<meta charset=\\"utf-8\\">\\n<meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge,chrome=1\\">\\n<title>[[++site_name]] | [[*pagetitle]]<\\/title>\\n<meta http-equiv=\\"Content-Type\\" content=\\"text\\/html; charset=[[++modx_charset]]\\" \\/>\\n<meta name=\\"description\\" content=\\"[[*description]]\\" \\/>\\n<meta name=\\"author\\" content=\\"[[*author]]\\">\\n<base href=\\"[[++site_url]]\\/\\" \\/>\\n<meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\">\\n\\n<link type=\\"text\\/css\\" rel=\\"stylesheet\\" href=\\"standard.css\\" \\/>\\n\\n<\\/head>\\n<body>\\n[[*content]]\\n<\\/body>\\n<\\/html>","locked":0,"properties":""}',
+        'guid' => 'fe225a92e24b9c0e669703eadea706ea',
+        'native_key' => 2,
+        'signature' => '03589b57b3620095b6e7208578071a1f',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      '7150f58e0a2d6e5500db67490776a97a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":1,"name":"Mobile Detection","description":"Detection for the most popular mobile platforms.  If a valid platform is served an alternate website can be served.","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/*------------------------------------------------------------------------------\\n Mobile Detection - plugin for MODx Revolution 2.1.0-pl\\n--------------------------------------------------------------------------------\\nVersion 2.1.0-pl by Zuriel Andrusyshyn\\n\\nCode based on plugin originally posted by Peter Hoeflehner\\nPlugin originally created for Modx EVO by everettg_99 and noahlearner \\n\\nInspiration from this forum thread:\\nhttp:\\/\\/modxcms.com\\/forums\\/index.php\\/topic,40357.0.html\\n\\nDESCRIPTION:\\nThis plugin combines browser detection and a URL-parameter override to \\nshow\\/hide portions of any template delineated by <mobile> and <standard> tags. \\n\\nREQUIREMENTS and EXAMPLES:\\nFor this to have any effect, you must delineate one or more portions of your \\ntemplate(s) with <mobile> and <standard> tags, e.g. \\n\\nTemplate Example A:\\n<html>\\n\\t<head>\\n\\t\\t<title>[[*pagetitle]]<\\/title>\\n\\t\\t<meta name=description content=\\"[[*description]]\\" \\/>\\n\\t\\t<mobile>\\n\\t\\t\\t<link type=\\"text\\/css\\" rel=\\"stylesheet\\" href=\\"mobile.css\\" \\/>\\n\\t\\t<\\/mobile>\\n\\t\\t<standard>\\n\\t\\t\\t<link type=\\"text\\/css\\" rel=\\"stylesheet\\" href=\\"standard_one.css\\" \\/>\\n\\t\\t\\t<link type=\\"text\\/css\\" rel=\\"stylesheet\\" href=\\"standard_two.css\\" \\/>\\n\\t\\t\\t<script type=\\"text\\/javascript\\" src=\\"menu.js\\"><\\/script>\\n\\t\\t<\\/standard>\\n\\t<\\/head>\\n<mobile>\\n\\t<body class=\\"narrow\\">\\n<\\/mobile>\\t\\n<standard>\\n\\t<body class=\\"huge\\">\\n<\\/standard>\\n\\n\\t[[*content]]\\n\\t<\\/body>\\n<\\/html>\\n\\nOR\\n\\nTemplate Example B:\\n<mobile>[[$my_mobile_template]]<\\/mobile>\\n<standard>[[$my_standard_template]]<\\/standard>\\n\\n\\nUSAGE:\\nWithout modifications, the user\'s browser is detected *once* and a cookie is set\\nto store the value; if a mobile browser is detected, <standard> portions of \\nthe template will be deleted, leaving only <mobile> portions.\\nURL parameters can override the results of the browser detection, e.g.:\\n\\n\\thttp:\\/\\/www.yoursite.com\\/some\\/page?browser=mobile\\n\\n\\thttp:\\/\\/www.yoursite.com\\/some\\/page?browser=standard\\n\\n\\thttp:\\/\\/www.yoursite.com\\/some\\/page?browser=detect\\n\\n\\"browser=mobile\\" will cause all portions of the template wrapped with <standard>\\ntags to be deleted. \\n\\n\\"browser=standard\\" will cause all <mobile> nodes to be deleted. \\n\\n\\"browser=detect\\" triggers browser detection and clears the cookie.  Whatever the \\nresult of browser detection will cause the respective nodes to be preserved.\\n\\n\\nCONFIGURATION:\\n\\nUse Cookie:  default is yes. Normal use (i.e. use cookie = yes) is that browser \\ndetection is run only ONCE per visitor, and the result is stored in the cookie.\\nIf the user chooses to override the template, this can be done via the URLs, e.g.\\nmydomain.com\\/?browser=mobile.  If cookies are disabled, then the browser detection is run for each page request\\nfor each user.\\n\\nforce_browser_detect_variable: The name of the parameter that will trigger the overrides, e.g.\\nif this is set to \'x\', then \\thttp:\\/\\/www.yoursite.com\\/some\\/page?x=mobile\\nwill trigger the mobile template to be used.\\n\\nMobile node: default mobile.  This affects your template code, e.g. \\n<mobile><\\/mobile> but it does NOT affect the browser override, e.g. \\nwww.yoursite.com?browser=mobi\\n\\nStandard node: default standard. This affects your template code, e.g. \\n<standard><\\/standard> but it does NOT affect the browser override, e.g.  \\nwww.yoursite.com?browser=full\\n\\nforce_browser_detect: default detect.  This string identifies how you can force the \\nuser\'s browser to be detected.  E.g. www.yoursite.com?browser=detect\\n\\nforce_browser_standard: default full.  This string identifies how you can force the \\nuser\'s browser to be detected.  E.g. www.yoursite.com?browser=full\\n\\nforce_browser_mobile: default mobi.  This string identifies how you can force the \\nuser\'s browser to be detected.  E.g. www.yoursite.com?browser=mobi\\n\\nThe following variables are from the script available at \\nhttp:\\/\\/mobileesp.com\\/\\nSome of its settings have been exposed for easy configuration within MODx.\\n\\nThe function $uagent_obj detects if your mobile device matches up to any mobile phone on the market and returns true or false if they do.  I have pulled some of the more important ones out and given you access to them.\\n\\n* iPad - Only targets iPAD.  Good to turn off if you want iPad to be a full browser and not a mobile site.\\n\\n* iPhone - These are modern touchscreen phones with WebKit browsers. These browsers handle CSS and JavaScript very well, which means that modest AJAX sites with native (iPhone or other) style components typically work great.\\n\\n* Detect Rich CSS - These devices can handle CSS reasonable well, so that iPhone- or Android-style UIs generally look fine. Unfortunately, JavaScript support is poor. For these reasons, in most cases, it\'s probably best to serve these devices the generic mobile site rather than the iPhone Tier site. Includes: Symbian S60 Open Source Browser, \'High\' BlackBerry Devices, Windows Mobile, other Webkit-based devices.\\n\\n* Detect Other Phones - Detects for all other mobile devices, with an emphasis on feature phones. For these devices, it\\u2019s best to serve only the most basic styling, limited to little more than text color, alignment, and bold\\/italics. JavaScript support is virtually non-existent for these devices.\\n\\n------------------------------------------------------------------------------*\\/\\n\\/*------------------ OTHER FUNCTIONS------------------------------------------*\\/\\nfunction store_user_prefs($x, $usecookie) {\\n\\tif ($usecookie == \'yes\') {\\n\\t\\tsetcookie(\'browser\',$x,time()+604800, \\"\\/\\", \\"\\", 0);\\n\\t}\\n}\\n\\/\\/-------------------------------------\\nfunction get_user_prefs() {\\n\\treturn $_COOKIE[\'browser\'];\\n}\\n\\/\\/-------------------------------------\\nfunction clear_user_prefs() {\\n\\tif ($usecookie == \'yes\') {\\n\\t\\tsetcookie(\'browser\',\'\',time()-3600, \\"\\/\\", \\"\\", 0);\\n\\t}\\n}\\n\\/\\/-------------------------------------\\nfunction delete_template_nodes($delete_node,$preserve_node) {\\n\\n\\tglobal $modx; \\/\\/ Without this, the $modx var is out of scope.\\n\\t$delete_node = preg_quote($delete_node);\\n\\t$pattern = \'\\/\\\\<\'.$delete_node.\'\\\\>(.*)\\\\<\\\\\\/\'.$delete_node.\'\\\\>\\/Usi\';\\n\\t$modx->resource->_output = preg_replace($pattern,\'\',$modx->resource->_output);\\n\\t$preserve_node = preg_quote($preserve_node);\\n\\t$pattern = \'\\/\\\\<\'.$preserve_node.\'\\\\>\\/Usi\';\\n\\t$modx->resource->_output = preg_replace($pattern,\'\',$modx->resource->_output);\\n\\t$pattern = \'\\/\\\\<\\\\\\/\'.$preserve_node.\'\\\\>\\/Usi\';\\n\\t$modx->resource->_output = preg_replace($pattern,\'\',$modx->resource->_output);\\n}\\n\\n\\/*---------------------- ERROR CHECKING --------------------------------------*\\/\\n\\/\\/ http:\\/\\/wiki.modxcms.com\\/index.php\\/API:logEvent\\nif ($modx->event->name != \'OnWebPagePrerender\') { \\n\\t$msg = \'Mobile Template Switcher: Plugin must be triggered by the OnWebPagePrerender event.  Instead it was triggered by \'.$modx->event->name;\\n\\t$modx->logEvent(3, 3, $msg, \'Mobile Detection\');\\n\\treturn; \\n};\\n\\n$msg = \'\';\\n\\/\\/ warn if any of those are unset\\nif ( !isset($mobile_node) || $mobile_node == \'\') {\\n\\t$msg .= \'Configuration error: Mobile node name not defined. Default value used. \';\\n\\t$mobile_node = \'mobile\';\\n}\\nif ( !isset($standard_node) || $standard_node == \'\' ) {\\n\\t$msg .= \'Configuration error: Standard node name not defined. Default value used. \';\\n\\t$standard_node = \'standard\';\\n}\\nif ( !isset($force_browser_detect) || $force_browser_detect == \'\') {\\n\\t$msg .= \'Configuration error: Force browser detect URL parameter not defined. Default value used. \';\\n\\t$force_browser_detect = \'detect\';\\n}\\nif ($msg != \'\') {\\n\\t$modx->logEvent(3, 2, $msg,\'Mobile Detection\'); \\n}\\n\\n\\/\\/ $mobile_node, $standard_node, $force_browser_detect MUST be distinct\\n\\/\\/ this is a cheap trick... using PHP hash to \\"count\\" distinct values.\\n$hash[$mobile_node] = 1;\\n$hash[$standard_node] = 1;\\n$hash[$force_browser_detect] = 1;\\nif (count($hash) < 3) {\\n\\t$msg = \'Configuration error: $mobile_node, $standard_node, $force_browser_detect MUST be distinct values.\';\\n\\t$modx->logEvent(3, 3, $msg,\'Mobile Detection\'); \\n\\treturn;\\n}\\n\\n\\n\\/*----------- Here begins the logical block ----------------------------------*\\/\\n\\n\\n\\/* include the mobileESP detection script\\nThe latest copy can always be found at:  \\"http:\\/\\/mobileesp.googlecode.com\\/svn\\/PHP\\/mdetect.php\\"\\n*\\/\\ninclude(\\"assets\\/components\\/mobiledetection\\/mdetect.php\\");\\n\\n\\/\\/Instantiate the object to do our testing with.\\n$uagent_obj = new uagent_info();\\n$var = $_GET[$force_browser_variable];\\nif($var == $force_browser_mobile){\\n\\tdelete_template_nodes($standard_node, $mobile_node);\\n\\tstore_user_prefs($mobile_node, $usecookie); \\n}else if ($var == $force_browser_standard){\\n\\tstore_user_prefs($standard_node, $usecookie);\\n\\tdelete_template_nodes($mobile_node, $standard_node);\\n}else if ($var == $force_browser_detect){\\n\\t\\tclear_user_prefs();\\n\\t\\t\\/\\/Detect iPhone\\n\\t\\tif (($uagent_obj->DetectTierIphone() == $uagent_obj->true) && ($iphone == 1)){\\n\\t\\tdelete_template_nodes($standard_node, $mobile_node);\\n\\t\\tstore_user_prefs($mobile_node, $usecookie);\\n\\t\\t\\/\\/Detect iPad\\n\\t\\t} else if (($uagent_obj->DetectIpad() == $uagent_obj->true) && ($ipad == 1)){\\n\\t\\tdelete_template_nodes($standard_node, $mobile_node);\\n\\t\\tstore_user_prefs($mobile_node, $usecookie);\\n\\t\\t\\/\\/Detect Tier Rich Css\\n\\t\\t} else if (($uagent_obj->DetectTierRichCss() == $uagent_obj->true) && ($rich_css == 1)){\\n\\t\\tdelete_template_nodes($standard_node, $mobile_node);\\n\\t\\tstore_user_prefs($mobile_node, $usecookie);\\n\\t\\t\\/\\/Detect All Other Mobile Devices\\n\\t\\t} else if (($uagent_obj->DetectTierOtherPhones() == $uagent_obj->true) && ($all_other_mobile == 1)){\\n\\t\\tdelete_template_nodes($standard_node, $mobile_node);\\n\\t\\tstore_user_prefs($mobile_node, $usecookie);\\n\\t\\t\\/\\/Else it\'s a regular PC browser -- send to regular desktop site\\n\\t\\t} else { store_user_prefs($standard_node, $usecookie);\\n\\t\\tdelete_template_nodes($mobile_node, $standard_node);\\n\\t\\t}\\n}else if ( get_user_prefs() == $standard_node ) { \\ndelete_template_nodes($mobile_node, $standard_node);\\nstore_user_prefs($standard_node, $usecookie); \\n}else if ( get_user_prefs() == $mobile_node ) { \\ndelete_template_nodes($standard_node, $mobile_node);\\nstore_user_prefs($mobile_node, $usecookie); \\n\\/\\/Detect iPhone\\n} else if (($uagent_obj->DetectTierIphone() == $uagent_obj->true) && ($iphone == 1)){\\ndelete_template_nodes($standard_node, $mobile_node);\\nstore_user_prefs($mobile_node, $usecookie);\\n\\/\\/Detect iPad\\n} else if (($uagent_obj->DetectIpad() == $uagent_obj->true) && ($ipad == 1)){\\ndelete_template_nodes($standard_node, $mobile_node);\\nstore_user_prefs($mobile_node, $usecookie);\\n\\/\\/Detect Tier Rich Css\\n} else if (($uagent_obj->DetectTierRichCss() == $uagent_obj->true) && ($rich_css == 1)){\\ndelete_template_nodes($standard_node, $mobile_node);\\nstore_user_prefs($mobile_node, $usecookie);\\n\\/\\/Detect All Other Mobile Devices\\n} else if (($uagent_obj->DetectTierOtherPhones() == $uagent_obj->true) && ($all_other_mobile == 1)){\\ndelete_template_nodes($standard_node, $mobile_node);\\nstore_user_prefs($mobile_node, $usecookie);\\n\\/\\/Else it\'s a regular PC browser -- send to regular desktop site\\n} else\\n{ store_user_prefs($standard_node, $usecookie);\\ndelete_template_nodes($mobile_node, $standard_node);\\n}","locked":0,"properties":"a:11:{s:16:\\"all_other_mobile\\";a:6:{s:4:\\"name\\";s:16:\\"all_other_mobile\\";s:4:\\"desc\\";s:54:\\"Should basic cellphones be treated as a mobile device?\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:1:\\"1\\";s:7:\\"lexicon\\";s:16:\\"all_other_mobile\\";}s:9:\\"usecookie\\";a:6:{s:4:\\"name\\";s:9:\\"usecookie\\";s:4:\\"desc\\";s:87:\\"Should detection be stored in a cookie and only run the first time you visit a webpage?\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:1:\\"1\\";s:7:\\"lexicon\\";s:9:\\"usecookie\\";}s:8:\\"rich_css\\";a:6:{s:4:\\"name\\";s:8:\\"rich_css\\";s:4:\\"desc\\";s:54:\\"Should rich_css devices be treated as a mobile device?\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:1:\\"1\\";s:7:\\"lexicon\\";s:8:\\"rich_css\\";}s:6:\\"iphone\\";a:6:{s:4:\\"name\\";s:6:\\"iphone\\";s:4:\\"desc\\";s:48:\\"Should the iphone be treated as a mobile device?\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:1:\\"1\\";s:7:\\"lexicon\\";s:6:\\"iphone\\";}s:4:\\"ipad\\";a:6:{s:4:\\"name\\";s:4:\\"ipad\\";s:4:\\"desc\\";s:46:\\"Should the iPad be treated as a mobile device?\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:1:\\"1\\";s:7:\\"lexicon\\";s:4:\\"ipad\\";}s:20:\\"force_browser_detect\\";a:6:{s:4:\\"name\\";s:20:\\"force_browser_detect\\";s:4:\\"desc\\";s:59:\\"Variable used to clear cache and re-Force Browser Detection\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:6:\\"detect\\";s:7:\\"lexicon\\";s:6:\\"detect\\";}s:20:\\"force_browser_mobile\\";a:6:{s:4:\\"name\\";s:20:\\"force_browser_mobile\\";s:4:\\"desc\\";s:39:\\"Variable used to force Mobile Detection\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:4:\\"mobi\\";s:7:\\"lexicon\\";s:4:\\"mobi\\";}s:22:\\"force_browser_standard\\";a:6:{s:4:\\"name\\";s:22:\\"force_browser_standard\\";s:4:\\"desc\\";s:41:\\"Variable used to force Standard Detection\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:4:\\"full\\";s:7:\\"lexicon\\";s:4:\\"full\\";}s:22:\\"force_browser_variable\\";a:6:{s:4:\\"name\\";s:22:\\"force_browser_variable\\";s:4:\\"desc\\";s:232:\\"you can customize the variable searched for in your site URL that allows forced detection.  ie: www.yoursite.com?x=mobile  where x is the name of this field.  setting this field to browser would yield www.yoursite.com?browser=mobile\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:7:\\"browser\\";s:7:\\"lexicon\\";s:7:\\"browser\\";}s:13:\\"standard_node\\";a:6:{s:4:\\"name\\";s:13:\\"standard_node\\";s:4:\\"desc\\";s:37:\\"template tag to hold standard content\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:8:\\"standard\\";s:7:\\"lexicon\\";s:8:\\"standard\\";}s:11:\\"mobile_node\\";a:6:{s:4:\\"name\\";s:11:\\"mobile_node\\";s:4:\\"desc\\";s:40:\\"template tag used to hold mobile content\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:6:\\"mobile\\";s:7:\\"lexicon\\";s:6:\\"mobile\\";}}","disabled":0,"moduleguid":""}',
+        'guid' => '390029fc958f48a0a3ac485857ac3eff',
+        'native_key' => 1,
+        'signature' => '2d651cbf9fb2b54126cbcadd59508a0a',
+      ),
+    ),
+    'Templates' => 
+    array (
+      '3bff5f785c9e45a028de48949951d4e6' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'templatename',
+        'class' => 'modTemplate',
+        'object' => '{"id":1,"templatename":"Mobile or Standard","description":"Serve two different templates.  Either Mobile or Standard.  Pulled from Chunks.","editor_type":0,"category":0,"icon":"","template_type":0,"content":"<mobile>[[$my_mobile_template]]<\\/mobile>\\n<standard>[[$my_standard_template]]<\\/standard>","locked":0,"properties":""}',
+        'guid' => 'edd676bbaf34818324334ab4a06dbe4b',
+        'native_key' => 1,
+        'signature' => '23b12ae13d6228e6250f06b57f952959',
+      ),
+      '1c4955a3cdd37ac814e9c3e79fb314c3' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'templatename',
+        'class' => 'modTemplate',
+        'object' => '{"id":2,"templatename":"One page to rule them all","description":"this page has mobile Or standard in the same template","editor_type":0,"category":0,"icon":"","template_type":0,"content":"<!DOCTYPE html PUBLIC \\"-\\/\\/W3C\\/\\/DTD XHTML 1.0 Transitional\\/\\/EN\\" \\"http:\\/\\/www.w3.org\\/TR\\/xhtml1\\/DTD\\/xhtml1-transitional.dtd\\">\\n<html xmlns=\\"http:\\/\\/www.w3.org\\/1999\\/xhtml\\" xml:lang=\\"en\\">\\n<head>\\n\\t<meta charset=\\"utf-8\\">\\n\\t<meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge,chrome=1\\">\\n\\t<title>[[++site_name]] | [[*pagetitle]]<\\/title>\\n\\t<meta http-equiv=\\"Content-Type\\" content=\\"text\\/html; charset=[[++modx_charset]]\\" \\/>\\n\\t<meta name=\\"description\\" content=\\"[[*description]]\\" \\/>\\n\\t<meta name=\\"author\\" content=\\"[[*author]]\\">\\n\\t<base href=\\"[[++site_url]]\\/\\" \\/>\\n<mobile>\\n\\t<meta name=\\"viewport\\" content=\\"width=320, initial-scale=1.0\\">\\n\\t<link rel=\\"stylesheet\\" type=\\"text\\/css\\" href=\\"mobile.css\\" \\/> \\n<\\/mobile>\\n\\n<standard>\\n\\t<meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\">\\n\\t<link rel=\\"stylesheet\\" type=\\"text\\/css\\" href=\\"standard.css\\" \\/> \\n<\\/standard>\\n\\n<\\/head>\\n\\n<mobile>\\n<body class=\\"narrow\\">\\n<h1>Mobile Site<\\/h1>\\n<\\/mobile>\\t\\n<standard>\\n<body class=\\"huge\\">\\n<h1>Standard Site<\\/h1>\\n<\\/standard>\\n[[*content]]\\n\\t<\\/body>\\n<\\/html>","locked":0,"properties":""}',
+        'guid' => '09b197ca2a19d35ac8a79aceae0e6308',
+        'native_key' => 2,
+        'signature' => '7b1a7cb8c1df9001872a73b9c0cfbbec',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+  ),
+  'namespace' => 'mobiledetection',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"mobiledetection-2.1.0-pl\\/modCategory\\/05d718337f973d07a90801b34f9c9188.install.script.resolver","type":"php","name":"install.script"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"mobiledetection-2.1.0-pl\\/modCategory\\/05d718337f973d07a90801b34f9c9188\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"mobiledetection"}',
+    ),
+    2 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"mobiledetection-2.1.0-pl\\/modCategory\\/05d718337f973d07a90801b34f9c9188\\/2\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"mobiledetection"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e1bc878ae55604df9e90ab74ddf8f006',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '05d718337f973d07a90801b34f9c9188',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"Mobile Detection"}',
+);

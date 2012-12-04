@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'unique_key' => 'key',
+  'namespace' => 'provisioner',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ce3358edb3d8ce678e8cd48a047250dd',
+  'package' => 'modx',
+  'class' => 'modContext',
+  'signature' => '43541c1f1690935a5339bf284c5aa874',
+  'native_key' => 'provisioner',
+  'object' => '{"key":"provisioner","description":"The provisioner component context"}',
+);

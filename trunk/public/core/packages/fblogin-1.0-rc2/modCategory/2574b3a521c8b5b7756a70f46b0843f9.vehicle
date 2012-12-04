@@ -1,0 +1,129 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '87a36fa6cffb0498479e9aa6f0b9a1f6' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"fbLinks","description":"Sample chunk to output your login related links & \'Connect to Facebook\' button","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"fbLinks\\">\\n[[!+modx.user.id:isnt=`0`:then=`<a href=\\"[[~[[++fbLogin_login_resource_id]]]]?service=logout\\" title=\\"[[+fbLogoutLinkTitle]]\\">[[+fbLogoutLinkText]]<\\/a> <span class=\\"fbBar\\">[[+fbLinksSeparator]]<\\/span> <a href=\\"[[~[[++fbLogin_account_resource_id]]]]\\" title=\\"[[+fbAccountLinkTitle]]\\">[[+fbAccountLinkText]]<\\/a>&nbsp;`:else=`<a href=\\"[[~[[++fbLogin_login_resource_id]]]]\\" id=\\"a_mainlogin\\" title=\\"[[+fbLoginLinkTitle]]\\">[[+fbLoginLinkText]]<\\/a> \\n<span class=\\"fbBar\\">[[+fbLinksSeparator]]<\\/span>\\n<a href=\\"[[~[[+fbRegisterLinkId]]]]\\"  title=\\"[[+fbRegisterLinkTitle]]\\">[[+fbRegisterLinkText]]<\\/a>  <span class=\\"fbBar\\">[[+fbLinksAltSeparator]]<\\/span>`]] \\n[[!fbLogin]]\\n<\\/div>","locked":0,"properties":null,"static":0,"static_file":"","content":"<div class=\\"fbLinks\\">\\n[[!+modx.user.id:isnt=`0`:then=`<a href=\\"[[~[[++fbLogin_login_resource_id]]]]?service=logout\\" title=\\"[[+fbLogoutLinkTitle]]\\">[[+fbLogoutLinkText]]<\\/a> <span class=\\"fbBar\\">[[+fbLinksSeparator]]<\\/span> <a href=\\"[[~[[++fbLogin_account_resource_id]]]]\\" title=\\"[[+fbAccountLinkTitle]]\\">[[+fbAccountLinkText]]<\\/a>&nbsp;`:else=`<a href=\\"[[~[[++fbLogin_login_resource_id]]]]\\" id=\\"a_mainlogin\\" title=\\"[[+fbLoginLinkTitle]]\\">[[+fbLoginLinkText]]<\\/a> \\n<span class=\\"fbBar\\">[[+fbLinksSeparator]]<\\/span>\\n<a href=\\"[[~[[+fbRegisterLinkId]]]]\\"  title=\\"[[+fbRegisterLinkTitle]]\\">[[+fbRegisterLinkText]]<\\/a>  <span class=\\"fbBar\\">[[+fbLinksAltSeparator]]<\\/span>`]] \\n[[!fbLogin]]\\n<\\/div>"}',
+        'guid' => '0736d385b09b33a98787b83a96c4dbca',
+        'native_key' => NULL,
+        'signature' => '76d9d730d104c1c66824027d9adae62f',
+      ),
+      '7f3100b92a1f4722f0afc1da7a9fde80' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"fbLoginTpl","description":"Chunk displayed when user is not logged in","editor_type":0,"category":0,"cache_type":0,"snippet":"<!--\\n--------------------\\nfbLogin 1.0\\n--------------------\\n\\nFirst Released: February 20th, 2012\\nAuthor: Joe Molloy <hyper-typer.com>\\nLicense: GNU GPLv2 (or later at your option)\\n\\nfbLogin is a MODX extra which extends Shaun McCormack\'s Login extra \\nto enable users to register and login to a site using their Facebook \\naccount via the Facebook API using Version 3.0 of their PHP SDK.\\n\\nChunk Name: fbloginTpl\\n\\nThis is the template that is called by the fbLogin snippet by \\ndefault.\\n\\nParameters:\\n&fbRedirectUrlId - required\\nThe ID of the resource where the fbRedirect snippet call was placed.\\n\\n&fbLoginTitle - required\\nThe title of the link for the \'Connect to Facebook\' button.\\n\\n&fbLoginImg\\nThe full URL of an image to use for the \'Connect to Facebook\' button.\\n\\n\\/\\/-->\\n<a href=\\"[[~[[+fbRedirectUrlId]]]]\\" title=\\"[[+fbLoginTitle]]\\"><img src=\\"[[+fbLoginImg]]\\"><\\/a>","locked":0,"properties":null,"static":0,"static_file":"","content":"<!--\\n--------------------\\nfbLogin 1.0\\n--------------------\\n\\nFirst Released: February 20th, 2012\\nAuthor: Joe Molloy <hyper-typer.com>\\nLicense: GNU GPLv2 (or later at your option)\\n\\nfbLogin is a MODX extra which extends Shaun McCormack\'s Login extra \\nto enable users to register and login to a site using their Facebook \\naccount via the Facebook API using Version 3.0 of their PHP SDK.\\n\\nChunk Name: fbloginTpl\\n\\nThis is the template that is called by the fbLogin snippet by \\ndefault.\\n\\nParameters:\\n&fbRedirectUrlId - required\\nThe ID of the resource where the fbRedirect snippet call was placed.\\n\\n&fbLoginTitle - required\\nThe title of the link for the \'Connect to Facebook\' button.\\n\\n&fbLoginImg\\nThe full URL of an image to use for the \'Connect to Facebook\' button.\\n\\n\\/\\/-->\\n<a href=\\"[[~[[+fbRedirectUrlId]]]]\\" title=\\"[[+fbLoginTitle]]\\"><img src=\\"[[+fbLoginImg]]\\"><\\/a>"}',
+        'guid' => '6e77d11bb1063fe70f531e77fe17fe91',
+        'native_key' => NULL,
+        'signature' => '0dd018ba1293132f1031c76777294a1c',
+      ),
+      '5ad4fdb2cd9c9bd8df14c2d92f98c085' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"fbLoggedinTpl","description":"chunk displayed when user is logged in","editor_type":0,"category":0,"cache_type":0,"snippet":"<!--\\n--------------------\\nfbLogin 1.0\\n--------------------\\n\\nFirst Released: February 20th, 2012\\nAuthor: Joe Molloy <hyper-typer.com>\\nLicense: GNU GPLv2 (or later at your option)\\n\\nfbLogin is a MODX extra which extends Shaun McCormack\'s Login extra \\nto enable users to register and login to a site using their Facebook \\naccount via the Facebook API using Version 3.0 of their PHP SDK.\\n\\nChunk Name: fbLoggedinTpl\\n\\nThis is the template used by the fbLoggedin snippet by default.\\n\\n\\n\\/\\/-->\\n&nbsp;<img class=\\"fbProfileImg\\" src=\\"[[+fbProfileImg]]\\" width=\\"30px\\" height=\\"30px\\" alt=\\"Logged in as [[+fbFullname]]\\"\\/>","locked":0,"properties":null,"static":0,"static_file":"","content":"<!--\\n--------------------\\nfbLogin 1.0\\n--------------------\\n\\nFirst Released: February 20th, 2012\\nAuthor: Joe Molloy <hyper-typer.com>\\nLicense: GNU GPLv2 (or later at your option)\\n\\nfbLogin is a MODX extra which extends Shaun McCormack\'s Login extra \\nto enable users to register and login to a site using their Facebook \\naccount via the Facebook API using Version 3.0 of their PHP SDK.\\n\\nChunk Name: fbLoggedinTpl\\n\\nThis is the template used by the fbLoggedin snippet by default.\\n\\n\\n\\/\\/-->\\n&nbsp;<img class=\\"fbProfileImg\\" src=\\"[[+fbProfileImg]]\\" width=\\"30px\\" height=\\"30px\\" alt=\\"Logged in as [[+fbFullname]]\\"\\/>"}',
+        'guid' => '86a4b9e64d38fa58575bdb039e67bc9e',
+        'native_key' => NULL,
+        'signature' => '37e527f86c59a5c50021e1add83216fd',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '32b87f4633f706447ad42ad741180df1' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"fbDe-authorised","description":"This snippet deactivates Facebook sourced users who have deactivated your app.","editor_type":0,"category":0,"cache_type":0,"snippet":"$file = $modx->getOption(\'core_path\').\'components\\/fbLogin\\/snippets\\/snippet.fbDe-authorised.php\';\\nif(!file_exists($file)){\\n$output = \'<b>Message from fbLogin:<\\/b> Can not locate <i>\'.$file.\'<\\/i>\';\\n}\\nelse\\n{\\nrequire_once($file);\\n}\\nreturn $output;","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"$file = $modx->getOption(\'core_path\').\'components\\/fbLogin\\/snippets\\/snippet.fbDe-authorised.php\';\\nif(!file_exists($file)){\\n$output = \'<b>Message from fbLogin:<\\/b> Can not locate <i>\'.$file.\'<\\/i>\';\\n}\\nelse\\n{\\nrequire_once($file);\\n}\\nreturn $output;"}',
+        'guid' => 'df8c9cd653af018f55a5259e6b028c86',
+        'native_key' => 0,
+        'signature' => '759c80c7a69ade0bb341f04a770cb91d',
+      ),
+      '2cfc7223ed15242885df93dfa69c15f2' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"fbLogin","description":"This snippet registers and logs in Facebook users. When users are logged in it handles OAuth exceptions and sets some useful placeholders","editor_type":0,"category":0,"cache_type":0,"snippet":"$file = $modx->getOption(\'core_path\').\'components\\/fbLogin\\/snippets\\/snippet.fbLogin.php\';\\nif(!file_exists($file)){\\n$output = \'<b>Message from fbLogin:<\\/b> Can not locate <i>\'.$file.\'<\\/i>\';\\n}\\nelse\\n{\\nrequire_once($file);\\n}\\nreturn $output;","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"$file = $modx->getOption(\'core_path\').\'components\\/fbLogin\\/snippets\\/snippet.fbLogin.php\';\\nif(!file_exists($file)){\\n$output = \'<b>Message from fbLogin:<\\/b> Can not locate <i>\'.$file.\'<\\/i>\';\\n}\\nelse\\n{\\nrequire_once($file);\\n}\\nreturn $output;"}',
+        'guid' => '49d21bdba6b49f44141f2c25e79d4493',
+        'native_key' => 0,
+        'signature' => '7a7649cc19042c552aa4620c7e331e0c',
+      ),
+      'ed5c0fe43e21c451184450218de85650' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"fbRedirect","description":"This snippet handles redirection to Facebook for Facebook users.","editor_type":0,"category":0,"cache_type":0,"snippet":"$file = $modx->getOption(\'core_path\').\'components\\/fbLogin\\/snippets\\/snippet.fbRedirect.php\';\\nif(!file_exists($file)){\\n$output = \'<b>Message from fbLogin:<\\/b> Can not locate <i>\'.$file.\'<\\/i>\';\\n}\\nelse\\n{\\nrequire_once($file);\\n}\\nreturn $output;","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"$file = $modx->getOption(\'core_path\').\'components\\/fbLogin\\/snippets\\/snippet.fbRedirect.php\';\\nif(!file_exists($file)){\\n$output = \'<b>Message from fbLogin:<\\/b> Can not locate <i>\'.$file.\'<\\/i>\';\\n}\\nelse\\n{\\nrequire_once($file);\\n}\\nreturn $output;"}',
+        'guid' => '26a69214969482bff97cdb1a1fb96b07',
+        'native_key' => 0,
+        'signature' => '4a196ddfb3b4addf023c46dd4d2e9a69',
+      ),
+      '16aef116f8e90f4f0394c42f4cb7c5e6' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"checkForActive","description":"This snippet ensures Facebook users are logged out immediately if they de-authorise your app while logged in to your site.","editor_type":0,"category":0,"cache_type":0,"snippet":"$file = $modx->getOption(\'core_path\').\'components\\/fbLogin\\/snippets\\/snippet.checkForActive.php\';\\nif(!file_exists($file)){\\n$output = \'<b>Message from fbLogin:<\\/b> Can not locate <i>\'.$file.\'<\\/i>\';\\n}\\nelse\\n{\\nrequire_once($file);\\n}\\nreturn $output;","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"$file = $modx->getOption(\'core_path\').\'components\\/fbLogin\\/snippets\\/snippet.checkForActive.php\';\\nif(!file_exists($file)){\\n$output = \'<b>Message from fbLogin:<\\/b> Can not locate <i>\'.$file.\'<\\/i>\';\\n}\\nelse\\n{\\nrequire_once($file);\\n}\\nreturn $output;"}',
+        'guid' => '2c5cbc290cd2cd90441d774b20a129b7',
+        'native_key' => 0,
+        'signature' => '9eb1b5a7428e064a5dfaa5418d022f55',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'fbLogin',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"fblogin-1.0-rc2\\/modCategory\\/2574b3a521c8b5b7756a70f46b0843f9\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"fbLogin"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fblogin-1.0-rc2\\/modCategory\\/2574b3a521c8b5b7756a70f46b0843f9.setupoptions.resolver.resolver","type":"php","name":"setupoptions.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c7e7c388fb71b42a196db0c59319797e',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '2574b3a521c8b5b7756a70f46b0843f9',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"fbLogin"}',
+);

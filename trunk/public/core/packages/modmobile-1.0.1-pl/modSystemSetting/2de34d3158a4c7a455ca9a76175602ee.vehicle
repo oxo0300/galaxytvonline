@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'modmobile',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '29369d4ace88e298e09d388f5ae7f059',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '2de34d3158a4c7a455ca9a76175602ee',
+  'native_key' => 'modmobile.mobile_template',
+  'object' => '{"key":"modmobile.mobile_template","value":"0","xtype":"textfield","namespace":"modMobile","area":"modMobile","editedon":null}',
+);

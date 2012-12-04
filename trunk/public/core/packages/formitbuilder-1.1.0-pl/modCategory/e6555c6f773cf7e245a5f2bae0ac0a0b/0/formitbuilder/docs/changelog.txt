@@ -1,0 +1,52 @@
+Changelog for FormItBuilder.
+
+FormItBuilder 1.1.0-pl
+====================================
+- Added new hidden field element (FormItBuilder_elementHidden) by default it doesn't appear in email output. Use showInEmail to send into email.
+
+FormItBuilder 1.0.1-pl
+====================================
+- Added new FormItBuilder_elementCheckboxGroup element (Thanks for the assistance Michelle)
+- Added setDescription method on form element classes (Allows a sub label to be displayed within the main label - Good suggestion Michelle)
+- Modified architecture of FormItBuilder_customValidation
+- More code comments
+
+FormItBuilder 0.1.9-rc3
+====================================
+- Fixed a great number of trivial PHP errors in the ModX error log (Thanks for the report Alex)
+- Fixed some glitches in date custom validation
+- Code comments
+
+FormItBuilder 0.1.9-rc2
+====================================
+- Added element type class to element wrappers (for extra CSS flexibility)
+- Add title attributes
+- Added default value for text field.
+- Fix single digit date issues with date field
+- Added ability to output javascript into a placeholder with the setPlaceholderJavascript method.
+- Added "store" FormIt config option.
+- Added captcha support
+- Fixed bug in non-required date fields (if date field was not required and empty an error message would be thrown).
+- Fix some class orders that were having issues with some PHP installs.
+
+FormItBuilder 0.1.8-beta
+====================================
+- Added emailFromName, emailToName, emailReplyToAddress, emailReplyToName, emailCCAddress, emailCCName, emailBCCAddress, emailBCCName
+- Added ability to alter dynamic emailTpl
+- Added file upload support*
+- Added customValidators (see customValidators property for formIt)*
+- Added validate (to allow extra validate options to be set)*
+* Thanks for the assistance Adam!
+
+FormItBuilder 0.1.7-beta
+====================================
+- Fixed escaping issues for special characters (Should have been using htmlspecialchars instead of htmlentities)
+- Added methods for outputRaw and postHookRaw to allow a raw dump of formIt syntax and emailChunkSyntax.
+
+FormItBuilder 0.1.6-beta
+====================================
+- Documentation Updates and small tweak to example snippet
+
+FormItBuilder 0.1.5-beta
+====================================
+- First public release. Still a big work in progress.

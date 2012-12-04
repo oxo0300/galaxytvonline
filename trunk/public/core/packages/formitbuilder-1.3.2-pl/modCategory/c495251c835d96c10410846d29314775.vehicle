@@ -1,0 +1,108 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      'c841fd5f5f21735d8297df844db3890b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"FormItBuilderEmailTpl","description":"","editor_type":0,"category":2,"cache_type":0,"snippet":"[[+FormItBuilderEmailTpl]]","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"[[+FormItBuilderEmailTpl]]"}',
+        'guid' => '25e7971663689b27dac4f515585ea3db',
+        'native_key' => 1,
+        'signature' => 'b906875673197ce94ef0f744f2881c0b',
+      ),
+      '8777d3c40532c0f4e6bda01cd16c5bc8' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"FormItBuilderAutoResponderEmailTpl","description":"","editor_type":0,"category":2,"cache_type":0,"snippet":"[[+FormItBuilderAutoResponderEmailTpl]]","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"[[+FormItBuilderAutoResponderEmailTpl]]"}',
+        'guid' => '048d4dec715e7d840b61d80ec629837e',
+        'native_key' => 2,
+        'signature' => 'bf3fe0730395ca8aff461df9617bcda4',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '5dd46694f2ad75037bf0006d292fe43c' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":13,"source":0,"property_preprocess":0,"name":"FormItBuilder_customValidation","description":"","editor_type":0,"category":2,"cache_type":0,"snippet":"$a_store = $GLOBALS[\'FormItBuilder_customValidation\'];\\nif(isset($a_store[$key])){\\n\\trequire_once $modx->getOption(\'core_path\',null,MODX_CORE_PATH).\'components\\/formitbuilder\\/model\\/formitbuilder\\/FormCustomValidate.class.php\';\\n\\t$a_res = FormItBuilder_customValidate::validateElement($key, $value, $a_store[$key]);\\n\\t\\/\\/Some functions may auto tidy or re-format the value. If so replace current value in formIT fields array.\\n\\tif(empty($validator->fields[$key])===false && empty($a_res[\'value\'])===false){\\n\\t\\t$validator->fields[$key] = $a_res[\'value\'];\\n\\t}\\n\\n\\tif($a_res[\'returnStatus\']===false){\\n\\t\\t$validator->addError($key,$a_res[\'errorMsg\']);\\n\\t}\\n}\\n\\/\\/if no fails, return true\\nreturn true;","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"$a_store = $GLOBALS[\'FormItBuilder_customValidation\'];\\nif(isset($a_store[$key])){\\n\\trequire_once $modx->getOption(\'core_path\',null,MODX_CORE_PATH).\'components\\/formitbuilder\\/model\\/formitbuilder\\/FormCustomValidate.class.php\';\\n\\t$a_res = FormItBuilder_customValidate::validateElement($key, $value, $a_store[$key]);\\n\\t\\/\\/Some functions may auto tidy or re-format the value. If so replace current value in formIT fields array.\\n\\tif(empty($validator->fields[$key])===false && empty($a_res[\'value\'])===false){\\n\\t\\t$validator->fields[$key] = $a_res[\'value\'];\\n\\t}\\n\\n\\tif($a_res[\'returnStatus\']===false){\\n\\t\\t$validator->addError($key,$a_res[\'errorMsg\']);\\n\\t}\\n}\\n\\/\\/if no fails, return true\\nreturn true;"}',
+        'guid' => '1057bd9468356658c4dbb148195c114b',
+        'native_key' => 13,
+        'signature' => 'e5aecc8c128246da7fa763e130440066',
+      ),
+      '52272b89bcfa4374deeaa2fd8d414b4a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":14,"source":0,"property_preprocess":0,"name":"FormItBuilder_hooks","description":"","editor_type":0,"category":2,"cache_type":0,"snippet":"require_once $modx->getOption(\'core_path\',null,MODX_CORE_PATH).\'components\\/formitbuilder\\/model\\/formitbuilder\\/FormItBuilder.class.php\';\\n$o_form = $GLOBALS[\'FormItBuilder_hookCommands\'][\'formObj\'];\\n$a_commands = $GLOBALS[\'FormItBuilder_hookCommands\'][\'commands\'];\\nreturn $o_form->processHooks($a_commands);","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"require_once $modx->getOption(\'core_path\',null,MODX_CORE_PATH).\'components\\/formitbuilder\\/model\\/formitbuilder\\/FormItBuilder.class.php\';\\n$o_form = $GLOBALS[\'FormItBuilder_hookCommands\'][\'formObj\'];\\n$a_commands = $GLOBALS[\'FormItBuilder_hookCommands\'][\'commands\'];\\nreturn $o_form->processHooks($a_commands);"}',
+        'guid' => '171e00b76dcd7afd5a250f59c1c554d1',
+        'native_key' => 14,
+        'signature' => 'f574866abd5c9e4a4033c2c7d871c89f',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'formitbuilder',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"formitbuilder-1.3.2-pl\\/modCategory\\/c495251c835d96c10410846d29314775\\/0\\/","target":"return \\"\\".MODX_CORE_PATH.\\"components\\/\\";","name":"formitbuilder"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"formitbuilder-1.3.2-pl\\/modCategory\\/c495251c835d96c10410846d29314775\\/1\\/","target":"return \\"\\".MODX_ASSETS_PATH.\\"components\\/\\";","name":"formitbuilder"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '16b1562915c8359f86edc7f5827c3d4a',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'c495251c835d96c10410846d29314775',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"FormItBuilder"}',
+);

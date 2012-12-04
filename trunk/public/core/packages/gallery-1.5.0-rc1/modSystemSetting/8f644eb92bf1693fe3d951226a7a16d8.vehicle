@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'gallery',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '60a933808ded88a49683a88f057d9893',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '8f644eb92bf1693fe3d951226a7a16d8',
+  'native_key' => 'gallery.default_batch_upload_path',
+  'object' => '{"key":"gallery.default_batch_upload_path","value":"{assets_path}images\\/","xtype":"textfield","namespace":"gallery","area":"backend","editedon":null}',
+);

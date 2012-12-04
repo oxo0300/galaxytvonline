@@ -1,0 +1,22 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'name',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"oembed-0.2.1-beta\\/modSnippet\\/a544aa510a6a0806fa48e32c7c8cfcd0\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"oembed"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e9fd2c68217878ecc5e2b69f935a65cc',
+  'package' => 'modx',
+  'class' => 'modSnippet',
+  'signature' => 'a544aa510a6a0806fa48e32c7c8cfcd0',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"oembed","description":"<strong>0.2.1-beta<\\/strong> oEmbed implementation for MODx Revo","editor_type":0,"category":0,"cache_type":0,"snippet":"if (empty($url)) {\\n    return false;\\n} else {\\n    $config[\'url\'] = $url;\\n}\\n$config[\'maxwidth\'] = !empty($maxwidth) ? (integer) $maxwidth : 600;\\n$config[\'maxheight\'] = !empty($maxheight) ? (integer) $maxheight : 600;\\n$config[\'format\'] = !empty($format) ? $format : \'json\';\\n$config[\'outputMode\'] = !empty($outputMode) ? $outputMode : \'full\';\\n$config[\'discover\'] = $discover;\\n$config[\'tpl\'] = $tpl;\\n$output = \'\';\\n\\ninclude_once $modx->getOption(\'core_path\').\'components\\/oembed\\/oembed.class.php\';\\n$oembed = new oEmbed($modx, $config);\\n$oembed->fetch();\\n$output = $oembed->getOutput();\\n\\nreturn $output;","locked":0,"properties":"a:7:{s:3:\\"tpl\\";a:5:{s:4:\\"name\\";s:3:\\"tpl\\";s:4:\\"desc\\";s:89:\\"Name of a chunk serving as a resource template. If not provided, simple tpl will be used.\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";}s:3:\\"url\\";a:5:{s:4:\\"name\\";s:3:\\"url\\";s:4:\\"desc\\";s:45:\\"The URL to fetch media from. <b>Required<\\/b>.\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";}s:8:\\"maxwidth\\";a:5:{s:4:\\"name\\";s:8:\\"maxwidth\\";s:4:\\"desc\\";s:34:\\"Maximum width for retrieved media.\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:3:\\"600\\";}s:9:\\"maxheight\\";a:5:{s:4:\\"name\\";s:9:\\"maxheight\\";s:4:\\"desc\\";s:35:\\"Maximum height for retrieved media.\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:3:\\"600\\";}s:6:\\"format\\";a:5:{s:4:\\"name\\";s:6:\\"format\\";s:4:\\"desc\\";s:96:\\"Format of the response. Can be json|xml. Require json_decode|simplexml_load_string respectively.\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:4:\\"json\\";}s:8:\\"discover\\";a:5:{s:4:\\"name\\";s:8:\\"discover\\";s:4:\\"desc\\";s:59:\\"True, if you want try to fetch media from unknown provider.\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:4:\\"true\\";}s:10:\\"outputMode\\";a:5:{s:4:\\"name\\";s:10:\\"outputMode\\";s:4:\\"desc\\";s:86:\\"Output mode. Can be \\"full\\" (chunks will be processed) and \\"minimal\\" (only embed code).\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:4:\\"full\\";}}","moduleguid":""}',
+);

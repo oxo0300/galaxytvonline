@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'namespace' => 'fbLogin',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ada925b51ad1f6f8b08d8051bcdab3cb',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '3be4fe7bc36d9f66fed870881b4ac3bf',
+  'native_key' => '',
+  'object' => '{"key":"","value":"","xtype":"textfield","namespace":"core","area":"","editedon":null,"name":"settings_facebook_app_secret","description":"The secret assigned by Facebook for your app"}',
+);

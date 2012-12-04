@@ -1,0 +1,33 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => false,
+  'unique_key' => 'name',
+  'namespace' => 'provisioner',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"provisioner-1.1.0-pl\\/modUserGroup\\/4ee614183745e4eb7beb7edb679dfc38\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"provisioner"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"provisioner-1.1.0-pl\\/modUserGroup\\/4ee614183745e4eb7beb7edb679dfc38\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"provisioner"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"provisioner-1.1.0-pl\\/modUserGroup\\/4ee614183745e4eb7beb7edb679dfc38.resolver.resolver","name":"resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'acf5c99054f292a496f3063b466c9fcb',
+  'package' => 'modx',
+  'class' => 'modUserGroup',
+  'signature' => '4ee614183745e4eb7beb7edb679dfc38',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"Provisioner","parent":0}',
+);

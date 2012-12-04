@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'key',
+  'namespace' => 'provisioner',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8443dc57ec6436fbbce885f3c98fd511',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'bd038789ddcb8586b5bacfe8e9914e9a',
+  'native_key' => 'cookiefile',
+  'object' => '{"key":"cookiefile","value":"no file","xtype":"textfield","namespace":"provisioner","area":"Provisioner","editedon":null}',
+);

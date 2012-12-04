@@ -1,0 +1,18 @@
+<?php return array (
+  'class' => 'xPDOFileVehicle',
+  'object' => 
+  array (
+    'source' => 'dbapi-1.0.0-pl/xPDOFileVehicle/45a39ae948a19de92a3603394af24252/',
+    'target' => 'return MODX_CORE_PATH . \'components/\';',
+    'name' => 'dbapi',
+  ),
+  'vehicle_class' => 'xPDOFileVehicle',
+  'namespace' => 'dbapi',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => '4d332eee67b9a134cf16419ff45721ff',
+  'package' => '',
+  'signature' => '45a39ae948a19de92a3603394af24252',
+  'native_key' => '4d332eee67b9a134cf16419ff45721ff',
+);

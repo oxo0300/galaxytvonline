@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'key',
+  'namespace' => 'provisioner',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5f406f6f703d621c3c54072efd0b1f03',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '7835ef51a5feae4b3dfa65ebbd713981',
+  'native_key' => 'sitetype',
+  'object' => '{"key":"sitetype","value":"revolution","xtype":"textfield","namespace":"provisioner","area":"Provisioner","editedon":null}',
+);

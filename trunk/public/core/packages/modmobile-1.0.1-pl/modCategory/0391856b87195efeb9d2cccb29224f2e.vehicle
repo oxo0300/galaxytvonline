@@ -1,0 +1,97 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      'beaa1f160593436414c8c56daa87b779' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":1,"name":"modMobile","description":"Returns mobile if user is set to mobile otherwise it returns full","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/*\\r\\n * modMobile snippet\\r\\n *\\r\\n * Package by: Jeroen Kenters \\/ www.kenters.com\\r\\n * \\r\\n * Revised by: Joshua Gulledge\\r\\n * License: GNU GENERAL PUBLIC LICENSE Version 2, June 1991\\r\\n *\\r\\n * *\\/\\r\\n\\r\\n\\/**\\r\\n * $get_var this is the name of the value that you wish to have \\r\\n *  retrieve weather or not the mode is mobile or full(PC).  Default is\\r\\n *  modxSiteTemplate, this is an example of what URL you would need to create\\r\\n *  like mypage.html?modxSiteTemplate=mobile\\r\\n *\\/\\r\\n$get_var = $modx->getOption(\'modmobile.get_var\');\\r\\n \\r\\n\\/\\/ just assign an option\\/property(user) to be used via an [[If]] in a template\\/chunck\\/snippet\\r\\n$use_if = $modx->getOption(\'modmobile.use_if\');\\r\\n\\r\\nrequire_once \'components\\/modMobile\\/model\\/detectmobile.class.php\';\\r\\n\\r\\n\\/\\/only proceed when there is a mobile theme\\r\\nif( !empty($use_if) && $use_if ) {\\r\\n    $mobile = new DetectMobile();\\r\\n    if ( $mobile->run() == \'mobile\' ){\\r\\n        $modx->setOption($get_var, \'mobile\');\\r\\n        return \'mobile\';\\r\\n    } else {\\r\\n        $modx->setOption($get_var, \'full\');\\r\\n        return \'full\';\\r\\n    }\\r\\n}\\r\\nreturn NULL;","locked":0,"properties":null,"moduleguid":""}',
+        'guid' => '9a4403a5293b7f6494f0a79fddad1aad',
+        'native_key' => 1,
+        'signature' => '532c32a79a5039dfdb1c0a66a5d9a445',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      '2b7bb7a1e09a65e10e9681142a3461ca' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":1,"name":"modMobile","description":"Render mobile template for mobile devices","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/*\\r\\n * modMobile plugin\\r\\n *\\r\\n * Package by: Jeroen Kenters \\/ www.kenters.com\\r\\n * Based on code of Danny Herran (http:\\/\\/www.dannyherran.com\\/2011\\/02\\/detect-mobile-browseruser-agent-with-php-ipad-iphone-blackberry-and-others\\/)\\r\\n * \\r\\n * Revised by: Joshua Gulledge\\r\\n * License: GNU GENERAL PUBLIC LICENSE Version 2, June 1991\\r\\n *\\r\\n * *\\/\\r\\n\\r\\n\\/**\\r\\n * $get_var this is the name of the value that you wish to have \\r\\n *  retrieve weather or not the mode is mobile or full(PC).  Default is\\r\\n *  modxSiteTemplate, this is an example of what URL you would need to create\\r\\n *  like mypage.html?modxSiteTemplate=mobile\\r\\n *\\/\\r\\n$get_var = $modx->getOption(\'modmobile.get_var\');\\r\\n \\r\\n\\/\\/ just assigns a PlaceHolder to modmobile.get_var which can be used via an [[If]] in a template\\/chunck\\/snippet\\r\\n$use_if = $modx->getOption(\'modmobile.use_if\');\\r\\n\\r\\nrequire_once MODX_CORE_PATH.\'components\\/modMobile\\/model\\/detectmobile.class.php\';\\r\\n\\r\\n\\/\\/only proceed when there is a mobile theme\\r\\nif( !empty($use_if) && $use_if ) {\\r\\n    $mobile = new DetectMobile();\\r\\n    if ( $mobile->run() == \'mobile\' ){\\r\\n        $modx->setPlaceholder($get_var, \'mobile\');\\r\\n        $_SESSION[$get_var] = \'mobile\';\\r\\n    } else {\\r\\n        $modx->setPlaceholder($get_var, \'full\');\\r\\n        $_SESSION[$get_var] = \'full\';\\r\\n    }\\r\\n    return;\\r\\n}\\r\\n\\r\\n\\/\\/ get mobile theme setting\\r\\n$mobile_template = $modx->getOption(\'modmobile.mobile_template\');\\r\\n\\/\\/only proceed when there is a mobile theme\\r\\nif( !empty($mobile_template) ) {\\r\\n    $mobile = new DetectMobile();\\r\\n    \\r\\n    if ( $mobile->run() == \'mobile\' ){\\r\\n        $modx->resource->set(\'template\', $mobile_template);\\r\\n        $modx->setPlaceholder($get_var, \'mobile\');\\r\\n    } else {\\r\\n        $modx->setPlaceholder($get_var, \'full\');\\r\\n    }\\r\\n}\\r\\nreturn;","locked":0,"properties":null,"disabled":0,"moduleguid":""}',
+        'guid' => '1fff4cfcdc42f55813ef3b9c31c855ad',
+        'native_key' => 1,
+        'signature' => 'fbf725f4f565257783b8a7375464f893',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'bf3d7e061b775354d0a3c410db9ce04d' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnLoadWebDocument","priority":0,"propertyset":0}',
+              'guid' => '798dc9102ababf3edf40c1ba058148d2',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnLoadWebDocument',
+              ),
+              'signature' => '1c63f1f825eddcb0935b6c07d41e184d',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'modmobile',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modmobile-1.0.1-pl\\/modCategory\\/0391856b87195efeb9d2cccb29224f2e.setupoptions.resolver.resolver","type":"php","name":"setupoptions.resolver"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modmobile-1.0.1-pl\\/modCategory\\/0391856b87195efeb9d2cccb29224f2e.install.script.resolver","type":"php","name":"install.script"}',
+    ),
+    2 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"modmobile-1.0.1-pl\\/modCategory\\/0391856b87195efeb9d2cccb29224f2e\\/2\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"modmobile"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd29725b7caffd4803a65e56609a9441d',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '0391856b87195efeb9d2cccb29224f2e',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"modMobile"}',
+);

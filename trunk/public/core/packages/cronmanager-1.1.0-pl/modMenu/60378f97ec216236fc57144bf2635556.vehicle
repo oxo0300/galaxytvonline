@@ -1,0 +1,72 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      '4230d31c89e43ea327768ac6ae82d0eb' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'class' => 'modAction',
+        'object' => '{"id":1,"namespace":"cronmanager","controller":"controllers\\/index","haslayout":1,"lang_topics":"cronmanager:default","assets":"","help_url":"","parent":0}',
+        'guid' => 'fad722248f8b10a106eeb7cda170ebc9',
+        'native_key' => 1,
+        'signature' => 'c8044b81594d50793cb5afe73e12ff06',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'cronmanager',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"cronmanager-1.1.0-pl\\/modMenu\\/60378f97ec216236fc57144bf2635556\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"cronmanager"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"cronmanager-1.1.0-pl\\/modMenu\\/60378f97ec216236fc57144bf2635556\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"cronmanager"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"cronmanager-1.1.0-pl\\/modMenu\\/60378f97ec216236fc57144bf2635556.resolve.tablechanges.resolver","type":"php","name":"resolve.tablechanges"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"cronmanager-1.1.0-pl\\/modMenu\\/60378f97ec216236fc57144bf2635556.resolve.tables.resolver","type":"php","name":"resolve.tables"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a1237db2983ee3b9c17aac6a89753828',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '60378f97ec216236fc57144bf2635556',
+  'native_key' => 'cronmanager',
+  'object' => '{"text":"cronmanager","parent":"components","action":1,"description":"cronmanager.desc","icon":"images\\/icons\\/plugin.gif","menuindex":0,"params":"","handler":"","permissions":""}',
+);

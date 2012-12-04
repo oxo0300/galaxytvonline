@@ -1,0 +1,23 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'dbapi',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"dbapi-1.0.0-pl\\/modPlugin\\/5605f282ae5d98bf13cbc772cb8d6a3e.resolve.plugin_events.resolver","type":"php","name":"resolve.plugin_events"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7f52c93173c6002fc2955d0147837069',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => '5605f282ae5d98bf13cbc772cb8d6a3e',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"DBAPI Service","description":"<strong>1.0.0<\\/strong> Plugin to load the Legacy DBAPI class as a service.","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * Plugin to load Legacy Database API class.\\n *\\n * @author Jason Coward <jason@modx.com>\\n * @package modx\\n * @subpackage dbapi\\n *\\/\\n$modx->addPackage(\'modx.dbapi\', $modx->getOption(\'components_path\', $scriptProperties, MODX_CORE_PATH . \'components\\/\') . \'dbapi\\/model\\/\');\\n$modx->getService(\'db\', \'DBAPI\');","locked":0,"properties":null,"disabled":0,"moduleguid":""}',
+);

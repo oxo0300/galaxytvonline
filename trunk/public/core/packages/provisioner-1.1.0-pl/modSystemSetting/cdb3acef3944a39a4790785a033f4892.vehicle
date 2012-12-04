@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'key',
+  'namespace' => 'provisioner',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ae58ec958cc04da789446195e810f5d7',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'cdb3acef3944a39a4790785a033f4892',
+  'native_key' => 'account',
+  'object' => '{"key":"account","value":"","xtype":"textfield","namespace":"provisioner","area":"Provisioner","editedon":null}',
+);
